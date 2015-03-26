@@ -8,21 +8,27 @@ namespace DigipostApiClientShared
 {
     public class ResourceUtility
     {
+        /// <summary>
+        /// Initialize a resource utility with base path for resources.
+        /// </summary>
+        /// <param name="basePathForResources"> Must be in following form 'SolutionNameSpace.ProjectName.File.Path.Separated.ByDots>'"</param>
         public ResourceUtility(string basePathForResources)
         {
             BasePath = basePathForResources;
+            CurrentExecutingAssembly = Assembly.GetCallingAssembly();
         }
-        
-        public string BasePath { get; set; }
 
-        public static IEnumerable<string> GetFiles(params string[] pathRelativeToBase)
+        public string BasePath { get; set; }
+        public Assembly CurrentExecutingAssembly { get; set; }
+
+        public IEnumerable<string> GetFiles(params string[] pathRelativeToBase)
         {
             var path = GetFullPath(pathRelativeToBase);
 
             return GetAllFiles().Where(file => file.Contains(path));
         }
 
-        public static string GetFileName(string resource, bool withExtension = true)
+        public string GetFileName(string resource, bool withExtension = true)
         {
             var parts = resource.Split('.');
             var filename = parts[parts.Length - 2];
@@ -36,13 +42,11 @@ namespace DigipostApiClientShared
             return filename;
         }
 
-        public static byte[] ReadAllBytes(bool isRelative, params string[] path)
+        public byte[] ReadAllBytes(bool isRelative, params string[] path)
         {
             var fullpath = isRelative ? GetFullPath(path) : String.Join(".", path);
 
-            var assembly = GetAssembly();
-
-            using (Stream fileStream = assembly.GetManifestResourceStream(fullpath))
+            using (Stream fileStream = CurrentExecutingAssembly.GetManifestResourceStream(fullpath))
             {
                 if (fileStream == null) return null;
                 byte[] bytes = new byte[fileStream.Length];
@@ -51,19 +55,14 @@ namespace DigipostApiClientShared
             }
         }
 
-        internal static string GetFullPath(params string[] path)
+        internal string GetFullPath(params string[] path)
         {
             return String.Join(".", BasePath, String.Join(".", path));
         }
 
-        private static IEnumerable<string> GetAllFiles()
+        private IEnumerable<string> GetAllFiles()
         {
-            return GetAssembly().GetManifestResourceNames();
-        }
-
-        private static Assembly GetAssembly()
-        {
-            return Assembly.GetExecutingAssembly();
+            return CurrentExecutingAssembly.GetManifestResourceNames();
         }
     }
 }
