@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Enums\CertificateUtility.cs" />
+    <Compile Include="Enums\Language.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceUtility.cs" />
   </ItemGroup>
@@ -71,5 +73,4 @@
     </GetAssemblyIdentity>
     <Message Text="##teamcity[buildNumber '%(AssemblyIdentity.Version)']" />
   </Target>
-
 </Project>
