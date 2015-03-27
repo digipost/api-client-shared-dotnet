@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Management.Instrumentation;
 using System.Security.Cryptography.X509Certificates;
+using DigipostApiClientShared.Enums;
 
-namespace DigipostApiClientShared.Enums
+namespace DigipostApiClientShared
 {
     public class CertificateUtility
     {
