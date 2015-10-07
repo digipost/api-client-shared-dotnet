@@ -57,7 +57,8 @@ namespace ApiClientShared
 
         internal string GetFullPath(params string[] path)
         {
-            return String.Join(".", BasePath, String.Join(".", path));
+            var relativePath = String.Join(".", path);
+            return string.Format("{0}.{1}", BasePath, relativePath); //To keep .NET 3.5 compatibility
         }
 
         private IEnumerable<string> GetAllFiles()
