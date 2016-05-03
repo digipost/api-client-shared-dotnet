@@ -7,13 +7,13 @@ namespace ApiClientShared
 {
     internal class CertificateFactory
     {
-        public CertificateFactory()
+        internal CertificateFactory()
         {
             KeyStoreUtil = new KeyStoreUtility();
             BomUtil = new BomUtility();
         }
 
-        public CertificateFactory(KeyStoreUtility keyStoreUtility, BomUtility bomUtility = null)
+        internal CertificateFactory(KeyStoreUtility keyStoreUtility, BomUtility bomUtility = null)
         {
             KeyStoreUtil = keyStoreUtility;
             BomUtil = bomUtility ?? new BomUtility();
@@ -28,7 +28,7 @@ namespace ApiClientShared
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>The certifikcate</returns>
-        public X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
+        internal X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
         {
             var storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
             X509Certificate2 senderCertificate;
@@ -53,7 +53,7 @@ namespace ApiClientShared
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>The certifikcate</returns>
-        public X509Certificate2 ReceiverCertificate(string thumbprint, Language errorMessageLanguage)
+        internal X509Certificate2 ReceiverCertificate(string thumbprint, Language errorMessageLanguage)
         {
             var storeTrusted = new X509Store(StoreName.TrustedPeople, StoreLocation.CurrentUser);
             X509Certificate2 receiverCertificate;
