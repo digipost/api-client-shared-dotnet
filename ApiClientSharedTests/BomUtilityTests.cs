@@ -5,10 +5,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ApiClientSharedTests
 {
     [TestClass]
-    class BomUtilityTests
+    internal class BomUtilityTests
     {
-        const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
-        const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
+        private const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
+        private const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
+
         [TestClass]
         public class RemoveBomMethod : BomUtilityTests
         {
@@ -16,7 +17,7 @@ namespace ApiClientSharedTests
             public void ShouldRemoveBom()
             {
                 //Arrange
-                BomUtility bomUtility = new BomUtility();
+                var bomUtility = new BomUtility();
                 //Act
                 var trimmed = bomUtility.RemoveBom(StringWithBom);
 
@@ -31,7 +32,7 @@ namespace ApiClientSharedTests
             public void ShouldNotRemoveBom()
             {
                 //Arrange
-                BomUtility bomUtility = new BomUtility();
+                var bomUtility = new BomUtility();
                 //Act
                 var trimmed = bomUtility.RemoveBom(StringWithoutBom);
 

@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Security.Cryptography.X509Certificates;
 using ApiClientShared;
 using ApiClientShared.Enums;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -9,9 +8,9 @@ namespace ApiClientSharedTests
 {
     public class CertificateUtilityTests
     {
-        const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
-        const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
-        
+        private const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
+        private const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
+
         [TestClass]
         public class SenderCertificateMethod : CertificateUtilityTests
         {
@@ -19,20 +18,20 @@ namespace ApiClientSharedTests
             public void CallsRemoveBom()
             {
                 //Arrange
-                var keyStoreUtilityMock =  new Mock<KeyStoreUtility>();
+                var keyStoreUtilityMock = new Mock<KeyStoreUtility>();
                 keyStoreUtilityMock.Setup(
                     utility => utility.FindCertificate(It.IsAny<string>(), It.IsAny<X509Store>()))
                     .Returns(new X509Certificate2());
-                
+
                 var bomUtilMock = new Mock<BomUtility>();
-                var certificateFactory = new CertificateFactory(keyStoreUtilityMock.Object,bomUtilMock.Object);
-                
+                var certificateFactory = new CertificateFactory(keyStoreUtilityMock.Object, bomUtilMock.Object);
+
                 //Act
-                var certificate  = certificateFactory.SenderCertificate(StringWithBom, Language.Norwegian);
-                
+                var certificate = certificateFactory.SenderCertificate(StringWithBom, Language.Norwegian);
+
                 //Assert
                 Assert.IsNotNull(certificate);
-                bomUtilMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()),Times.Once());
+                bomUtilMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()), Times.Once());
             }
 
             [TestMethod]
@@ -52,7 +51,6 @@ namespace ApiClientSharedTests
                 //Assert
                 Assert.IsNotNull(certificate);
                 keyStoreUtilityMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
-
             }
         }
 
@@ -87,7 +85,7 @@ namespace ApiClientSharedTests
                 keyStoreUtilityMock.Setup(
                     utility => utility.FindCertificate(It.IsAny<string>(), It.IsAny<X509Store>()))
                     .Returns(new X509Certificate2());
-                
+
                 var certificateFactory = new CertificateFactory(keyStoreUtilityMock.Object);
 
                 //Act
@@ -95,8 +93,7 @@ namespace ApiClientSharedTests
 
                 //Assert
                 Assert.IsNotNull(certificate);
-                keyStoreUtilityMock.Verify(utility => utility.FindCertificate(StringWithoutBom,It.IsAny<X509Store>()));
-                
+                keyStoreUtilityMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
         }
     }
