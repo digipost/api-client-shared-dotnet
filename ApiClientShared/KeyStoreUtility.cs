@@ -2,9 +2,9 @@
 
 namespace ApiClientShared
 {
-    public class KeyStoreUtility
+    internal class KeyStoreUtility
     {
-        public virtual X509Certificate2 FindCertificate(string thumbprint, X509Store storeMy)
+        internal virtual X509Certificate2 FindCertificate(string thumbprint, X509Store storeMy)
         {
             try
             {

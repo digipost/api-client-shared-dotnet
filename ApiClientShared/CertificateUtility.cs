@@ -5,14 +5,23 @@ namespace ApiClientShared
 {
     public class CertificateUtility
     {
-        public static string EnglishErrorDescription = "Could not find certificate";
-        public static string NorwegianErrorDescription = "Klarte ikke finne sertifikat";
 
+        /// <summary>
+        ///     Retrieves certificate from personal certificates (StoreName.My) from current user.
+        /// </summary>
+        /// <param name="thumbprint">The thumbprint of the certificate.</param>
+        /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
+        /// <returns>The certifikcate</returns>
         public static X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
         {
             return new CertificateFactory().SenderCertificate(thumbprint, errorMessageLanguage);
         }
-
+        /// <summary>
+        ///     Retrieves certificate from trusted People (StoreName.TrustedPeople) from current user.
+        /// </summary>
+        /// <param name="thumbprint">The thumbprint of the certificate.</param>
+        /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
+        /// <returns>The certifikcate</returns>
         public static X509Certificate2 ReceiverCertificate(string thumbprint, Language errorMessageLanguage)
         {
             return new CertificateFactory().ReceiverCertificate(thumbprint, errorMessageLanguage);

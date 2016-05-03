@@ -61,7 +61,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="BomUtilityTests.cs" />
-    <Compile Include="CertificateUtilityTests.cs" />
+    <Compile Include="CertificateFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

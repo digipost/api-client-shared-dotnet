@@ -6,13 +6,13 @@ using Moq;
 
 namespace ApiClientSharedTests
 {
-    public class CertificateUtilityTests
+    public class CertificateFactoryTests
     {
         private const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
         private const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
 
         [TestClass]
-        public class SenderCertificateMethod : CertificateUtilityTests
+        public class SenderCertificateMethod : CertificateFactoryTests
         {
             [TestMethod]
             public void CallsRemoveBom()
@@ -55,7 +55,7 @@ namespace ApiClientSharedTests
         }
 
         [TestClass]
-        public class ReceiverCertificateMethod : CertificateUtilityTests
+        public class ReceiverCertificateMethod : CertificateFactoryTests
         {
             [TestMethod]
             public void CallsRemoveBom()

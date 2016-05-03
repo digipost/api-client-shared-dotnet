@@ -4,14 +4,14 @@ using System.Text;
 
 namespace ApiClientShared
 {
-    public class BomUtility
+    internal class BomUtility
     {
         /// <summary>
         ///     Removes the invisible character often encountered when copying thumbprint from Microsoft Management Console.
         /// </summary>
         /// <param name="thumbprint"></param>
         /// <returns>cleansed thumbprint</returns>
-        public virtual string RemoveBom(string thumbprint)
+        internal virtual string RemoveBom(string thumbprint)
         {
             var thumbprintBytes = Encoding.UTF8.GetBytes(thumbprint);
             var arrayOfKnownByteOrderMarks = new List<byte[]> {new byte[] {226, 128, 142}};
