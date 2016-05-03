@@ -5,21 +5,22 @@ using ApiClientShared.Enums;
 
 namespace ApiClientShared
 {
-    class CertificateFactory
+    internal class CertificateFactory
     {
-        internal virtual KeyStoreUtility KeyStoreUtil { get; }
-        internal virtual BomUtility BomUtil { get; }
-
         public CertificateFactory()
         {
             KeyStoreUtil = new KeyStoreUtility();
             BomUtil = new BomUtility();
         }
+
         public CertificateFactory(KeyStoreUtility keyStoreUtility, BomUtility bomUtility = null)
         {
             KeyStoreUtil = keyStoreUtility;
             BomUtil = bomUtility ?? new BomUtility();
         }
+
+        internal virtual KeyStoreUtility KeyStoreUtil { get; }
+        internal virtual BomUtility BomUtil { get; }
 
         /// <summary>
         ///     Retrieves certificate from personal certificates (StoreName.My) from current user.
@@ -82,6 +83,5 @@ namespace ApiClientShared
                     throw new ArgumentOutOfRangeException(nameof(language));
             }
         }
-        
     }
 }

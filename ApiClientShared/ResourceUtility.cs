@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -9,9 +7,12 @@ namespace ApiClientShared
     public class ResourceUtility
     {
         /// <summary>
-        /// Initialize a resource utility with base path for resources.
+        ///     Initialize a resource utility with base path for resources.
         /// </summary>
-        /// <param name="basePathForResources"> Must be in following form 'SolutionNameSpace.ProjectName.File.Path.Separated.ByDots>'"</param>
+        /// <param name="basePathForResources">
+        ///     Must be in following form
+        ///     'SolutionNameSpace.ProjectName.File.Path.Separated.ByDots>'"
+        /// </param>
         public ResourceUtility(string basePathForResources)
         {
             BasePath = basePathForResources;
@@ -36,7 +37,7 @@ namespace ApiClientShared
             if (withExtension)
             {
                 var extension = parts[parts.Length - 1];
-                filename = String.Format("{0}.{1}", filename, extension);
+                filename = string.Format("{0}.{1}", filename, extension);
             }
 
             return filename;
@@ -44,12 +45,12 @@ namespace ApiClientShared
 
         public byte[] ReadAllBytes(bool isRelative, params string[] path)
         {
-            var fullpath = isRelative ? GetFullPath(path) : String.Join(".", path);
+            var fullpath = isRelative ? GetFullPath(path) : string.Join(".", path);
 
-            using (Stream fileStream = CurrentExecutingAssembly.GetManifestResourceStream(fullpath))
+            using (var fileStream = CurrentExecutingAssembly.GetManifestResourceStream(fullpath))
             {
                 if (fileStream == null) return null;
-                byte[] bytes = new byte[fileStream.Length];
+                var bytes = new byte[fileStream.Length];
                 fileStream.Read(bytes, 0, bytes.Length);
                 return bytes;
             }
@@ -57,7 +58,7 @@ namespace ApiClientShared
 
         internal string GetFullPath(params string[] path)
         {
-            return String.Join(".", BasePath, String.Join(".", path));
+            return string.Join(".", BasePath, string.Join(".", path));
         }
 
         private IEnumerable<string> GetAllFiles()
