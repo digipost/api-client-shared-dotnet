@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6AD5A8C6-6609-4452-A31E-7EA643B4A36D}"
 	ProjectSection(SolutionItems) = preProject
 		C:\Keys\digipost.pfx = C:\Keys\digipost.pfx
+		SolutionItems\SharedAssemblyInfo.cs = SolutionItems\SharedAssemblyInfo.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiClientShared", "ApiClientShared\ApiClientShared.csproj", "{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}"
