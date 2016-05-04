@@ -49,8 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\SolutionItems\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="BomUtility.cs" />
     <Compile Include="CertificateUtility.cs" />
     <Compile Include="Enums\Language.cs" />
+    <Compile Include="KeyStoreUtility.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResourceUtility.cs" />
   </ItemGroup>

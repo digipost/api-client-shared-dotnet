@@ -7,71 +7,80 @@ namespace ApiClientShared
 {
     public class CertificateUtility
     {
-        public static string EnglishErrorDescription = "Could not find certificate";
-        public static string NorwegianErrorDescription = "Klarte ikke finne sertifikat";
+        internal virtual KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility();
 
-        private static string GetErrorMessage(string thumbprint, Language language)
-        {
-            switch (language)
-            {
-                case Language.English:
-                    return String.Format("Could not find certificate with thumbprint: {0}",thumbprint);
-                case Language.Norwegian:
-                    return String.Format("Klarte ikke finne sertifikat med thumbprint: {0}", thumbprint);
+        internal virtual BomUtility BomUtility { get; set; } = new BomUtility();
 
-                default:
-                    throw new ArgumentOutOfRangeException("language");
-            }
-        }
-        
         /// <summary>
-        /// Retrieves certificate from personal certificates (StoreName.My) from current user.
+        ///     Retrieves certificate from personal certificates (StoreName.My) from current user.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>The certifikcate</returns>
         public static X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
         {
-            X509Store storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
-            X509Certificate2 tekniskAvsenderSertifikat;
+            return new CertificateUtility().CreateSenderCertificate(thumbprint, errorMessageLanguage);
+        }
+
+        internal X509Certificate2 CreateSenderCertificate(string thumbprint, Language errorMessageLanguage)
+        {
+            var storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
+            X509Certificate2 senderCertificate;
+
+            thumbprint = BomUtility.RemoveBom(thumbprint);
+
             try
             {
-                storeMy.Open(OpenFlags.ReadOnly);
-                tekniskAvsenderSertifikat = storeMy.Certificates.Find(
-                    X509FindType.FindByThumbprint, thumbprint, true)[0];
+                senderCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeMy);
             }
             catch (Exception e)
             {
-                throw new InstanceNotFoundException(GetErrorMessage(thumbprint,errorMessageLanguage), e);
+                throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage), e);
             }
-            storeMy.Close();
-            return tekniskAvsenderSertifikat;
+
+            return senderCertificate;
         }
 
         /// <summary>
-        /// Retrieves certificate from trusted People (StoreName.TrustedPeople) from current user.
+        ///     Retrieves certificate from trusted People (StoreName.TrustedPeople) from current user.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>The certifikcate</returns>
         public static X509Certificate2 ReceiverCertificate(string thumbprint, Language errorMessageLanguage)
         {
+            return new CertificateUtility().CreateReceiverCertificate(thumbprint, errorMessageLanguage);
+        }
+
+        internal X509Certificate2 CreateReceiverCertificate(string thumbprint, Language errorMessageLanguage)
+        {
             var storeTrusted = new X509Store(StoreName.TrustedPeople, StoreLocation.CurrentUser);
-            X509Certificate2 mottakerSertifikat;
+            X509Certificate2 receiverCertificate;
+
+            thumbprint = BomUtility.RemoveBom(thumbprint);
             try
             {
-                storeTrusted.Open(OpenFlags.ReadOnly);
-                mottakerSertifikat =
-                    storeTrusted.Certificates.Find(X509FindType.FindByThumbprint, thumbprint, true)[0];
+                receiverCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeTrusted);
             }
             catch (Exception e)
             {
-                throw new InstanceNotFoundException(GetErrorMessage(thumbprint,errorMessageLanguage), e);
+                throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage), e);
             }
-            storeTrusted.Close();
-            return mottakerSertifikat;
+            return receiverCertificate;
         }
 
+        private string GetErrorMessage(string thumbprint, Language language)
+        {
+            switch (language)
+            {
+                case Language.English:
+                    return $"Could not find certificate with thumbprint: {thumbprint}";
+                case Language.Norwegian:
+                    return $"Klarte ikke finne sertifikat med thumbprint: {thumbprint}";
 
+                default:
+                    throw new ArgumentOutOfRangeException(nameof(language));
+            }
+        }
     }
 }
