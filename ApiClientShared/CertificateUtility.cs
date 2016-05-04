@@ -7,9 +7,9 @@ namespace ApiClientShared
 {
     public class CertificateUtility
     {
-        internal virtual KeyStoreUtility KeyStoreUtil { get; set; } = new KeyStoreUtility();
+        internal virtual KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility();
 
-        internal virtual BomUtility BomUtil { get; set; } = new BomUtility();
+        internal virtual BomUtility BomUtility { get; set; } = new BomUtility();
 
         /// <summary>
         ///     Retrieves certificate from personal certificates (StoreName.My) from current user.
@@ -27,11 +27,11 @@ namespace ApiClientShared
             var storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
             X509Certificate2 senderCertificate;
 
-            thumbprint = BomUtil.RemoveBom(thumbprint);
+            thumbprint = BomUtility.RemoveBom(thumbprint);
 
             try
             {
-                senderCertificate = KeyStoreUtil.FindCertificate(thumbprint, storeMy);
+                senderCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeMy);
             }
             catch (Exception e)
             {
@@ -57,10 +57,10 @@ namespace ApiClientShared
             var storeTrusted = new X509Store(StoreName.TrustedPeople, StoreLocation.CurrentUser);
             X509Certificate2 receiverCertificate;
 
-            thumbprint = BomUtil.RemoveBom(thumbprint);
+            thumbprint = BomUtility.RemoveBom(thumbprint);
             try
             {
-                receiverCertificate = KeyStoreUtil.FindCertificate(thumbprint, storeTrusted);
+                receiverCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeTrusted);
             }
             catch (Exception e)
             {
