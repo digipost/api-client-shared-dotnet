@@ -50,7 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BomUtility.cs" />
-    <Compile Include="CertificateFactory.cs" />
     <Compile Include="CertificateUtility.cs" />
     <Compile Include="Enums\Language.cs" />
     <Compile Include="KeyStoreUtility.cs" />
