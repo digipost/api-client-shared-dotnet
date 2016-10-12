@@ -103,5 +103,15 @@ namespace ApiClientSharedTests
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
         }
+
+        [TestClass]
+        public class TestShit : CertificateUtilityTests
+        {
+            [TestMethod]
+            public void GetsCertificateFromMachineStore()
+            {
+                var cert = CertificateUtility.SenderCertificate("‎2d 7f 30 dd 05 d3 b7 fc 7a e5 97 3a 73 f8 49 08 3b 20 40 ed", Language.English);
+            }
+        }
     }
 }
