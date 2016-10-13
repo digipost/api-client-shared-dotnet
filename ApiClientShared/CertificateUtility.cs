@@ -13,7 +13,8 @@ namespace ApiClientShared
         internal virtual BomUtility BomUtility { get; set; } = new BomUtility();
 
         /// <summary>
-        ///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentUser) or local machine (StoreLocation.LocalMachine) identified by thumbprint.
+        ///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentUser) or
+        ///     local machine (StoreLocation.LocalMachine) identified by thumbprint.
         ///     A lookup is first performed on CurrentUser and then on LocalMachine.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
@@ -25,7 +26,8 @@ namespace ApiClientShared
         }
 
         /// <summary>
-        ///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.CurrentUser) or local machine (StoreLocation.LocalMachine) identified by thumbprint.
+        ///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.CurrentUser)
+        ///     or local machine (StoreLocation.LocalMachine) identified by thumbprint.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
