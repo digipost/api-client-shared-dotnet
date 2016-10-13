@@ -1,8 +1,9 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using ApiClientShared;
 using ApiClientShared.Enums;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using Xunit;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace ApiClientSharedTests
 {
@@ -46,10 +47,10 @@ namespace ApiClientSharedTests
                 : certificateUtility.CreateReceiverCertificate(thumbprint, Language.English);
         }
 
-        [TestClass]
+        
         public class SenderCertificateMethod : CertificateUtilityTests
         {
-            [TestMethod]
+            [Fact]
             public void Calls_remove_bom()
             {
                 //Arrange
@@ -69,7 +70,7 @@ namespace ApiClientSharedTests
                 bomUtilityMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()), Times.Once());
             }
 
-            [TestMethod]
+            [Fact]
             public void Thumbprint_without_bom_should_not_change()
             {
                 //Arrange
@@ -84,7 +85,7 @@ namespace ApiClientSharedTests
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
 
-            [TestMethod]
+            [Fact]
             public void Accesses_current_user_store()
             {
                 const StoreName storeName = StoreName.My;
@@ -95,7 +96,7 @@ namespace ApiClientSharedTests
                 Assert.IsNotNull(certificate);
             }
 
-            [TestMethod]
+            [Fact]
             public void Accesses_local_machine_store()
             {
                 const StoreName storeName = StoreName.My;
@@ -107,10 +108,10 @@ namespace ApiClientSharedTests
             }
         }
 
-        [TestClass]
+        
         public class ReceiverCertificateMethod : CertificateUtilityTests
         {
-            [TestMethod]
+            [Fact]
             public void Calls_remove_bom()
             {
                 //Arrange
@@ -130,7 +131,7 @@ namespace ApiClientSharedTests
                 bomUtilityMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()), Times.Once());
             }
 
-            [TestMethod]
+            [Fact]
             public void Thumbprint_without_bom_should_not_change()
             {
                 //Arrange
@@ -145,7 +146,7 @@ namespace ApiClientSharedTests
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
 
-            [TestMethod]
+            [Fact]
             public void Accesses_current_user_store()
             {
                 const StoreName storeName = StoreName.TrustedPeople;
@@ -156,7 +157,7 @@ namespace ApiClientSharedTests
                 Assert.IsNotNull(certificate);
             }
 
-            [TestMethod]
+            [Fact]
             public void Accesses_local_machine_store()
             {
                 const StoreName storeName = StoreName.TrustedPeople;

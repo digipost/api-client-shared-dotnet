@@ -1,20 +1,20 @@
 ﻿using System.Linq;
 using ApiClientShared;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
 namespace ApiClientSharedTests
 {
-    [TestClass]
-    internal class BomUtilityTests
+    
+    public class BomUtilityTests
     {
         private const string StringWithBom = "‎30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
         private const string StringWithoutBom = "30 5b 7d 02 e6 5e 65 5f de a8 20 65 9c 3a e0 f1 a8 4b 72 2c";
 
-        [TestClass]
+        
         public class RemoveBomMethod : BomUtilityTests
         {
-            [TestMethod]
-            public void ShouldRemoveBom()
+            [Fact]
+            public void Should_remove_bom()
             {
                 //Arrange
                 var bomUtility = new BomUtility();
@@ -24,12 +24,12 @@ namespace ApiClientSharedTests
                 var firstElement = trimmed.ElementAt(0);
 
                 //Assert
-                Assert.IsTrue(firstElement == '3');
-                Assert.AreNotEqual(trimmed, StringWithBom);
+                Assert.True(firstElement == '3');
+                Assert.NotEqual(trimmed, StringWithBom);
             }
 
-            [TestMethod]
-            public void ShouldNotRemoveBom()
+            [Fact]
+            public void Should_not_remove_bom()
             {
                 //Arrange
                 var bomUtility = new BomUtility();
@@ -39,8 +39,8 @@ namespace ApiClientSharedTests
                 var firstElement = trimmed.ElementAt(0);
 
                 //Assert
-                Assert.IsTrue(firstElement == '3');
-                Assert.AreEqual(trimmed, StringWithoutBom);
+                Assert.True(firstElement == '3');
+                Assert.Equal(trimmed, StringWithoutBom);
             }
         }
     }
