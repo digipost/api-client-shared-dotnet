@@ -1,19 +1,23 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ApiClientShared
 {
     internal class KeyStoreUtility
     {
-        internal virtual X509Certificate2 FindCertificate(string thumbprint, X509Store storeMy)
+        internal virtual X509Certificate2 FindCertificate(string thumbprint, X509Store store)
         {
             try
             {
-                storeMy.Open(OpenFlags.ReadOnly);
-                return storeMy.Certificates.Find(X509FindType.FindByThumbprint, thumbprint, true)[0];
+                store.Open(OpenFlags.ReadOnly);
+                var x509Certificate2Collection = store.Certificates.Find(X509FindType.FindByThumbprint, thumbprint, true);
+                var certificates = x509Certificate2Collection.Cast<X509Certificate2>().ToList();
+                
+                return certificates.FirstOrDefault(); ;
             }
             finally
             {
-                storeMy.Close();
+                store.Close();
             }
         }
     }

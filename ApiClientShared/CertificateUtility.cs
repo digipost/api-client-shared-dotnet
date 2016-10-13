@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Management.Instrumentation;
 using System.Security.Cryptography.X509Certificates;
 using ApiClientShared.Enums;
@@ -12,37 +13,21 @@ namespace ApiClientShared
         internal virtual BomUtility BomUtility { get; set; } = new BomUtility();
 
         /// <summary>
-        ///     Retrieves certificate from personal certificates (StoreName.My) from current user.
+        ///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentUser) or
+        ///     local machine (StoreLocation.LocalMachine) identified by thumbprint.
+        ///     A lookup is first performed on CurrentUser and then on LocalMachine.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
-        /// <returns>The certifikcate</returns>
+        /// <returns>First certificate found or null</returns>
         public static X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
         {
             return new CertificateUtility().CreateSenderCertificate(thumbprint, errorMessageLanguage);
         }
 
-        internal X509Certificate2 CreateSenderCertificate(string thumbprint, Language errorMessageLanguage)
-        {
-            var storeMy = new X509Store(StoreName.My, StoreLocation.CurrentUser);
-            X509Certificate2 senderCertificate;
-
-            thumbprint = BomUtility.RemoveBom(thumbprint);
-
-            try
-            {
-                senderCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeMy);
-            }
-            catch (Exception e)
-            {
-                throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage), e);
-            }
-
-            return senderCertificate;
-        }
-
         /// <summary>
-        ///     Retrieves certificate from trusted People (StoreName.TrustedPeople) from current user.
+        ///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.CurrentUser)
+        ///     or local machine (StoreLocation.LocalMachine) identified by thumbprint.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
         /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
@@ -52,21 +37,37 @@ namespace ApiClientShared
             return new CertificateUtility().CreateReceiverCertificate(thumbprint, errorMessageLanguage);
         }
 
+        internal X509Certificate2 CreateSenderCertificate(string thumbprint, Language errorMessageLanguage)
+        {
+            return GetFirstCertificateOrThrowException(thumbprint, StoreName.My, errorMessageLanguage);
+        }
+
         internal X509Certificate2 CreateReceiverCertificate(string thumbprint, Language errorMessageLanguage)
         {
-            var storeTrusted = new X509Store(StoreName.TrustedPeople, StoreLocation.CurrentUser);
-            X509Certificate2 receiverCertificate;
+            return GetFirstCertificateOrThrowException(thumbprint, StoreName.TrustedPeople, errorMessageLanguage);
+        }
 
+        private X509Certificate2 GetFirstCertificateOrThrowException(string thumbprint, StoreName storeName, Language errorMessageLanguage)
+        {
             thumbprint = BomUtility.RemoveBom(thumbprint);
-            try
+
+            var stores = new List<X509Store>
             {
-                receiverCertificate = KeyStoreUtility.FindCertificate(thumbprint, storeTrusted);
-            }
-            catch (Exception e)
+                new X509Store(storeName, StoreLocation.CurrentUser),
+                new X509Store(storeName, StoreLocation.LocalMachine)
+            };
+
+            foreach (var store in stores)
             {
-                throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage), e);
+                var certificate = KeyStoreUtility.FindCertificate(thumbprint, store);
+
+                if (certificate != null)
+                {
+                    return certificate;
+                }
             }
-            return receiverCertificate;
+
+            throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage));
         }
 
         private string GetErrorMessage(string thumbprint, Language language)
