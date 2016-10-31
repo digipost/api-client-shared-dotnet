@@ -167,6 +167,12 @@ namespace ApiClientSharedTests
 
                 Assert.IsNotNull(certificate);
             }
+
+            [Fact]
+            public void FailingTest()
+            {
+                Assert.IsNotNull(null);
+            }
         }
     }
 }
