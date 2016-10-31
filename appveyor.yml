@@ -57,6 +57,7 @@
     strong_name_key_secret:
       secure: bcmLk9o07UTrGB+wphBFsGMO49JBy8WGntBdzJECZKk=  
   install:
+     - git submodule update --init --recursive
     - nuget install secure-file -ExcludeVersion
     - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
