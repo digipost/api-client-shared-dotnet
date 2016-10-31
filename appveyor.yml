@@ -62,8 +62,7 @@
     - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
   - ps: >-
-      .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs";  
+      .\Scripts\NugetRestore.ps1;       
   build:
         verbosity: minimal  
   before_test:
