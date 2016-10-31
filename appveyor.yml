@@ -59,11 +59,11 @@
       secure: bcmLk9o07UTrGB+wphBFsGMO49JBy8WGntBdzJECZKk=  
   install:
     - nuget install secure-file -ExcludeVersion
-    - secure-file\tools\secure-file -decrypt keykey.snk.enc -secret %strong_name_key_secret%
+    - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
   - ps: >-
       .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\ApiClientShared\Properties\AssemblyInfo.cs";    
+      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs"; 
   build:
         verbosity: minimal  
   before_test:
