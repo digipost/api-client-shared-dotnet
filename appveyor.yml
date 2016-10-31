@@ -20,13 +20,13 @@
   before_build:
   - ps: >-
       .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\ApiClientShared\Properties\AssemblyInfo.cs"; 
+      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs"; 
       .\Scripts\BuildPreamble.ps1   
   build:
     verbosity: minimal  
   after_build:
   - ps: >-
-      .\Scripts\NuspecVersionPatcher.ps1 -assembly "AppVeyorTestPackage\bin\Release\AppVeyorTestPackage.dll" -nuspec "AppVeyorTestPackage.nuspec";
+      .\Scripts\NuspecVersionPatcher.ps1 -assembly "ApiClientShared\bin\Release\ApiClientShared.dll" -nuspec "api-client-shared.nuspec";
       nuget pack;    
   artifacts:
     - path: '*.nupkg'
