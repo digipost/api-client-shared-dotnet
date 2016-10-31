@@ -19,7 +19,6 @@
     - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
   - ps: >-
-      Get-Childitem;
       .\Scripts\NugetRestore.ps1;    
       .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs"; 
       .\Scripts\BuildPreamble.ps1   
@@ -28,7 +27,7 @@
   after_build:
   - ps: >-
       .\Scripts\NuspecVersionPatcher.ps1 -assembly "ApiClientShared\bin\Release\ApiClientShared.dll" -nuspec "api-client-shared.nuspec";
-      nuget pack;    
+      nuget pack;
   artifacts:
     - path: '*.nupkg'
   before_test:
