@@ -37,7 +37,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>C:\Keys\digipost.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\signingkey.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />

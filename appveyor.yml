@@ -20,7 +20,7 @@
   before_build:
   - ps: >-
       .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\AppVeyorTestPackage\Properties\AssemblyInfo.cs"; 
+      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\ApiClientShared\Properties\AssemblyInfo.cs"; 
       .\Scripts\BuildPreamble.ps1   
   build:
     verbosity: minimal  
@@ -62,7 +62,7 @@
   before_build:
   - ps: >-
       .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\AppVeyorTestPackage\Properties\AssemblyInfo.cs";    
+      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath ".\ApiClientShared\Properties\AssemblyInfo.cs";    
   build:
         verbosity: minimal  
   before_test:
