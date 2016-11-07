@@ -19,23 +19,24 @@
     - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
   - ps: >-
-      .\Scripts\NugetRestore.ps1;    
-      .\Scripts\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs"; 
-      .\Scripts\BuildPreamble.ps1   
+      .\appveyor-deploy\MoveSigningKey.ps1 -signingKeyPath "$env:APPVEYOR_BUILD_FOLDER\signingkey.snk" -signingKeyDestination "C:\Keys\signingkey.snk";
+      .\appveyor-deploy\NugetRestore.ps1;    
+      .\appveyor-deploy\AssemblyInfoVersionPatcher.ps1 -assemblyInfoPath  ".\SolutionItems\SharedAssemblyInfo.cs"; 
+      .\appveyor-deploy\BuildPreamble.ps1   
   build:
     verbosity: minimal  
   after_build:
   - ps: >-
-      .\Scripts\NuspecVersionPatcher.ps1 -assembly "ApiClientShared\bin\Release\ApiClientShared.dll" -nuspec "api-client-shared.nuspec";
+      .\appveyor-deploy\NuspecVersionPatcher.ps1 -assembly "ApiClientShared\bin\Release\ApiClientShared.dll" -nuspec "api-client-shared.nuspec";
       nuget pack;
   artifacts:
     - path: '*.nupkg'
   before_test:
   - ps: >-
-      .\Scripts\TestPreamble.ps1
+      .\appveyor-deploy\TestPreamble.ps1
   before_deploy:
   - ps: >-
-      .\Scripts\DeployPreamble.ps1
+      .\appveyor-deploy\DeployPreamble.ps1
   deploy:
     provider: NuGet
     api_key:
@@ -62,9 +63,11 @@
     - secure-file\tools\secure-file -decrypt signingkey.snk.enc -secret %strong_name_key_secret%
   before_build:
   - ps: >-
-      .\Scripts\NugetRestore.ps1;       
+      .\appveyor-deploy\MoveSigningKey.ps1 -signingKeyPath "$env:APPVEYOR_BUILD_FOLDER\signingkey.snk" -signingKeyDestination "C:\Keys\signingkey.snk";
+      .\appveyor-deploy\NugetRestore.ps1; 
+      .\appveyor-deploy\BuildPreamble.ps1         
   build:
         verbosity: minimal  
   before_test:
   - ps: >-
-      .\Scripts\TestPreamble.ps1
+      .\appveyor-deploy\TestPreamble.ps1
