@@ -50,6 +50,11 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Certificate\CertificateResource.cs" />
+    <Compile Include="Language\Data\en-us.Designer.cs" />
+    <Compile Include="Language\Data\nb-no.Designer.cs" />
+    <Compile Include="Language\Language.cs" />
+    <Compile Include="Language\LanguageResource.cs" />
+    <Compile Include="Language\LanguageResourceKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -69,6 +74,8 @@
     <EmbeddedResource Include="Certificate\Data\UnitTests\produksjonsmottakersertifikatFraOppslagstjenesten.pem" />
     <EmbeddedResource Include="Certificate\Data\UnitTests\testmottakersertifikatFraOppslagstjenesten.pem" />
     <EmbeddedResource Include="Certificate\Data\UnitTests\ValidSelfSignedBringAs.cer" />
+    <EmbeddedResource Include="Language\Data\en-us.resx" />
+    <EmbeddedResource Include="Language\Data\nb-no.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Keys\signingkey.snk">

@@ -204,7 +204,7 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult SelfSignedErrorResult(X509Certificate2 certificate)
         {
-            var selfSignedErrorResult = GetResource(CertificateSelfSignedErrorResult);
+            var selfSignedErrorResult = Digipost.Api.Client.Shared.Resources.Certificate.CertificateResource.GetResource(CertificateSelfSignedErrorResult);
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(selfSignedErrorResult));
         }
 
