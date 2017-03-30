@@ -5,7 +5,7 @@ using Moq;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
-namespace ApiClientSharedTests.Certificate
+namespace Digipost.Api.Client.Shared.Tests.Certificate
 {
     public class CertificateUtilityTests
     {

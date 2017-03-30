@@ -2,7 +2,7 @@
 using Digipost.Api.Client.Shared.Certificate;
 using Xunit;
 
-namespace ApiClientSharedTests.Certificate
+namespace Digipost.Api.Client.Shared.Tests.Certificate
 {
     public class CertificateChainUtilityTests
     {

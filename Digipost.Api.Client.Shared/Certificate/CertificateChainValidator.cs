@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
-using Difi.Felles.Utility.Resources.Language;
 using Digipost.Api.Client.Shared.Extensions;
 using Digipost.Api.Client.Shared.Resources.Language;
 
