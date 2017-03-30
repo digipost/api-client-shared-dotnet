@@ -1,9 +1,9 @@
 ﻿using Difi.Felles.Utility.Extensions;
-using Difi.Felles.Utility.Resources.Certificate;
 using Difi.Felles.Utility.Resources.Language;
+using Digipost.Api.Client.Shared.Resources.Certificate;
 using Xunit;
 
-namespace Difi.Felles.Utility.Tester
+namespace Digipost.Api.Client.Shared.Resources.Tests
 {
     public class LanguageResourceTests
     {

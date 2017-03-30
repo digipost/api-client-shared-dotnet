@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Digipost.Api.Client.Shared.Resources</RootNamespace>
     <AssemblyName>Digipost.Api.Client.Shared.Resources</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -51,11 +52,11 @@
     </Compile>
     <Compile Include="Certificate\CertificateResource.cs" />
     <Compile Include="Language\Data\en-us.Designer.cs" />
-    <Compile Include="Language\Data\nb-no.Designer.cs" />
     <Compile Include="Language\Language.cs" />
     <Compile Include="Language\LanguageResource.cs" />
     <Compile Include="Language\LanguageResourceKey.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource\ResourceUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Certificate\Data\ProdChain\BPClass3CA3.cer" />
@@ -75,7 +76,6 @@
     <EmbeddedResource Include="Certificate\Data\UnitTests\testmottakersertifikatFraOppslagstjenesten.pem" />
     <EmbeddedResource Include="Certificate\Data\UnitTests\ValidSelfSignedBringAs.cer" />
     <EmbeddedResource Include="Language\Data\en-us.resx" />
-    <EmbeddedResource Include="Language\Data\nb-no.resx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Keys\signingkey.snk">

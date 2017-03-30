@@ -1,4 +1,5 @@
 ﻿using ApiClientShared.Certificate;
+using Digipost.Api.Client.Shared.Resources.Certificate;
 using Xunit;
 
 namespace ApiClientSharedTests.Certificate

@@ -91,6 +91,10 @@
       <Project>{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}</Project>
       <Name>ApiClientShared</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Digipost.Api.Client.Shared.Resources\Digipost.Api.Client.Shared.Resources.csproj">
+      <Project>{D61483AD-6923-485A-A19E-D74E10465456}</Project>
+      <Name>Digipost.Api.Client.Shared.Resources</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Keys\signingkey.snk">

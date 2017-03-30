@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using Difi.Felles.Utility.Extensions;
+using static Difi.Felles.Utility.Resources.Language.LanguageResource;
+using static Difi.Felles.Utility.Resources.Language.LanguageResourceKey;
 
 namespace ApiClientShared.Certificate
 {
@@ -204,7 +207,7 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult SelfSignedErrorResult(X509Certificate2 certificate)
         {
-            var selfSignedErrorResult = Digipost.Api.Client.Shared.Resources.Certificate.CertificateResource.GetResource(CertificateSelfSignedErrorResult);
+            var selfSignedErrorResult = GetResource(CertificateSelfSignedErrorResult);
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(selfSignedErrorResult));
         }
 

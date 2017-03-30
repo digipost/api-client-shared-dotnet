@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
+using Digipost.Api.Client.Shared.Resources.Certificate;
 
 namespace ApiClientShared.Certificate
 {
