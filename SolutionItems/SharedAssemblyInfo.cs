@@ -9,4 +9,3 @@
 [assembly: AssemblyInformationalVersion("2.0.0")]
 [assembly: AssemblyCulture("")]
 [assembly: AssemblyCopyright("© 2015-2016 Digipost AS")]
-

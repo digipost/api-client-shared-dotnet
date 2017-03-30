@@ -1,7 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using Difi.Felles.Utility.Resources.Certificate;
 
-namespace Difi.Felles.Utility.Utilities
+namespace ApiClientShared.Certificate
 {
     public static class CertificateChainUtility
     {

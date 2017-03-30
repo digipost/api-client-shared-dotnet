@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
-using Difi.Felles.Utility.Extensions;
-using static Difi.Felles.Utility.Resources.Language.LanguageResource;
-using static Difi.Felles.Utility.Resources.Language.LanguageResourceKey;
 
-namespace Difi.Felles.Utility
+namespace ApiClientShared.Certificate
 {
     public class CertificateValidator
     {
@@ -44,7 +41,10 @@ namespace Difi.Felles.Utility
         /// </summary>
         /// <param name="certificate">The certificate to validate</param>
         /// <param name="allowedChainCertificates">The certificates allowed to build a certificate chain</param>
-        /// <returns>The result of the validation which is represented by a <see cref="CertificateValidationType"/> and a textual description of the validation</returns>
+        /// <returns>
+        ///     The result of the validation which is represented by a <see cref="CertificateValidationType" /> and a textual
+        ///     description of the validation
+        /// </returns>
         public static CertificateValidationResult ValidateCertificateAndChain(X509Certificate2 certificate, X509Certificate2Collection allowedChainCertificates)
         {
             var certificateOrganizationNumber = string.Empty;
@@ -75,12 +75,16 @@ namespace Difi.Felles.Utility
         ///     </list>
         /// </summary>
         /// <remarks>
-        ///     Does not validate the certificate chain. Please use <see cref="ValidateCertificateAndChain(X509Certificate2,string,X509Certificate2Collection)" /> for including
+        ///     Does not validate the certificate chain. Please use
+        ///     <see cref="ValidateCertificateAndChain(X509Certificate2,string,X509Certificate2Collection)" /> for including
         ///     chain validation
         /// </remarks>
         /// <param name="certificate">The certificate to validate</param>
         /// <param name="certificateOrganizationNumber">The organization number the certificate is issued to</param>
-        /// <returns>The result of the validation which is represented by a <see cref="CertificateValidationType"/> and a textual description of the validation</returns>
+        /// <returns>
+        ///     The result of the validation which is represented by a <see cref="CertificateValidationType" /> and a textual
+        ///     description of the validation
+        /// </returns>
         public static CertificateValidationResult ValidateCertificate(X509Certificate2 certificate, string certificateOrganizationNumber)
         {
             if (certificate == null)

@@ -4,7 +4,7 @@ using System.Management.Instrumentation;
 using System.Security.Cryptography.X509Certificates;
 using ApiClientShared.Enums;
 
-namespace ApiClientShared
+namespace ApiClientShared.Certificate
 {
     public class CertificateUtility
     {

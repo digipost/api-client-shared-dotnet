@@ -1,11 +1,11 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using ApiClientShared;
+using ApiClientShared.Certificate;
 using ApiClientShared.Enums;
 using Moq;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
-namespace ApiClientSharedTests
+namespace ApiClientSharedTests.Certificate
 {
     public class CertificateUtilityTests
     {
@@ -34,9 +34,9 @@ namespace ApiClientSharedTests
             var keyStoreUtilityMock = new Mock<KeyStoreUtility>();
             keyStoreUtilityMock
                 .Setup(utility => utility
-                        .FindCertificate(
-                            It.Is<string>(p => p == thumbprint),
-                            It.Is<X509Store>(p => (p.Location == storeLocation) && (p.Name == storeName.ToString())))
+                    .FindCertificate(
+                        It.Is<string>(p => p == thumbprint),
+                        It.Is<X509Store>(p => p.Location == storeLocation && p.Name == storeName.ToString()))
                 )
                 .Returns(new X509Certificate2());
 
@@ -47,9 +47,30 @@ namespace ApiClientSharedTests
                 : certificateUtility.CreateReceiverCertificate(thumbprint, Language.English);
         }
 
-        
         public class SenderCertificateMethod : CertificateUtilityTests
         {
+            [Fact]
+            public void Accesses_current_user_store()
+            {
+                const StoreName storeName = StoreName.My;
+                const StoreLocation storeLocation = StoreLocation.CurrentUser;
+
+                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
+
+                Assert.IsNotNull(certificate);
+            }
+
+            [Fact]
+            public void Accesses_local_machine_store()
+            {
+                const StoreName storeName = StoreName.My;
+                const StoreLocation storeLocation = StoreLocation.LocalMachine;
+
+                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
+
+                Assert.IsNotNull(certificate);
+            }
+
             [Fact]
             public void Calls_remove_bom()
             {
@@ -84,14 +105,17 @@ namespace ApiClientSharedTests
                 Assert.IsNotNull(certificate);
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
+        }
 
+        public class ReceiverCertificateMethod : CertificateUtilityTests
+        {
             [Fact]
             public void Accesses_current_user_store()
             {
-                const StoreName storeName = StoreName.My;
+                const StoreName storeName = StoreName.TrustedPeople;
                 const StoreLocation storeLocation = StoreLocation.CurrentUser;
 
-                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
+                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
 
                 Assert.IsNotNull(certificate);
             }
@@ -99,18 +123,14 @@ namespace ApiClientSharedTests
             [Fact]
             public void Accesses_local_machine_store()
             {
-                const StoreName storeName = StoreName.My;
+                const StoreName storeName = StoreName.TrustedPeople;
                 const StoreLocation storeLocation = StoreLocation.LocalMachine;
 
-                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
+                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
 
                 Assert.IsNotNull(certificate);
             }
-        }
 
-        
-        public class ReceiverCertificateMethod : CertificateUtilityTests
-        {
             [Fact]
             public void Calls_remove_bom()
             {
@@ -144,28 +164,6 @@ namespace ApiClientSharedTests
                 //Assert
                 Assert.IsNotNull(certificate);
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
-            }
-
-            [Fact]
-            public void Accesses_current_user_store()
-            {
-                const StoreName storeName = StoreName.TrustedPeople;
-                const StoreLocation storeLocation = StoreLocation.CurrentUser;
-
-                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
-
-                Assert.IsNotNull(certificate);
-            }
-
-            [Fact]
-            public void Accesses_local_machine_store()
-            {
-                const StoreName storeName = StoreName.TrustedPeople;
-                const StoreLocation storeLocation = StoreLocation.LocalMachine;
-
-                var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
-
-                Assert.IsNotNull(certificate);
             }
         }
     }

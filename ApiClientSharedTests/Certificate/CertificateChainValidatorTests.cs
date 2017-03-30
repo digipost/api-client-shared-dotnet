@@ -1,8 +1,7 @@
-﻿using Difi.Felles.Utility.Resources.Certificate;
-using Difi.Felles.Utility.Utilities;
+﻿using ApiClientShared.Certificate;
 using Xunit;
 
-namespace Difi.Felles.Utility.Tester
+namespace ApiClientSharedTests.Certificate
 {
     public class CertificateChainValidatorTests
     {

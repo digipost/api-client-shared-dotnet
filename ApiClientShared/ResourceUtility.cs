@@ -20,6 +20,7 @@ namespace ApiClientShared
         }
 
         public string BasePath { get; set; }
+
         public Assembly CurrentExecutingAssembly { get; set; }
 
         public IEnumerable<string> GetFiles(params string[] pathRelativeToBase)

@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ApiClientShared
+namespace ApiClientShared.Certificate
 {
     internal class KeyStoreUtility
     {
@@ -12,8 +12,8 @@ namespace ApiClientShared
                 store.Open(OpenFlags.ReadOnly);
                 var x509Certificate2Collection = store.Certificates.Find(X509FindType.FindByThumbprint, thumbprint, true);
                 var certificates = x509Certificate2Collection.Cast<X509Certificate2>().ToList();
-                
-                return certificates.FirstOrDefault(); ;
+
+                return certificates.FirstOrDefault();
             }
             finally
             {

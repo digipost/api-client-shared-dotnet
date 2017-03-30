@@ -1,4 +1,4 @@
-﻿namespace Difi.Felles.Utility
+﻿namespace ApiClientShared.Certificate
 {
     public enum CertificateValidationType
     {

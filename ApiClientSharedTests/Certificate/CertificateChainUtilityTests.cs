@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
-using Difi.Felles.Utility.Utilities;
+using ApiClientShared.Certificate;
 using Xunit;
 
-namespace Difi.Felles.Utility.Tester.Utilities
+namespace ApiClientSharedTests.Certificate
 {
     public class CertificateChainUtilityTests
     {

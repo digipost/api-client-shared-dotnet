@@ -1,8 +1,7 @@
-﻿using Difi.Felles.Utility.Resources.Certificate;
-using Difi.Felles.Utility.Utilities;
+﻿using ApiClientShared.Certificate;
 using Xunit;
 
-namespace Difi.Felles.Utility.Tester
+namespace ApiClientSharedTests.Certificate
 {
     public class CertificateValidatorTests
     {
@@ -163,7 +162,6 @@ namespace Difi.Felles.Utility.Tester
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
                 Assert.Contains("er et gyldig sertifikat", result.Message);
             }
-
         }
 
         public class IsValidCertificateMethod : CertificateValidatorTests

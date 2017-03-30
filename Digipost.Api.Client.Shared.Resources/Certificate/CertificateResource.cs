@@ -1,8 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
-using ApiClientShared;
 
-namespace Difi.Felles.Utility.Resources.Certificate
+namespace Digipost.Api.Client.Shared.Resources.Certificate
 {
     internal class CertificateResource
     {
