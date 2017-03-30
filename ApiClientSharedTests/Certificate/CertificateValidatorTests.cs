@@ -19,7 +19,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("gikk ut", result.Message);
+                Assert.Contains("expired on", result.Message);
             }
 
             [Fact]
@@ -33,7 +33,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidChain, result.Type);
-                Assert.Contains("er ugyldig, fordi lengden på kjeden er 1", result.Message);
+                Assert.Contains("is invalid because the chain length is 1", result.Message);
             }
 
             [Fact]
@@ -47,7 +47,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
-                Assert.Contains("er et gyldig sertifikat", result.Message);
+                Assert.Contains("is a valid certificate", result.Message);
             }
         }
 
@@ -67,7 +67,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("gikk ut", result.Message);
+                Assert.Contains("expired on", result.Message);
             }
 
             [Fact]
@@ -78,7 +78,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
-                Assert.Contains("er et gyldig sertifikat", result.Message);
+                Assert.Contains("is a valid certificate", result.Message);
             }
 
             [Fact]
@@ -92,7 +92,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("ikke utstedt til organisasjonsnummer", result.Message);
+                Assert.Contains("is not issued to organization number", result.Message);
             }
 
             [Fact]
@@ -106,7 +106,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
-                Assert.Contains("er et gyldig sertifikat", result.Message);
+                Assert.Contains("is a valid certificate", result.Message);
             }
         }
 
@@ -122,7 +122,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("gikk ut", result.Message);
+                Assert.Contains("expired on", result.Message);
             }
 
             [Fact]
@@ -135,7 +135,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("aktiveres ikke før", result.Message);
+                Assert.Contains("is not active until", result.Message);
             }
 
             [Fact]
@@ -148,7 +148,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
-                Assert.Contains("var null", result.Message);
+                Assert.Contains("is null", result.Message);
             }
 
             [Fact]
@@ -161,7 +161,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
-                Assert.Contains("er et gyldig sertifikat", result.Message);
+                Assert.Contains("is a valid certificate", result.Message);
             }
         }
 

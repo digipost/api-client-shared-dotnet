@@ -20,7 +20,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidChain, result.Type);
-                Assert.Contains("sertifikatet er selvsignert", result.Message);
+                Assert.Contains("certificate is self signed", result.Message);
             }
 
             [Fact]
@@ -35,7 +35,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.InvalidChain, result.Type);
-                Assert.Contains("blir hentet fra Certificate Store på Windows", result.Message);
+                Assert.Contains("the certificate is retrieved from Windows Certificate Store", result.Message);
             }
 
             [Fact]
@@ -50,7 +50,7 @@ namespace ApiClientSharedTests.Certificate
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
-                Assert.Contains("et gyldig sertifikat", result.Message);
+                Assert.Contains("is a valid certificate", result.Message);
             }
         }
     }

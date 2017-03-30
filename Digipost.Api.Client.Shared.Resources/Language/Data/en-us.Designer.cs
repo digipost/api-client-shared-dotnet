@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Difi.Felles.Utility.Resources.Language.Data {
+namespace Digipost.Api.Client.Shared.Resources.Language.Data {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Difi.Felles.Utility.Resources.Language.Data {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Difi.Felles.Utility.Resources.Language.Data.en-us", typeof(en_us).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Digipost.Api.Client.Shared.Resources.Language.Data.en-us", typeof(en_us).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

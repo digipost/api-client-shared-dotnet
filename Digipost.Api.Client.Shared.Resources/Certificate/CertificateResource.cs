@@ -6,7 +6,7 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
 {
     internal class CertificateResource
     {
-        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Difi.Felles.Utility.Resources.Certificate.Data");
+        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Digipost.Api.Client.Shared.Resources.Certificate.Data");
 
         internal static X509Certificate2 GetCertificate(params string[] path)
         {

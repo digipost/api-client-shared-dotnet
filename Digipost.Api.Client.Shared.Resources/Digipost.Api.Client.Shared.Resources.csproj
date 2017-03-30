@@ -51,7 +51,11 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Certificate\CertificateResource.cs" />
-    <Compile Include="Language\Data\en-us.Designer.cs" />
+    <Compile Include="Language\Data\en-us.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>en-us.resx</DependentUpon>
+    </Compile>
     <Compile Include="Language\Language.cs" />
     <Compile Include="Language\LanguageResource.cs" />
     <Compile Include="Language\LanguageResourceKey.cs" />
@@ -75,7 +79,10 @@
     <EmbeddedResource Include="Certificate\Data\UnitTests\produksjonsmottakersertifikatFraOppslagstjenesten.pem" />
     <EmbeddedResource Include="Certificate\Data\UnitTests\testmottakersertifikatFraOppslagstjenesten.pem" />
     <EmbeddedResource Include="Certificate\Data\UnitTests\ValidSelfSignedBringAs.cer" />
-    <EmbeddedResource Include="Language\Data\en-us.resx" />
+    <EmbeddedResource Include="Language\Data\en-us.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en-us.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="C:\Keys\signingkey.snk">
