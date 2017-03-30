@@ -7,8 +7,8 @@
     <ProjectGuid>{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApiClientShared</RootNamespace>
-    <AssemblyName>ApiClientShared</AssemblyName>
+    <RootNamespace>Digipost.Api.Client.Shared</RootNamespace>
+    <AssemblyName>Digipost.Api.Client.Shared</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

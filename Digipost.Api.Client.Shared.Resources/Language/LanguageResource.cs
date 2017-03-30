@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection;
 using System.Resources;
+using Digipost.Api.Client.Shared.Resources.Language;
 
 namespace Difi.Felles.Utility.Resources.Language
 {

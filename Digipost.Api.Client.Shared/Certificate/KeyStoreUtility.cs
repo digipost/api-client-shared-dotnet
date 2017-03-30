@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
-namespace ApiClientShared.Certificate
+namespace Digipost.Api.Client.Shared.Certificate
 {
     internal class KeyStoreUtility
     {

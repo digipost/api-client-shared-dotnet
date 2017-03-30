@@ -1,14 +1,14 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using static Difi.Felles.Utility.Resources.Language.LanguageResource;
-using static Difi.Felles.Utility.Resources.Language.LanguageResourceKey;
+using Difi.Felles.Utility.Resources.Language;
+using Digipost.Api.Client.Shared.Resources.Language;
 
-namespace Difi.Felles.Utility.Extensions
+namespace Digipost.Api.Client.Shared.Extensions
 {
     public static class X509Certificate2Extensions
     {
         public static string ToShortString(this X509Certificate2 certificate, string extraInfo = "")
         {
-            var shortStringWithPlaceholders = GetResource(CertificateShortDescription);
+            var shortStringWithPlaceholders = LanguageResource.GetResource(LanguageResourceKey.CertificateShortDescription);
             return string.Format(shortStringWithPlaceholders, certificate.Subject, certificate.Thumbprint, extraInfo);
         }
     }

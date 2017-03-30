@@ -80,17 +80,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApiClientSharedTests\ApiClientSharedTests.csproj">
-      <Project>{809BC116-BE0A-4B6C-9F32-C10165E720D1}</Project>
-      <Name>ApiClientSharedTests</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ApiClientShared\ApiClientShared.csproj">
-      <Project>{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}</Project>
-      <Name>ApiClientShared</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Digipost.Api.Client.Shared.Resources\Digipost.Api.Client.Shared.Resources.csproj">
       <Project>{d61483ad-6923-485a-a19e-d74e10465456}</Project>
       <Name>Digipost.Api.Client.Shared.Resources</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj">
+      <Project>{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}</Project>
+      <Name>Digipost.Api.Client.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

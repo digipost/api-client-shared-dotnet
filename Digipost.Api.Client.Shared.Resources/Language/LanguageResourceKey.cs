@@ -1,4 +1,4 @@
-﻿namespace Difi.Felles.Utility.Resources.Language
+﻿namespace Digipost.Api.Client.Shared.Resources.Language
 {
     public enum LanguageResourceKey
     {

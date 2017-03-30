@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Management.Instrumentation;
 using System.Security.Cryptography.X509Certificates;
-using ApiClientShared.Enums;
+using Digipost.Api.Client.Shared.Enums;
 
-namespace ApiClientShared.Certificate
+namespace Digipost.Api.Client.Shared.Certificate
 {
     public class CertificateUtility
     {

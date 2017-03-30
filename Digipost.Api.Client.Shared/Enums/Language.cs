@@ -1,4 +1,4 @@
-﻿namespace ApiClientShared.Enums
+﻿namespace Digipost.Api.Client.Shared.Enums
 {
     public enum Language
     {

@@ -6,8 +6,8 @@
     <ProjectGuid>{809BC116-BE0A-4B6C-9F32-C10165E720D1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ApiClientSharedTests</RootNamespace>
-    <AssemblyName>ApiClientSharedTests</AssemblyName>
+    <RootNamespace>Digipost.Api.Client.Shared.Tests</RootNamespace>
+    <AssemblyName>Digipost.Api.Client.Shared.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -87,9 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ApiClientShared\ApiClientShared.csproj">
+    <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj">
       <Project>{5DD8A0ED-31CB-4FB8-A793-708ACBA9CC83}</Project>
-      <Name>ApiClientShared</Name>
+      <Name>Digipost.Api.Client.Shared</Name>
     </ProjectReference>
     <ProjectReference Include="..\Digipost.Api.Client.Shared.Resources\Digipost.Api.Client.Shared.Resources.csproj">
       <Project>{D61483AD-6923-485A-A19E-D74E10465456}</Project>

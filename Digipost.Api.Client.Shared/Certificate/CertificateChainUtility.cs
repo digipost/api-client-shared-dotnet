@@ -1,7 +1,7 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Resources.Certificate;
 
-namespace ApiClientShared.Certificate
+namespace Digipost.Api.Client.Shared.Certificate
 {
     public static class CertificateChainUtility
     {

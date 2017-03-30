@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace ApiClientShared
+namespace Digipost.Api.Client.Shared.Resources.Resource
 {
     public class ResourceUtility
     {

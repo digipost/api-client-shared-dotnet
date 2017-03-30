@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
-using Difi.Felles.Utility.Extensions;
-using static Difi.Felles.Utility.Resources.Language.LanguageResource;
-using static Difi.Felles.Utility.Resources.Language.LanguageResourceKey;
+using Difi.Felles.Utility.Resources.Language;
+using Digipost.Api.Client.Shared.Extensions;
+using Digipost.Api.Client.Shared.Resources.Language;
 
-namespace ApiClientShared.Certificate
+namespace Digipost.Api.Client.Shared.Certificate
 {
     public class CertificateValidator
     {
@@ -144,13 +144,13 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult NoCertificateResult()
         {
-            var nullCertificateResult = GetResource(CertificateIsNull);
+            var nullCertificateResult = LanguageResource.GetResource(LanguageResourceKey.CertificateIsNull);
             return new CertificateValidationResult(CertificateValidationType.InvalidCertificate, nullCertificateResult);
         }
 
         private static CertificateValidationResult NotIssuedToOrganizationResult(X509Certificate2 certificate, string certificateOrganizationNumber)
         {
-            var notIssuedToOrganizationResult = string.Format(GetResource(CertificateNotIssuedToOrganization), certificateOrganizationNumber);
+            var notIssuedToOrganizationResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotIssuedToOrganization), certificateOrganizationNumber);
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notIssuedToOrganizationResult));
@@ -158,7 +158,7 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult NotActivatedResult(X509Certificate2 certificate)
         {
-            var notActivatedResult = string.Format(GetResource(CertificateNotActivatedResult), certificate.GetEffectiveDateString());
+            var notActivatedResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotActivatedResult), certificate.GetEffectiveDateString());
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notActivatedResult));
@@ -166,7 +166,7 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult ExpiredResult(X509Certificate2 certificate)
         {
-            var expiredResult = string.Format(GetResource(CertificateExpiredResult), certificate.GetExpirationDateString());
+            var expiredResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateExpiredResult), certificate.GetExpirationDateString());
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(expiredResult));
@@ -174,7 +174,7 @@ namespace ApiClientShared.Certificate
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
-            var validResult = GetResource(CertificateValidResult);
+            var validResult = LanguageResource.GetResource(LanguageResourceKey.CertificateValidResult);
             return new CertificateValidationResult(
                 CertificateValidationType.Valid,
                 certificate.ToShortString(validResult));

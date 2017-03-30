@@ -1,4 +1,4 @@
-﻿namespace ApiClientShared.Certificate
+﻿namespace Digipost.Api.Client.Shared.Certificate
 {
     public class CertificateValidationResult
     {

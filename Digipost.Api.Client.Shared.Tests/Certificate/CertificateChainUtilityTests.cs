@@ -1,5 +1,5 @@
 ﻿using System.Diagnostics;
-using ApiClientShared.Certificate;
+using Digipost.Api.Client.Shared.Certificate;
 using Xunit;
 
 namespace ApiClientSharedTests.Certificate

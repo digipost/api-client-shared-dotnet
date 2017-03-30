@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using ApiClientShared.Certificate;
-using ApiClientShared.Enums;
+using Digipost.Api.Client.Shared.Certificate;
+using Digipost.Api.Client.Shared.Enums;
 using Moq;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
