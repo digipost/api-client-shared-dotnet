@@ -6,14 +6,19 @@
         <title>api-client-shared</title>
         <authors>Aleksander Sjåfjell</authors>
         <owners></owners>
-        <licenseUrl>https://github.com/digipost/digipost-api-client-dotnet/blob/master/LICENSE</licenseUrl>
-        <projectUrl>https://github.com/digipost/digipost-api-client-dotnet</projectUrl>
+        <licenseUrl>https://github.com/digipost/api-client-shared-dotnet/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/digipost/api-client-shared-dotnet</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Enkelt bibliotek for vanlig brukte hjelpeklasser.</description>
+        <description>Enkelt bibliotek for vanlig brukte hjelpeklasser for bruk i digipost.</description>
         <summary>Apache License 2.0</summary>
-        <tags>utility hjelp api difi</tags>
+        <tags>utility hjelp api digipost</tags>
     </metadata>
     <files>
-        <file src="ApiClientShared\bin\Release\*.dll" target="lib\net45\" />
+        <file src="Digipost.Api.Client.Shared\bin\Release\Digipost.Api.Client.Shared.dll" target="lib\net46\" />
+        <file src="Digipost.Api.Client.Shared\bin\Release\Digipost.Api.Client.Shared.xml" target="lib\net46\" />
+
+        <file src="Digipost.Api.Client.Shared\bin\Release\Digipost.Api.Client.Shared.Resources.dll" target="lib\net46\" />
+        <file src="Digipost.Api.Client.Shared\bin\Release\Digipost.Api.Client.Shared.Resources.xml" target="lib\net46\" />
+
     </files>
 </package>
