@@ -27,7 +27,7 @@
     verbosity: minimal  
   after_build:
   - ps: >-
-      .\appveyor-deploy\NuspecVersionPatcher.ps1 -assembly "ApiClientShared\bin\Release\ApiClientShared.dll" -nuspec "api-client-shared.nuspec";
+      .\appveyor-deploy\NuspecVersionPatcher.ps1 -assembly "Digipost.Api.Client.Shared\bin\Release\Digipost.Api.Client.Shared.dll" -nuspec "api-client-shared.nuspec";
       nuget pack;
   artifacts:
     - path: '*.nupkg'
