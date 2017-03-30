@@ -79,8 +79,11 @@
     <Compile Include="..\SolutionItems\SharedAssemblyInfo.cs">
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="BomUtilityTests.cs" />
-    <Compile Include="CertificateUtilityTests.cs" />
+    <Compile Include="Certificate\BomUtilityTests.cs" />
+    <Compile Include="Certificate\CertificateChainUtilityTests.cs" />
+    <Compile Include="Certificate\CertificateChainValidatorTests.cs" />
+    <Compile Include="Certificate\CertificateUtilityTests.cs" />
+    <Compile Include="Certificate\CertificateValidatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
