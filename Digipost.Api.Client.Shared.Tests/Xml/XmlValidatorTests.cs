@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using Difi.Felles.Utility;
 using Digipost.Api.Client.Shared.Xml;
 using Xunit;
 

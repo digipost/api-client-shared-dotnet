@@ -1,5 +1,4 @@
 ﻿using System.Xml;
-using Difi.Felles.Utility;
 using Digipost.Api.Client.Shared.Resources.Xsd;
 using Digipost.Api.Client.Shared.Xml;
 

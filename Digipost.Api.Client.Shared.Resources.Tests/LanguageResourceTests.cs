@@ -14,7 +14,7 @@ namespace Digipost.Api.Client.Shared.Resources.Tests
             {
                 LanguageResource.CurrentLanguage = Language.Language.English;
                 var certificate = CertificateResource.UnitTests.GetPostenCertificate();
-                
+
                 var certDescr = certificate.ToShortString("Extrainfo");
 
                 Assert.True(certDescr.Contains(certificate.Subject));
