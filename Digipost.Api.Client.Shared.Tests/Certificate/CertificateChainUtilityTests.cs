@@ -18,9 +18,9 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 //Assert
                 Assert.Equal(4, certificates.Count);
-                foreach (var sertifikat in certificates)
+                foreach (var certificate in certificates)
                 {
-                    Assert.NotNull(sertifikat.Thumbprint);
+                    Assert.NotNull(certificate.Thumbprint);
                 }
             }
         }
@@ -37,9 +37,9 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 //Assert
                 Assert.Equal(4, certificates.Count);
-                foreach (var sertifikat in certificates)
+                foreach (var certificate in certificates)
                 {
-                    Assert.NotNull(sertifikat.Thumbprint);
+                    Assert.NotNull(certificate.Thumbprint);
                 }
             }
         }
