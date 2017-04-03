@@ -8,7 +8,7 @@ namespace Digipost.Api.Client.Shared.Resources.Language
     {
         private const string ResourceBasePath = "Digipost.Api.Client.Shared.Resources.Language.Data";
         private static readonly string EnUs = $"{ResourceBasePath}.en-us";
-        private static readonly string NbNo = $"{ResourceBasePath}.en-us";
+        private static readonly string NbNo = $"{ResourceBasePath}.nb-no";
         private static readonly ResourceManager EnglishResourceManager = new ResourceManager(EnUs, Assembly.GetExecutingAssembly());
         private static readonly ResourceManager NorwegianResourceManager = new ResourceManager(NbNo, Assembly.GetExecutingAssembly());
         

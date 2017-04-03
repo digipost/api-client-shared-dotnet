@@ -68,7 +68,6 @@
     <Compile Include="Xml\Data\Transportkvittering.cs" />
     <Compile Include="Xml\XmlResource.cs" />
     <Compile Include="Xml\XmlUtility.cs" />
-    <Compile Include="Xsd\XmlUtility.cs" />
     <Compile Include="Xsd\XsdResource.cs" />
   </ItemGroup>
   <ItemGroup>

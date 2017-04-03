@@ -16,22 +16,8 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         public X509Certificate2Collection CertificateStore { get; set; }
 
-        [Obsolete("Use CertificateStore instead.")]
-        public X509Certificate2Collection SertifikatLager => CertificateStore;
-
         /// <summary>
-        ///     Validerer sertifikatkjeden til sertifikatet. Gjør dette ved å validere mot <see cref="SertifikatLager" />
-        /// </summary>
-        /// <param name="certificate"></param>
-        /// <returns></returns>
-        [Obsolete("Use IsValidChain instead.")]
-        public bool ErGyldigSertifikatkjede(X509Certificate2 certificate)
-        {
-            return IsValidChain(certificate);
-        }
-
-        /// <summary>
-        ///     Validerer sertifikatkjeden til sertifikatet. Gjør dette ved å validere mot <see cref="SertifikatLager" />
+        ///    Validates the certificate chain of the certificate, using the <see cref="CertificateStore" />.
         /// </summary>
         /// <param name="certificate"></param>
         /// <returns></returns>
@@ -41,22 +27,10 @@ namespace Digipost.Api.Client.Shared.Certificate
         }
 
         /// <summary>
-        ///     Validerer sertifikatkjeden til sertifikatet. Gjør dette ved å validere mot <see cref="SertifikatLager" />
+        ///    Validates the certificate chain of the certificate, using the <see cref="CertificateStore" />.
         /// </summary>
         /// <param name="certificate"></param>
-        /// <param name="detailedErrorInformation">Status på kjeden etter validering hvis validering feilet.</param>
-        /// <returns></returns>
-        [Obsolete("Use IsValidChain instead.")]
-        public bool ErGyldigSertifikatkjede(X509Certificate2 certificate, out string detailedErrorInformation)
-        {
-            return IsValidChain(certificate, out detailedErrorInformation);
-        }
-
-        /// <summary>
-        ///     Validerer sertifikatkjeden til sertifikatet. Gjør dette ved å validere mot <see cref="SertifikatLager" />
-        /// </summary>
-        /// <param name="certificate"></param>
-        /// <param name="detailedErrorInformation">Status på kjeden etter validering hvis validering feilet.</param>
+        /// <param name="detailedErrorInformation">Status of chain validation if failed.</param>
         /// <returns></returns>
         public bool IsValidChain(X509Certificate2 certificate, out string detailedErrorInformation)
         {
@@ -75,27 +49,6 @@ namespace Digipost.Api.Client.Shared.Certificate
             return onlyUsingValidatorCertificatesResult.Type != CertificateValidationType.Valid
                 ? onlyUsingValidatorCertificatesResult
                 : Validate(certificate, chain);
-        }
-
-        /// <summary>
-        ///     Validerer sertifikatkjeden til sertifikatet. Gjør dette ved å validere mot <see cref="SertifikatLager" />
-        /// </summary>
-        /// <param name="certificate"></param>
-        /// <param name="detailedErrorInformation">Status på kjeden etter validering hvis validering feilet.</param>
-        /// <returns></returns>
-        [Obsolete("Use other overloads for validation, as this overload exposes the error of untrusted root certificate. We tolerate this error because it occurs when loading a root certificate from file, which is always done here. We trust the certificates as they are preloaded in library.")]
-        public bool ErGyldigSertifikatkjede(X509Certificate2 certificate, out X509ChainStatus[] detailedErrorInformation)
-        {
-            var chain = BuildCertificateChain(certificate);
-            detailedErrorInformation = chain.ChainStatus;
-
-            var onlyUsingValidatorCertificatesResult = ValidateThatUsingOnlyValidatorCertificates(chain, certificate);
-            if (onlyUsingValidatorCertificatesResult.Type != CertificateValidationType.Valid)
-            {
-                return false;
-            }
-
-            return Validate(certificate, chain).Type == CertificateValidationType.Valid;
         }
 
         private X509Chain BuildCertificateChain(X509Certificate2 sertifikat)

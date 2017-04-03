@@ -15,17 +15,8 @@ namespace Digipost.Api.Client.Shared.Xml
         {
             Add(message);
 
-            switch (severity)
-            {
-                case XmlSeverityType.Warning:
-                    HasWarnings = true;
-                    break;
-                case XmlSeverityType.Error:
-                    HasErrors = true;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
+            HasErrors = severity == XmlSeverityType.Error;
+            HasWarnings = severity == XmlSeverityType.Warning;
         }
 
         public override string ToString()

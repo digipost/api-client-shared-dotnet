@@ -9,15 +9,16 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
         public class TestsertifikaterMethod : CertificateChainUtilityTests
         {
             [Fact]
-            public void ReturnererFireSertifikaterMedThumbprint()
+            public void Returns_four_certificates_with_thumbprint()
             {
                 //Arrange
-                var sertifikater = CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
+                var certificates = CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
 
                 //Act
 
                 //Assert
-                foreach (var sertifikat in sertifikater)
+                Assert.Equal(4, certificates.Count);
+                foreach (var sertifikat in certificates)
                 {
                     Assert.NotNull(sertifikat.Thumbprint);
                 }
@@ -27,15 +28,16 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
         public class ProduksjonssertifikaterMethod : CertificateChainUtilityTests
         {
             [Fact]
-            public void ReturnererFireSertifikaterMedThumbprint()
+            public void Returns_four_certificates_with_thumbprint()
             {
                 //Arrange
-                var sertifikater = CertificateChainUtility.ProduksjonsSertifikater();
+                var certificates = CertificateChainUtility.ProduksjonsSertifikater();
 
                 //Act
 
                 //Assert
-                foreach (var sertifikat in sertifikater)
+                Assert.Equal(4, certificates.Count);
+                foreach (var sertifikat in certificates)
                 {
                     Assert.NotNull(sertifikat.Thumbprint);
                 }

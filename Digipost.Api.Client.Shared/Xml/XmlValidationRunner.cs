@@ -47,10 +47,7 @@ namespace Digipost.Api.Client.Shared.Xml
 
         private void ValidationEventHandler(object sender, ValidationEventArgs e)
         {
-            if (IsToleratedError(e))
-            {
-            }
-            else
+            if (!IsToleratedError(e))
             {
                 ValidationMessages.Add(e.Severity, e.Message);
             }
