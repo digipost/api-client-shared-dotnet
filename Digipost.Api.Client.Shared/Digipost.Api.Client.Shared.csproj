@@ -59,7 +59,6 @@
     <Compile Include="Certificate\CertificateValidationResult.cs" />
     <Compile Include="Certificate\CertificateValidationType.cs" />
     <Compile Include="Certificate\CertificateValidator.cs" />
-    <Compile Include="Enums\Language.cs" />
     <Compile Include="Certificate\KeyStoreUtility.cs" />
     <Compile Include="Extensions\X509Certificate2Extensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

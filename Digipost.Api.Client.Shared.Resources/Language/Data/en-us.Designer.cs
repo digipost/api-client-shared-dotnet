@@ -61,6 +61,15 @@ namespace Digipost.Api.Client.Shared.Resources.Language.Data {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Could not find certificate with thumbprint {0:certificateThumbrint}.
+        /// </summary>
+        internal static string CertificateCouldNotFind {
+            get {
+                return ResourceManager.GetString("CertificateCouldNotFind", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to expired on {0:expirationDateString}..
         /// </summary>
         internal static string CertificateExpiredResult {

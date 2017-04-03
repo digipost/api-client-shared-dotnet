@@ -3,6 +3,7 @@ using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Extensions;
 using Digipost.Api.Client.Shared.Resources.Language;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
@@ -142,7 +143,7 @@ namespace Digipost.Api.Client.Shared.Certificate
         {
             var externalCertificatesUsedMessage =
                 string.Format(
-                    LanguageResource.GetResource(LanguageResourceKey.CertificateUsedExternalResult),
+                    GetResource(LanguageResourceKey.CertificateUsedExternalResult),
                     certificate.ToShortString(), chainAsString, validatorCertificatesAsString);
 
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, externalCertificatesUsedMessage);
@@ -194,19 +195,19 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult InvalidChainResult(X509Certificate2 certificate, params X509ChainStatus[] x509ChainStatuses)
         {
-            var invalidChainResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateInvalidChainResult), GetPrettyChainErrorStatuses(x509ChainStatuses));
+            var invalidChainResult = string.Format(GetResource(LanguageResourceKey.CertificateInvalidChainResult), GetPrettyChainErrorStatuses(x509ChainStatuses));
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(invalidChainResult));
         }
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
-            var validChainResult = LanguageResource.GetResource(LanguageResourceKey.CertificateValidResult);
+            var validChainResult = GetResource(LanguageResourceKey.CertificateValidResult);
             return new CertificateValidationResult(CertificateValidationType.Valid, certificate.ToShortString(validChainResult));
         }
 
         private static CertificateValidationResult SelfSignedErrorResult(X509Certificate2 certificate)
         {
-            var selfSignedErrorResult = LanguageResource.GetResource(LanguageResourceKey.CertificateSelfSignedErrorResult);
+            var selfSignedErrorResult = GetResource(LanguageResourceKey.CertificateSelfSignedErrorResult);
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(selfSignedErrorResult));
         }
 

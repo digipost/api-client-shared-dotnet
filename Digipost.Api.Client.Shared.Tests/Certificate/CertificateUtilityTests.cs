@@ -1,6 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Certificate;
-using Digipost.Api.Client.Shared.Enums;
 using Moq;
 using Xunit;
 using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
@@ -43,8 +42,8 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             var certificateUtility = new CertificateUtility {KeyStoreUtility = keyStoreUtilityMock.Object};
 
             return isSenderCertificate
-                ? certificateUtility.CreateSenderCertificate(thumbprint, Language.English)
-                : certificateUtility.CreateReceiverCertificate(thumbprint, Language.English);
+                ? certificateUtility.CreateSenderCertificate(thumbprint)
+                : certificateUtility.CreateReceiverCertificate(thumbprint);
         }
 
         public class SenderCertificateMethod : CertificateUtilityTests
@@ -85,7 +84,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 };
 
                 //Act
-                var certificate = certificateUtility.CreateSenderCertificate(StringWithBom, Language.Norwegian);
+                var certificate = certificateUtility.CreateSenderCertificate(StringWithBom);
 
                 //Assert
                 bomUtilityMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()), Times.Once());
@@ -99,7 +98,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var certificateUtility = new CertificateUtility {KeyStoreUtility = keyStoreMock.Object};
 
                 //Act
-                var certificate = certificateUtility.CreateSenderCertificate(StringWithoutBom, Language.Norwegian);
+                var certificate = certificateUtility.CreateSenderCertificate(StringWithoutBom);
 
                 //Assert
                 Assert.IsNotNull(certificate);
@@ -144,7 +143,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 };
 
                 //Act
-                var certificate = certificateFactory.CreateReceiverCertificate(StringWithBom, Language.Norwegian);
+                var certificate = certificateFactory.CreateReceiverCertificate(StringWithBom);
 
                 //Assert
                 Assert.IsNotNull(certificate);
@@ -159,7 +158,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var certificateFactory = new CertificateUtility {KeyStoreUtility = keyStoreMock.Object};
 
                 //Act
-                var certificate = certificateFactory.CreateReceiverCertificate(StringWithoutBom, Language.Norwegian);
+                var certificate = certificateFactory.CreateReceiverCertificate(StringWithoutBom);
 
                 //Assert
                 Assert.IsNotNull(certificate);

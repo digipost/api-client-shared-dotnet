@@ -17,6 +17,9 @@
         CertificateIsNull,
         CertificateNotIssuedToOrganization,
         CertificateNotActivatedResult,
-        CertificateExpiredResult
+        CertificateExpiredResult,
+
+        //Certificate loading
+        CertificateCouldNotFind
     }
 }

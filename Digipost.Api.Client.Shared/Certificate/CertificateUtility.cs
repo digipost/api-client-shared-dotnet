@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Management.Instrumentation;
 using System.Security.Cryptography.X509Certificates;
-using Digipost.Api.Client.Shared.Enums;
+using Digipost.Api.Client.Shared.Resources.Language;
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
@@ -18,11 +18,10 @@ namespace Digipost.Api.Client.Shared.Certificate
         ///     A lookup is first performed on CurrentUser and then on LocalMachine.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
-        /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>First certificate found or null</returns>
-        public static X509Certificate2 SenderCertificate(string thumbprint, Language errorMessageLanguage)
+        public static X509Certificate2 SenderCertificate(string thumbprint)
         {
-            return new CertificateUtility().CreateSenderCertificate(thumbprint, errorMessageLanguage);
+            return new CertificateUtility().CreateSenderCertificate(thumbprint);
         }
 
         /// <summary>
@@ -30,24 +29,23 @@ namespace Digipost.Api.Client.Shared.Certificate
         ///     or local machine (StoreLocation.LocalMachine) identified by thumbprint.
         /// </summary>
         /// <param name="thumbprint">The thumbprint of the certificate.</param>
-        /// <param name="errorMessageLanguage">Specifies the error message language if certificate is not found.</param>
         /// <returns>The certifikcate</returns>
-        public static X509Certificate2 ReceiverCertificate(string thumbprint, Language errorMessageLanguage)
+        public static X509Certificate2 ReceiverCertificate(string thumbprint)
         {
-            return new CertificateUtility().CreateReceiverCertificate(thumbprint, errorMessageLanguage);
+            return new CertificateUtility().CreateReceiverCertificate(thumbprint);
         }
 
-        internal X509Certificate2 CreateSenderCertificate(string thumbprint, Language errorMessageLanguage)
+        internal X509Certificate2 CreateSenderCertificate(string thumbprint)
         {
-            return GetFirstCertificateOrThrowException(thumbprint, StoreName.My, errorMessageLanguage);
+            return GetFirstCertificateOrThrowException(thumbprint, StoreName.My);
         }
 
-        internal X509Certificate2 CreateReceiverCertificate(string thumbprint, Language errorMessageLanguage)
+        internal X509Certificate2 CreateReceiverCertificate(string thumbprint)
         {
-            return GetFirstCertificateOrThrowException(thumbprint, StoreName.TrustedPeople, errorMessageLanguage);
+            return GetFirstCertificateOrThrowException(thumbprint, StoreName.TrustedPeople);
         }
 
-        private X509Certificate2 GetFirstCertificateOrThrowException(string thumbprint, StoreName storeName, Language errorMessageLanguage)
+        private X509Certificate2 GetFirstCertificateOrThrowException(string thumbprint, StoreName storeName)
         {
             thumbprint = BomUtility.RemoveBom(thumbprint);
 
@@ -67,21 +65,12 @@ namespace Digipost.Api.Client.Shared.Certificate
                 }
             }
 
-            throw new InstanceNotFoundException(GetErrorMessage(thumbprint, errorMessageLanguage));
+            throw new InstanceNotFoundException(GetErrorMessage(thumbprint));
         }
 
-        private string GetErrorMessage(string thumbprint, Language language)
+        private static string GetErrorMessage(string thumbprint)
         {
-            switch (language)
-            {
-                case Language.English:
-                    return $"Could not find certificate with thumbprint: {thumbprint}";
-                case Language.Norwegian:
-                    return $"Klarte ikke finne sertifikat med thumbprint: {thumbprint}";
-
-                default:
-                    throw new ArgumentOutOfRangeException(nameof(language));
-            }
+            return string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateCouldNotFind), thumbprint);
         }
     }
 }

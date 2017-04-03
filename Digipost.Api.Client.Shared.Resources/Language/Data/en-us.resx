@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CertificateCouldNotFind" xml:space="preserve">
+    <value>Could not find certificate with thumbprint {0:certificateThumbrint}</value>
+  </data>
   <data name="CertificateExpiredResult" xml:space="preserve">
     <value>expired on {0:expirationDateString}.</value>
   </data>
