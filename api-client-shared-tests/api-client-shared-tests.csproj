@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Moq" Version="4.7.145" />
+    <PackageReference Include="xunit" Version="2.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\api-client-shared\api-client-shared.csproj">
+      <Project>{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}</Project>
+      <Name>api-client-shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

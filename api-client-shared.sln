@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api_client_shared", "api-client-shared/api-client-shared.csproj", "{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-client-shared-tests", "api-client-shared-tests\api-client-shared-tests.csproj", "{0375952E-4FAD-4DBA-B962-A1D6A3551212}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0375952E-4FAD-4DBA-B962-A1D6A3551212}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0375952E-4FAD-4DBA-B962-A1D6A3551212}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0375952E-4FAD-4DBA-B962-A1D6A3551212}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0375952E-4FAD-4DBA-B962-A1D6A3551212}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
