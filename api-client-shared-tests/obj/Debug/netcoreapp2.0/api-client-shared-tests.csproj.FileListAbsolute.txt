@@ -1,0 +1,15 @@
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.deps.json
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.runtimeconfig.json
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.runtimeconfig.dev.json
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.pdb
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.csproj.CoreCompileInputs.cache
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.AssemblyInfoInputs.cache
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.AssemblyInfo.cs
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.pdb
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared.dll
+/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared.pdb

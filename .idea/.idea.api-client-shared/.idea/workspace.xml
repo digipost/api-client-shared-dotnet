@@ -1,7 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4bad3299-2d75-4b66-ae33-6a4b70fcf31f" name="Default" comment="" />
+    <list default="true" id="4bad3299-2d75-4b66-ae33-6a4b70fcf31f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netstandard2.0/api-client-shared-tests.deps.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netstandard2.0/api-client-shared-tests.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netstandard2.0/api-client-shared-tests.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netstandard2.0/api-client-shared.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netstandard2.0/api-client-shared.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfo.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfoInputs.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.csproj.CopyComplete" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.csproj.CoreCompileInputs.cache" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.csproj.FileListAbsolute.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.dll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.pdb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.cache" afterPath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.api-client-shared/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs" afterPath="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/api-client-shared-tests.csproj" afterPath="$PROJECT_DIR$/api-client-shared-tests/api-client-shared-tests.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.g.props" afterPath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.g.props" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.g.targets" afterPath="$PROJECT_DIR$/api-client-shared-tests/obj/api-client-shared-tests.csproj.nuget.g.targets" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/project.assets.json" afterPath="$PROJECT_DIR$/api-client-shared-tests/obj/project.assets.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/project.packagespec.json" afterPath="$PROJECT_DIR$/api-client-shared-tests/obj/project.packagespec.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared.sln" afterPath="$PROJECT_DIR$/api-client-shared.sln" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,41 +35,20 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="XmlValidationRunnerTests.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="16" column="60" lean-forward="false" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
               <folding>
-                <marker date="1510830721483" expanded="true" signature="6:50" ph="..." />
-                <marker date="1510830721483" expanded="true" signature="98:1208" ph="{...}" />
-                <marker date="1510830721483" expanded="true" signature="142:1206" ph="{...}" />
-                <marker date="1510830721483" expanded="true" signature="214:621" ph="{...}" />
-                <marker date="1510830721483" expanded="true" signature="290:611" ph="{...}" />
-                <marker date="1510830721483" expanded="true" signature="684:1200" ph="{...}" />
-                <marker date="1510830721483" expanded="true" signature="761:1190" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlValidationRunner.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
-              <folding>
-                <marker date="1510831286382" expanded="false" signature="6:314" ph="..." />
-                <marker date="1510831286382" expanded="true" signature="356:2352" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="444:2350" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="540:852" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="965:1026" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="1364:1967" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="1843:1871" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="2050:2199" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="2098:2189" ph="{...}" />
-                <marker date="1510831286382" expanded="true" signature="2268:2344" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="6:50" ph="..." />
+                <marker date="1510832787034" expanded="true" signature="98:1208" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="142:1206" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="214:621" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="290:611" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="684:1200" ph="{...}" />
+                <marker date="1510832787034" expanded="true" signature="761:1190" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -53,146 +57,209 @@
       <file leaf-file-name="XmlValidatorTestImplementation.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="10" column="68" lean-forward="false" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
+            <state relative-caret-position="90">
+              <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
               <folding>
-                <marker date="1510761858182" expanded="false" signature="6:103" ph="..." />
-                <marker date="1510761858182" expanded="true" signature="151:387" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="216:385" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="270:379" ph="{...}" />
+                <marker date="1510832791748" expanded="true" signature="6:103" ph="..." />
+                <marker date="1510832791748" expanded="true" signature="151:387" ph="{...}" />
+                <marker date="1510832791748" expanded="true" signature="216:385" ph="{...}" />
+                <marker date="1510832791748" expanded="true" signature="270:379" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XsdResource.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Xsd/XsdResource.cs">
+      <file leaf-file-name="BomUtilityTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="77" lean-forward="false" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
+            <state relative-caret-position="225">
+              <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
               <folding>
-                <marker date="1510831003074" expanded="false" signature="6:88" ph="..." />
-                <marker date="1510831003074" expanded="true" signature="140:670" ph="{...}" />
-                <marker date="1510831003074" expanded="true" signature="220:668" ph="{...}" />
-                <marker date="1510831003074" expanded="true" signature="427:557" ph="{...}" />
-                <marker date="1510831003074" expanded="true" signature="596:662" ph="{...}" />
+                <marker date="1510832763164" expanded="false" signature="6:77" ph="..." />
+                <marker date="1510832763164" expanded="true" signature="133:1382" ph="{...}" />
+                <marker date="1510832763164" expanded="true" signature="168:1380" ph="{...}" />
+                <marker date="1510832763164" expanded="true" signature="450:1374" ph="{...}" />
+                <marker date="1510832763164" expanded="true" signature="527:915" ph="{...}" />
+                <marker date="1510832763164" expanded="true" signature="979:1364" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="api-client-shared-tests.AssemblyInfo.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfo.cs">
+      <file leaf-file-name="CertificateChainUtilityTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="180">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
               <folding>
-                <marker date="1510828978847" expanded="true" signature="0:259" ph="/* ------------------------------------------------------------------------------ ... */" />
-                <marker date="1510828978847" expanded="false" signature="267:299" ph="..." />
+                <marker date="1510832706760" expanded="false" signature="6:84" ph="..." />
+                <marker date="1510832706760" expanded="true" signature="140:1844" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="188:1842" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="269:781" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="366:771" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="519:550" ph="/* Act ... */" />
+                <marker date="1510832706760" expanded="true" signature="661:757" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="864:1367" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="961:1357" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="1105:1136" ph="/* Act ... */" />
+                <marker date="1510832706760" expanded="true" signature="1247:1343" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="1446:1836" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="1514:1826" ph="{...}" />
+                <marker date="1510832706760" expanded="true" signature="1659:1812" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestGenerator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/TestGenerator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-              <folding>
-                <marker date="1510761858182" expanded="false" signature="6:172" ph="..." />
-                <marker date="1510761858182" expanded="true" signature="220:2887" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="262:2885" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="318:522" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="560:670" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="722:945" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="849:935" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1006:1832" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1075:1699" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1109:1685" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1734:1822" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1892:2879" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1961:2728" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1995:2714" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="2763:2869" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidationMessagesTests.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-              <folding>
-                <marker date="1510761858182" expanded="false" signature="6:75" ph="..." />
-                <marker date="1510761858182" expanded="true" signature="123:1846" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="166:1844" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="234:791" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="309:781" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="856:1419" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="933:1409" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1482:1838" ph="{...}" />
-                <marker date="1510761858182" expanded="true" signature="1554:1828" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="List`1.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/31/8b14b4e5/List`1.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ValidationMessages.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/ValidationMessages.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="13" column="114" lean-forward="false" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
-              <folding>
-                <marker date="1510831209802" expanded="false" signature="6:91" ph="..." />
-                <marker date="1510831209802" expanded="true" signature="133:773" ph="{...}" />
-                <marker date="1510831209802" expanded="true" signature="186:771" ph="{...}" />
-                <marker date="1510831209802" expanded="true" signature="415:584" ph="{...}" />
-                <marker date="1510831209802" expanded="true" signature="627:765" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlResource.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Xml/XmlResource.cs">
+      <file leaf-file-name="CertificateChainValidatorTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainValidatorTests.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
               <folding>
-                <marker date="1510831168735" expanded="false" signature="6:71" ph="..." />
-                <marker date="1510831168735" expanded="true" signature="123:1061" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="154:1059" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="361:533" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="615:1053" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="671:770" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="835:921" ph="{...}" />
-                <marker date="1510831168735" expanded="true" signature="966:1043" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="6:114" ph="..." />
+                <marker date="1510832713168" expanded="true" signature="170:2433" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="220:2431" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="305:2425" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="395:992" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="1077:1729" ph="{...}" />
+                <marker date="1510832713168" expanded="true" signature="1816:2415" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificateUtilityTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <marker date="1510832753509" expanded="false" signature="6:122" ph="..." />
+                <marker date="1510832753509" expanded="true" signature="178:6271" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="221:6269" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="586:961" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="612:951" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="1120:1919" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="1991:4054" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="2074:2383" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="2458:2768" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="2831:3445" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="3052:3185" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="3532:4044" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="4128:6263" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="4211:4532" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="4607:4929" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="4992:5652" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="5212:5345" ph="{...}" />
+                <marker date="1510832753509" expanded="true" signature="5739:6253" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificateValidatorTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding>
+                <marker date="1510832771336" expanded="true" signature="6:114" ph="..." />
+                <marker date="1510832771336" expanded="true" signature="170:9060" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="215:9058" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="312:2310" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="401:974" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="1060:1655" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="1743:2300" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="2408:4814" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="2431:2585" ph="///     To ensure we are calling the overload doing checking for expiration, activation and not null. ... " />
+                <marker date="1510832771336" expanded="true" signature="2694:3172" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="3275:3641" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="3737:4254" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="4320:4804" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="4914:6735" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="4993:5388" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="5024:5056" ph="/* Arrange ... */" />
+                <marker date="1510832771336" expanded="true" signature="5464:5870" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="5495:5527" ph="/* Arrange ... */" />
+                <marker date="1510832771336" expanded="true" signature="5951:6280" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="5982:6014" ph="/* Arrange ... */" />
+                <marker date="1510832771336" expanded="true" signature="6346:6725" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="6377:6409" ph="/* Arrange ... */" />
+                <marker date="1510832771336" expanded="true" signature="6810:9052" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="6890:7268" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="7345:7725" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="7822:8191" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="8273:8597" ph="{...}" />
+                <marker date="1510832771336" expanded="true" signature="8680:9042" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlValidatorTests.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+              <folding>
+                <marker date="1510832803924" expanded="false" signature="6:84" ph="..." />
+                <marker date="1510832803924" expanded="true" signature="132:4882" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="169:4880" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="231:4874" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="331:1504" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="1570:1893" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="1979:2497" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="2576:3074" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="3186:3611" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="3723:4238" ph="{...}" />
+                <marker date="1510832803924" expanded="true" signature="4349:4864" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValidationMessagesTests.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+              <folding>
+                <marker date="1510832796662" expanded="true" signature="6:75" ph="..." />
+                <marker date="1510832796662" expanded="true" signature="123:1846" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="166:1844" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="234:791" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="309:781" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="856:1419" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="933:1409" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="1482:1838" ph="{...}" />
+                <marker date="1510832796662" expanded="true" signature="1554:1828" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api-client-shared-tests.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared-tests/api-client-shared-tests.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/api-client-shared/Certificate/KeyStoreUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Certificate/BomUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2825BEB1-5F1E-4CEA-BD5F-7543CD34EBAA/71/79b3e2f7/Mock`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Xml/XmlResource.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainValidatorTests.cs" root0="FORCE_HIGHLIGHTING" />
@@ -201,10 +268,13 @@
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Xsd/XsdResource.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/ValidationMessages.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/TestGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/31/8b14b4e5/List`1.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Certificate/CertificateResource.cs" root0="FORCE_HIGHLIGHTING" />
@@ -213,18 +283,29 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/api-client-shared-tests/Class1.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Resources/Certificate/CertificateResource.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/KeyStoreUtility.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/BomUtility.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Resources/Xsd/XsdResource.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Resources/Xml/XmlResource.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Xml/ValidationMessages.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" />
+        <option value="$PROJECT_DIR$/UnitTestProject/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/UnitTestProject/UnitTestProject.csproj" />
+        <option value="$PROJECT_DIR$/api-client-shared-dotnet/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/api-client-shared-tests.csproj" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs" />
       </list>
     </option>
   </component>
@@ -239,6 +320,7 @@
     <option name="width" value="1706" />
     <option name="height" value="1417" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
       <flattenPackages />
@@ -269,7 +351,19 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Xml" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="api-client-shared-tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared-tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Certificate" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
@@ -288,7 +382,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="xmlvalid&#9;null&#9;null&#10;nuget&#9;ACTION&#9;ActivateNuGetToolWindow" />
+    <property name="SearchEverywhereHistoryKey" value="nuget&#9;ACTION&#9;ActivateNuGetToolWindow&#10;xmlvalid&#9;null&#9;null" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -315,6 +410,7 @@
       <option name="PROJECT_OUTPUT_TRACKING" value="1" />
       <option name="PROJECT_KIND" value="None" />
       <option name="PROJECT_TFM" value="" />
+      <browser url="http://localhost:5000" />
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -330,12 +426,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1510826421129</updated>
-      <workItem from="1510826422226" duration="2348000" />
+      <workItem from="1510826422226" duration="3464000" />
+      <workItem from="1510832522342" duration="288000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2348000" />
+    <option name="totallyTimeSpent" value="3752000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,25 +448,25 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35404456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -384,89 +481,209 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Class1.cs">
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510832787034" expanded="true" signature="6:50" ph="..." />
+            <marker date="1510832787034" expanded="true" signature="98:1208" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="142:1206" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="214:621" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="290:611" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="684:1200" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="761:1190" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Class1.cs">
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding>
+            <marker date="1510832791748" expanded="true" signature="6:103" ph="..." />
+            <marker date="1510832791748" expanded="true" signature="151:387" ph="{...}" />
+            <marker date="1510832791748" expanded="true" signature="216:385" ph="{...}" />
+            <marker date="1510832791748" expanded="true" signature="270:379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1510832526127" expanded="false" signature="6:26" ph="..." />
+            <marker date="1510832526127" expanded="true" signature="90:196" ph="{...}" />
+            <marker date="1510832526127" expanded="true" signature="139:190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding>
+            <marker date="1510832763164" expanded="false" signature="6:77" ph="..." />
+            <marker date="1510832763164" expanded="true" signature="133:1382" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="168:1380" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="450:1374" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="527:915" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="979:1364" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        <state relative-caret-position="195">
+          <caret line="13" column="42" lean-forward="false" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
           <folding>
-            <marker date="1510761858180" expanded="true" signature="6:84" ph="..." />
-            <marker date="1510761858180" expanded="true" signature="140:1844" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="188:1842" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="269:781" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="366:771" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="519:550" ph="/* Act ... */" />
-            <marker date="1510761858180" expanded="true" signature="661:757" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="864:1367" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="961:1357" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1105:1136" ph="/* Act ... */" />
-            <marker date="1510761858180" expanded="true" signature="1247:1343" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1446:1836" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1514:1826" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1659:1812" ph="{...}" />
+            <marker date="1510832706760" expanded="false" signature="6:84" ph="..." />
+            <marker date="1510832706760" expanded="true" signature="140:1844" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="188:1842" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="269:781" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="366:771" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="519:550" ph="/* Act ... */" />
+            <marker date="1510832706760" expanded="true" signature="661:757" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="864:1367" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="961:1357" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1105:1136" ph="/* Act ... */" />
+            <marker date="1510832706760" expanded="true" signature="1247:1343" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1446:1836" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1514:1826" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1659:1812" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainValidatorTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="180">
+          <caret line="12" column="55" lean-forward="false" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
           <folding>
-            <marker date="1510761858180" expanded="true" signature="6:114" ph="..." />
-            <marker date="1510761858180" expanded="true" signature="170:2433" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="220:2431" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="305:2425" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="395:992" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1077:1729" ph="{...}" />
-            <marker date="1510761858180" expanded="true" signature="1816:2415" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="6:114" ph="..." />
+            <marker date="1510832713168" expanded="true" signature="170:2433" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="220:2431" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="305:2425" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="395:992" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="1077:1729" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="1816:2415" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="1" />
+          <folding>
+            <marker date="1510832753509" expanded="false" signature="6:122" ph="..." />
+            <marker date="1510832753509" expanded="true" signature="178:6271" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="221:6269" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="586:961" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="612:951" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="1120:1919" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="1991:4054" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2074:2383" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2458:2768" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2831:3445" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="3052:3185" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="3532:4044" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4128:6263" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4211:4532" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4607:4929" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4992:5652" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="5212:5345" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="5739:6253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding>
+            <marker date="1510832771336" expanded="true" signature="6:114" ph="..." />
+            <marker date="1510832771336" expanded="true" signature="170:9060" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="215:9058" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="312:2310" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="401:974" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="1060:1655" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="1743:2300" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="2408:4814" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="2431:2585" ph="///     To ensure we are calling the overload doing checking for expiration, activation and not null. ... " />
+            <marker date="1510832771336" expanded="true" signature="2694:3172" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="3275:3641" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="3737:4254" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4320:4804" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4914:6735" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4993:5388" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5024:5056" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="5464:5870" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5495:5527" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="5951:6280" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5982:6014" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="6346:6725" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="6377:6409" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="6810:9052" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="6890:7268" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="7345:7725" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="7822:8191" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="8273:8597" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="8680:9042" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="1" lean-forward="false" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+          <folding>
+            <marker date="1510832796662" expanded="true" signature="6:75" ph="..." />
+            <marker date="1510832796662" expanded="true" signature="123:1846" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="166:1844" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="234:791" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="309:781" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="856:1419" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="933:1409" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="1482:1838" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="1554:1828" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+          <folding>
+            <marker date="1510832803924" expanded="false" signature="6:84" ph="..." />
+            <marker date="1510832803924" expanded="true" signature="132:4882" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="169:4880" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="231:4874" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="331:1504" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="1570:1893" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="1979:2497" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="2576:3074" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="3186:3611" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="3723:4238" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="4349:4864" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Class1.cs" />
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Class1.cs" />
     <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Certificate/CertificateResource.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="92" lean-forward="false" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="92" />
-          <folding>
-            <marker date="1510829472038" expanded="false" signature="6:139" ph="..." />
-            <marker date="1510829472038" expanded="true" signature="199:4321" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="294:4319" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="522:693" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="732:3022" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="837:974" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="1079:1209" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="1293:1410" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="1492:1604" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="1684:1794" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="1867:1942" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2025:2130" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2197:2298" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2380:2468" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2550:2639" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2721:2826" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="2907:3012" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="3057:4313" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="3135:3719" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="3216:3704" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="3794:4303" ph="{...}" />
-            <marker date="1510829472038" expanded="true" signature="3875:4288" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -474,14 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-          <folding>
-            <marker date="1510829724031" expanded="false" signature="6:71" ph="..." />
-            <marker date="1510829724031" expanded="true" signature="121:778" ph="{...}" />
-            <marker date="1510829724031" expanded="true" signature="205:776" ph="{...}" />
-            <marker date="1510829724031" expanded="true" signature="304:770" ph="{...}" />
-            <marker date="1510829724031" expanded="true" signature="330:681" ph="{...}" />
-            <marker date="1510829724031" expanded="true" signature="701:760" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="587" column="16" lean-forward="false" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -497,42 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="13" column="14" lean-forward="false" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <marker date="1510829788052" expanded="false" signature="6:71" ph="..." />
-            <marker date="1510829788052" expanded="true" signature="121:1190" ph="{...}" />
-            <marker date="1510829788052" expanded="true" signature="202:1188" ph="{...}" />
-            <marker date="1510829788052" expanded="true" signature="217:475" ph="///     Removes the invisible character often encountered when copying thumbprint from Microsoft Management Conso ... " />
-            <marker date="1510829788052" expanded="true" signature="575:1182" ph="{...}" />
-            <marker date="1510829788052" expanded="true" signature="818:1140" ph="{...}" />
-            <marker date="1510829788052" expanded="true" signature="984:1126" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="144" column="60" lean-forward="false" selection-start-line="144" selection-start-column="60" selection-end-line="144" selection-end-column="60" />
-          <folding>
-            <marker date="1510829972343" expanded="true" signature="6:122" ph="..." />
-            <marker date="1510829972343" expanded="true" signature="178:6271" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="221:6269" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="586:961" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="612:951" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="1120:1919" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="1991:4054" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="2074:2383" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="2458:2768" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="2831:3445" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="3052:3185" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="3532:4044" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="4128:6263" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="4211:4532" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="4607:4929" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="4992:5652" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="5212:5345" ph="{...}" />
-            <marker date="1510829972343" expanded="true" signature="5739:6253" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,22 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <marker date="1510830034290" expanded="false" signature="6:153" ph="..." />
-            <marker date="1510830034290" expanded="true" signature="203:3227" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="241:3225" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="529:1007" ph="///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentU ... " />
-            <marker date="1510830034290" expanded="true" signature="1083:1184" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="1194:1576" ph="///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.Curr ... " />
-            <marker date="1510830034290" expanded="true" signature="1654:1757" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="1882:1984" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="2111:2224" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="2334:3012" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="2462:2615" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="2659:2891" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="2801:2877" ph="{...}" />
-            <marker date="1510830034290" expanded="true" signature="3078:3219" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,86 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="795">
           <caret line="56" column="251" lean-forward="false" selection-start-line="56" selection-start-column="251" selection-end-line="56" selection-end-column="251" />
-          <folding>
-            <marker date="1510830090413" expanded="false" signature="6:164" ph="..." />
-            <marker date="1510830090413" expanded="true" signature="214:9443" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="254:9441" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="517:661" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="671:1507" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
-            <marker date="1510830090413" expanded="true" signature="1706:1852" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="1862:2644" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
-            <marker date="1510830090413" expanded="true" signature="2805:3014" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="3271:3744" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="3482:3564" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="3754:4790" ph="///     Validates that the certificate ... " />
-            <marker date="1510830090413" expanded="true" signature="4928:5491" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="4975:5049" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="5124:5209" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="5301:5427" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="5501:6099" ph="///     Validates that the certificate ... " />
-            <marker date="1510830090413" expanded="true" signature="6199:6646" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="6246:6320" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="6375:6459" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="6511:6590" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="6720:6970" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="7120:7509" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="7610:7979" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="8075:8430" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="8524:8806" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="8931:9120" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="9202:9279" ph="{...}" />
-            <marker date="1510830090413" expanded="true" signature="9359:9435" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26">
-          <caret line="17" column="57" lean-forward="false" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <marker date="1510761858181" expanded="false" signature="6:114" ph="..." />
-            <marker date="1510761858181" expanded="true" signature="170:9060" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="215:9058" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="312:2310" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="401:974" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="1060:1655" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="1743:2300" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="2408:4814" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="2431:2585" ph="///     To ensure we are calling the overload doing checking for expiration, activation and not null. ... " />
-            <marker date="1510761858181" expanded="true" signature="2694:3172" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="3275:3641" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="3737:4254" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="4320:4804" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="4914:6735" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="4993:5388" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="5024:5056" ph="/* Arrange ... */" />
-            <marker date="1510761858181" expanded="true" signature="5464:5870" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="5495:5527" ph="/* Arrange ... */" />
-            <marker date="1510761858181" expanded="true" signature="5951:6280" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="5982:6014" ph="/* Arrange ... */" />
-            <marker date="1510761858181" expanded="true" signature="6346:6725" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="6377:6409" ph="/* Arrange ... */" />
-            <marker date="1510761858181" expanded="true" signature="6810:9052" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="6890:7268" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="7345:7725" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="7822:8191" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="8273:8597" ph="{...}" />
-            <marker date="1510761858181" expanded="true" signature="8680:9042" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="68" lean-forward="false" selection-start-line="10" selection-start-column="68" selection-end-line="10" selection-end-column="68" />
-          <folding>
-            <marker date="1510761858182" expanded="false" signature="6:103" ph="..." />
-            <marker date="1510761858182" expanded="true" signature="151:387" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="216:385" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="270:379" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -650,65 +726,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="77" lean-forward="false" selection-start-line="6" selection-start-column="77" selection-end-line="6" selection-end-column="77" />
-          <folding>
-            <marker date="1510831003074" expanded="false" signature="6:88" ph="..." />
-            <marker date="1510831003074" expanded="true" signature="140:670" ph="{...}" />
-            <marker date="1510831003074" expanded="true" signature="220:668" ph="{...}" />
-            <marker date="1510831003074" expanded="true" signature="427:557" ph="{...}" />
-            <marker date="1510831003074" expanded="true" signature="596:662" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfo.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <marker date="1510828978847" expanded="true" signature="0:259" ph="/* ------------------------------------------------------------------------------ ... */" />
-            <marker date="1510828978847" expanded="false" signature="267:299" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netstandard2.0/api-client-shared-tests.AssemblyInfo.cs" />
     <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Xml/XmlResource.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding>
-            <marker date="1510831168735" expanded="false" signature="6:71" ph="..." />
-            <marker date="1510831168735" expanded="true" signature="123:1061" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="154:1059" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="361:533" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="615:1053" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="671:770" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="835:921" ph="{...}" />
-            <marker date="1510831168735" expanded="true" signature="966:1043" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/TestGenerator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="30" column="43" lean-forward="false" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <marker date="1510761858182" expanded="false" signature="6:172" ph="..." />
-            <marker date="1510761858182" expanded="true" signature="220:2887" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="262:2885" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="318:522" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="560:670" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="722:945" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="849:935" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1006:1832" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1075:1699" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1109:1685" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1734:1822" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1892:2879" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1961:2728" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1995:2714" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="2763:2869" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,7 +741,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="292">
           <caret line="126" column="18" lean-forward="false" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -724,47 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="114" lean-forward="false" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
-          <folding>
-            <marker date="1510831209802" expanded="false" signature="6:91" ph="..." />
-            <marker date="1510831209802" expanded="true" signature="133:773" ph="{...}" />
-            <marker date="1510831209802" expanded="true" signature="186:771" ph="{...}" />
-            <marker date="1510831209802" expanded="true" signature="415:584" ph="{...}" />
-            <marker date="1510831209802" expanded="true" signature="627:765" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="30" column="49" lean-forward="false" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
-          <folding>
-            <marker date="1510761858182" expanded="false" signature="6:75" ph="..." />
-            <marker date="1510761858182" expanded="true" signature="123:1846" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="166:1844" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="234:791" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="309:781" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="856:1419" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="933:1409" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1482:1838" ph="{...}" />
-            <marker date="1510761858182" expanded="true" signature="1554:1828" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding>
-            <marker date="1510830721483" expanded="true" signature="6:50" ph="..." />
-            <marker date="1510830721483" expanded="true" signature="98:1208" ph="{...}" />
-            <marker date="1510830721483" expanded="true" signature="142:1206" ph="{...}" />
-            <marker date="1510830721483" expanded="true" signature="214:621" ph="{...}" />
-            <marker date="1510830721483" expanded="true" signature="290:611" ph="{...}" />
-            <marker date="1510830721483" expanded="true" signature="684:1200" ph="{...}" />
-            <marker date="1510830721483" expanded="true" signature="761:1190" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,17 +755,238 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnitTestProject/UnitTest1.cs" />
+    <entry file="file://$PROJECT_DIR$/UnitTestProject/UnitTestProject.csproj" />
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/TestGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-dotnet/UnitTest1.cs" />
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
-            <marker date="1510831286382" expanded="false" signature="6:314" ph="..." />
-            <marker date="1510831286382" expanded="true" signature="356:2352" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="444:2350" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="540:852" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="965:1026" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="1364:1967" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="1843:1871" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="2050:2199" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="2098:2189" ph="{...}" />
-            <marker date="1510831286382" expanded="true" signature="2268:2344" ph="{...}" />
+            <marker date="1510832526127" expanded="false" signature="6:26" ph="..." />
+            <marker date="1510832526127" expanded="true" signature="90:196" ph="{...}" />
+            <marker date="1510832526127" expanded="true" signature="139:190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="40" />
+          <folding>
+            <marker date="1510761858187" expanded="false" signature="6:93" ph="..." />
+            <marker date="1510761858187" expanded="true" signature="135:1552" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="176:1550" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="300:395" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="472:733" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="817:1068" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="1135:1216" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="1284:1352" ph="{...}" />
+            <marker date="1510761858187" expanded="true" signature="1408:1544" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="45" lean-forward="false" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding>
+            <marker date="1510832803924" expanded="false" signature="6:84" ph="..." />
+            <marker date="1510832803924" expanded="true" signature="132:4882" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="169:4880" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="231:4874" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="331:1504" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="1570:1893" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="1979:2497" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="2576:3074" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="3186:3611" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="3723:4238" ph="{...}" />
+            <marker date="1510832803924" expanded="true" signature="4349:4864" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/api-client-shared-tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          <folding>
+            <marker date="1510832706760" expanded="false" signature="6:84" ph="..." />
+            <marker date="1510832706760" expanded="true" signature="140:1844" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="188:1842" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="269:781" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="366:771" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="519:550" ph="/* Act ... */" />
+            <marker date="1510832706760" expanded="true" signature="661:757" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="864:1367" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="961:1357" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1105:1136" ph="/* Act ... */" />
+            <marker date="1510832706760" expanded="true" signature="1247:1343" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1446:1836" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1514:1826" ph="{...}" />
+            <marker date="1510832706760" expanded="true" signature="1659:1812" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <marker date="1510832713168" expanded="true" signature="6:114" ph="..." />
+            <marker date="1510832713168" expanded="true" signature="170:2433" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="220:2431" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="305:2425" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="395:992" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="1077:1729" ph="{...}" />
+            <marker date="1510832713168" expanded="true" signature="1816:2415" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <marker date="1510832753509" expanded="false" signature="6:122" ph="..." />
+            <marker date="1510832753509" expanded="true" signature="178:6271" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="221:6269" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="586:961" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="612:951" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="1120:1919" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="1991:4054" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2074:2383" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2458:2768" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="2831:3445" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="3052:3185" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="3532:4044" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4128:6263" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4211:4532" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4607:4929" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="4992:5652" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="5212:5345" ph="{...}" />
+            <marker date="1510832753509" expanded="true" signature="5739:6253" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="47" lean-forward="false" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
+          <folding>
+            <marker date="1510832763164" expanded="false" signature="6:77" ph="..." />
+            <marker date="1510832763164" expanded="true" signature="133:1382" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="168:1380" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="450:1374" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="527:915" ph="{...}" />
+            <marker date="1510832763164" expanded="true" signature="979:1364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding>
+            <marker date="1510832771336" expanded="true" signature="6:114" ph="..." />
+            <marker date="1510832771336" expanded="true" signature="170:9060" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="215:9058" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="312:2310" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="401:974" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="1060:1655" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="1743:2300" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="2408:4814" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="2431:2585" ph="///     To ensure we are calling the overload doing checking for expiration, activation and not null. ... " />
+            <marker date="1510832771336" expanded="true" signature="2694:3172" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="3275:3641" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="3737:4254" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4320:4804" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4914:6735" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="4993:5388" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5024:5056" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="5464:5870" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5495:5527" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="5951:6280" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="5982:6014" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="6346:6725" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="6377:6409" ph="/* Arrange ... */" />
+            <marker date="1510832771336" expanded="true" signature="6810:9052" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="6890:7268" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="7345:7725" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="7822:8191" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="8273:8597" ph="{...}" />
+            <marker date="1510832771336" expanded="true" signature="8680:9042" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="60" lean-forward="false" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+          <folding>
+            <marker date="1510832787034" expanded="true" signature="6:50" ph="..." />
+            <marker date="1510832787034" expanded="true" signature="98:1208" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="142:1206" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="214:621" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="290:611" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="684:1200" ph="{...}" />
+            <marker date="1510832787034" expanded="true" signature="761:1190" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="53" lean-forward="false" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
+          <folding>
+            <marker date="1510832791748" expanded="true" signature="6:103" ph="..." />
+            <marker date="1510832791748" expanded="true" signature="151:387" ph="{...}" />
+            <marker date="1510832791748" expanded="true" signature="216:385" ph="{...}" />
+            <marker date="1510832791748" expanded="true" signature="270:379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/ValidationMessagesTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="38" lean-forward="false" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
+          <folding>
+            <marker date="1510832796662" expanded="true" signature="6:75" ph="..." />
+            <marker date="1510832796662" expanded="true" signature="123:1846" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="166:1844" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="234:791" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="309:781" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="856:1419" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="933:1409" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="1482:1838" ph="{...}" />
+            <marker date="1510832796662" expanded="true" signature="1554:1828" ph="{...}" />
           </folding>
         </state>
       </provider>

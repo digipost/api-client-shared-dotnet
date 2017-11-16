@@ -7,10 +7,10 @@
     "outputPath": "/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
-      "netstandard2.0"
+      "netcoreapp2.0"
     ],
     "frameworks": {
-      "netstandard2.0": {
+      "netcoreapp2.0": {
         "projectReferences": {
           "/Users/aas/projects/rider/api-client-shared/api-client-shared/api-client-shared.csproj": {
             "projectPath": "/Users/aas/projects/rider/api-client-shared/api-client-shared/api-client-shared.csproj"
@@ -20,12 +20,15 @@
     }
   },
   "frameworks": {
-    "netstandard2.0": {
+    "netcoreapp2.0": {
       "dependencies": {
-        "NETStandard.Library": {
-          "suppressParent": "All",
+        "Microsoft.NETCore.App": {
           "target": "Package",
           "version": "2.0.0"
+        },
+        "Microsoft.NET.Test.Sdk": {
+          "target": "Package",
+          "version": "15.3.0-preview-20170628-02"
         },
         "Moq": {
           "target": "Package",
@@ -33,7 +36,11 @@
         },
         "xunit": {
           "target": "Package",
-          "version": "2.3.1"
+          "version": "2.2.0"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "2.2.0"
         }
       },
       "imports": [

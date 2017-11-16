@@ -1,15 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
     <PackageReference Include="Moq" Version="4.7.145" />
-    <PackageReference Include="xunit" Version="2.3.1" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\api-client-shared\api-client-shared.csproj">
-      <Project>{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}</Project>
-      <Name>api-client-shared</Name>
-    </ProjectReference>
+    <ProjectReference Include="..\api-client-shared\api-client-shared.csproj" />
   </ItemGroup>
 </Project>
