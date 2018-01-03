@@ -94,10 +94,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult UsedExternalCertificatesResult(X509Certificate2 certificate, string chainAsString, string validatorCertificatesAsString)
         {
-            var externalCertificatesUsedMessage =
-                string.Format(
-                    LanguageResource.CertificateUsedExternalResult,
-                    certificate.ToShortString(), chainAsString, validatorCertificatesAsString);
+            var externalCertificatesUsedMessage = string.Format(CertificateUsedExternalResult, certificate.ToShortString(), chainAsString, validatorCertificatesAsString);
 
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, externalCertificatesUsedMessage);
         }

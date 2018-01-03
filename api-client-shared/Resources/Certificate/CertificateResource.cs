@@ -83,10 +83,10 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
             {
                 return new List<X509Certificate2>
                 {
-                    new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_CA_3.cer")),
-                    new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_Root_CA.cer")),
-                    new X509Certificate2(GetCertificate("TestChain", "intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.crt")),
-                    new X509Certificate2(GetCertificate("TestChain", "root - cpn root sha256 ca - test.crt"))
+                    new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_CA_3.pem")),
+                    new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_Root_CA.pem")),
+                    new X509Certificate2(GetCertificate("TestChain", "intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.pem")),
+                    new X509Certificate2(GetCertificate("TestChain", "root - cpn root sha256 ca - test.pem"))
                 };
             }
 

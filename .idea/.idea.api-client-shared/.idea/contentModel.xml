@@ -41,9 +41,11 @@
               </e>
               <e p="TestChain" t="Include">
                 <e p="Buypass_Class_3_Test4_CA_3.cer" t="Include" />
+                <e p="Buypass_Class_3_Test4_CA_3.pem" t="Include" />
                 <e p="Buypass_Class_3_Test4_Root_CA.cer" t="Include" />
-                <e p="intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.crt" t="Include" />
-                <e p="root - cpn root sha256 ca - test.crt" t="Include" />
+                <e p="Buypass_Class_3_Test4_Root_CA.pem" t="Include" />
+                <e p="intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.pem" t="Include" />
+                <e p="root - cpn root sha256 ca - test.pem" t="Include" />
               </e>
               <e p="UnitTests" t="Include">
                 <e p="difi-enhetstester.cer" t="Include" />
@@ -57,15 +59,7 @@
               </e>
             </e>
           </e>
-          <e p="Language" t="Include">
-            <e p="Data" t="Include">
-              <e p="en-us.Designer.cs" t="Include" />
-              <e p="en-us.resx" t="Include" />
-              <e p="nb-no.Designer.cs" t="Include" />
-              <e p="nb-no.resx" t="Include" />
-            </e>
-            <e p="LanguageResource.cs" t="Include" />
-          </e>
+          <e p="LanguageResource.cs" t="Include" />
           <e p="Resource" t="Include">
             <e p="ResourceUtility.cs" t="Include" />
           </e>
