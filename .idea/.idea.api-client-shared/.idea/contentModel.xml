@@ -64,9 +64,7 @@
               <e p="nb-no.Designer.cs" t="Include" />
               <e p="nb-no.resx" t="Include" />
             </e>
-            <e p="Language.cs" t="Include" />
             <e p="LanguageResource.cs" t="Include" />
-            <e p="LanguageResourceKey.cs" t="Include" />
           </e>
           <e p="Resource" t="Include">
             <e p="ResourceUtility.cs" t="Include" />

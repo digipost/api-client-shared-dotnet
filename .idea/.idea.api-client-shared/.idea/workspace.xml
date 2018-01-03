@@ -2,41 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bad3299-2d75-4b66-ae33-6a4b70fcf31f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.deps.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.pdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.runtimeconfig.dev.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared-tests.runtimeconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/api-client-shared.pdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.reporters.netstandard15.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.utility.netstandard15.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/bin/Debug/netcoreapp2.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.AssemblyInfo.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.AssemblyInfoInputs.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.csproj.CoreCompileInputs.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.csproj.FileListAbsolute.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared-tests/obj/Debug/netcoreapp2.0/api-client-shared-tests.pdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/bin/Debug/netstandard2.0/api-client-shared.deps.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/bin/Debug/netstandard2.0/api-client-shared.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/bin/Debug/netstandard2.0/api-client-shared.pdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.AssemblyInfo.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.AssemblyInfoInputs.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.Resources.Language.Data.en-us.resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.Resources.Language.Data.nb-no.resources" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.csproj.CoreCompileInputs.cache" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.csproj.FileListAbsolute.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.dll" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/obj/Debug/netstandard2.0/api-client-shared.pdb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Language/Language.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResourceKey.cs" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs" afterPath="$PROJECT_DIR$/api-client-shared-tests/UnitTest1.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Certificate/CertificateResource.cs" afterPath="$PROJECT_DIR$/api-client-shared/Resources/Certificate/CertificateResource.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.Designer.cs" afterPath="$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.Designer.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Resource/ResourceUtility.cs" afterPath="$PROJECT_DIR$/api-client-shared/Resources/Resource/ResourceUtility.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/api-client-shared.csproj" afterPath="$PROJECT_DIR$/api-client-shared/api-client-shared.csproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs" afterPath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" afterPath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" afterPath="$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Extensions/X509Certificate2Extensions.cs" afterPath="$PROJECT_DIR$/api-client-shared/Extensions/X509Certificate2Extensions.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs" afterPath="$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" afterPath="$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,63 +26,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LanguageResource.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs">
+      <file leaf-file-name="CertificateValidator.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+            <state relative-caret-position="263">
+              <caret line="159" column="41" lean-forward="false" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
               <folding>
-                <marker date="1510825267242" expanded="false" signature="6:62" ph="..." />
-                <marker date="1510825267242" expanded="true" signature="155:1563" ph="{...}" />
-                <marker date="1510825267242" expanded="true" signature="838:912" ph="{...}" />
-                <marker date="1510825267242" expanded="true" signature="998:1096" ph="{...}" />
-                <marker date="1510825267242" expanded="true" signature="1177:1557" ph="{...}" />
-                <marker date="1510825267242" expanded="true" signature="1217:1547" ph="{...}" />
+                <marker date="1514987753922" expanded="false" signature="6:164" ph="..." />
+                <marker date="1514987753922" expanded="true" signature="214:9172" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="254:9170" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="517:661" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="671:1507" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
+                <marker date="1514987753922" expanded="true" signature="1706:1852" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="1862:2644" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
+                <marker date="1514987753922" expanded="true" signature="2805:3014" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="3271:3744" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="3482:3564" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="3754:4790" ph="///     Validates that the certificate ... " />
+                <marker date="1514987753922" expanded="true" signature="4928:5491" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="4975:5049" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="5124:5209" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="5301:5427" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="5501:6099" ph="///     Validates that the certificate ... " />
+                <marker date="1514987753922" expanded="true" signature="6199:6646" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="6246:6320" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="6375:6459" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="6511:6590" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="6720:6874" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="7024:7380" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="7481:7817" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="7913:8235" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="8329:8535" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="8660:8849" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="8931:9008" ph="{...}" />
+                <marker date="1514987753922" expanded="true" signature="9088:9164" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="en-us.Designer.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.Designer.cs">
+      <file leaf-file-name="XmlValidationRunner.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
-                <marker date="1514984988031" expanded="true" signature="0:395" ph="/* ------------------------------------------------------------------------------ ... */" />
-                <marker date="1514984988031" expanded="true" signature="449:4478" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="746:4476" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1069:1080" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1273:1639" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1291:1629" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1347:1579" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1824:1980" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1842:1897" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="1914:1970" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2045:2182" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2063:2172" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2248:2386" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2266:2376" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2457:2600" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2475:2590" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2659:2790" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2677:2780" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2861:3004" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="2879:2994" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3080:3228" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3098:3218" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3302:3448" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3320:3438" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3517:3658" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3535:3648" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3729:3872" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3747:3862" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3936:4072" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="3954:4062" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="4138:4276" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="4156:4266" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="4337:4470" ph="{...}" />
-                <marker date="1514984988031" expanded="true" signature="4355:4460" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="6:165" ph="..." />
+                <marker date="1514987837031" expanded="true" signature="207:2128" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="295:2126" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="391:628" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="741:802" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="1140:1743" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="1619:1647" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="1826:1975" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="1874:1965" ph="{...}" />
+                <marker date="1514987837031" expanded="true" signature="2044:2120" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CertificateUtility.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+              <folding>
+                <marker date="1514987753918" expanded="false" signature="6:153" ph="..." />
+                <marker date="1514987753918" expanded="true" signature="203:3194" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="241:3192" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="529:1007" ph="///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentU ... " />
+                <marker date="1514987753918" expanded="true" signature="1083:1184" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="1194:1576" ph="///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.Curr ... " />
+                <marker date="1514987753918" expanded="true" signature="1654:1757" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="1882:1984" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="2111:2224" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="2334:3012" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="2462:2615" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="2659:2891" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="2801:2877" ph="{...}" />
+                <marker date="1514987753918" expanded="true" signature="3078:3186" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -115,92 +114,9 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            <state relative-caret-position="550">
+              <caret line="198" column="10" lean-forward="false" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="api-client-shared.csproj" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/api-client-shared.csproj">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Language.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Language.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1510825267238" expanded="true" signature="55:131" ph="{...}" />
-                <marker date="1510825267238" expanded="true" signature="82:129" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceManager.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/47/95e37694/ResourceManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="11" lean-forward="false" selection-start-line="34" selection-start-column="11" selection-end-line="34" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CertificateChainValidator.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1395">
-              <caret line="98" column="54" lean-forward="false" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-              <folding>
-                <marker date="1510761858184" expanded="false" signature="6:260" ph="..." />
-                <marker date="1510761858184" expanded="true" signature="355:7706" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="447:516" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="600:825" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
-                <marker date="1510761858184" expanded="true" signature="888:990" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="1000:1322" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
-                <marker date="1510761858184" expanded="true" signature="1422:1613" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="1696:2096" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="2174:2368" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="2235:2294" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="2503:3732" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="2575:3676" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="2738:2804" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="3022:3088" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="3905:4312" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="4421:4512" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="4608:4707" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="4753:4994" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="4821:4896" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="5102:6091" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="5160:5247" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="5363:6081" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="6236:6559" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="6653:6895" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="6999:7268" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="7360:7490" ph="{...}" />
-                <marker date="1510761858184" expanded="true" signature="7560:7700" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LanguageResourceKey.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResourceKey.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding>
-                <marker date="1510825267246" expanded="true" signature="93:661" ph="{...}" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -210,6 +126,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>dll</find>
+      <find>workspace</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -217,6 +134,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2825BEB1-5F1E-4CEA-BD5F-7543CD34EBAA/71/79b3e2f7/Mock`1.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/api-client-shared/Extensions/X509Certificate2Extensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Xml/ValidationMessages.cs" root0="FORCE_HIGHLIGHTING" />
@@ -240,9 +158,7 @@
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/BomUtilityTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTestImplementation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/47/95e37694/ResourceManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Language.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidationRunnerTests.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResourceKey.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/TestGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared-tests/Xml/XmlValidatorTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs" root0="FORCE_HIGHLIGHTING" />
@@ -259,12 +175,9 @@
         <option value="$PROJECT_DIR$/api-client-shared-tests/Class1.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/KeyStoreUtility.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Certificate/BomUtility.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Resources/Xsd/XsdResource.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Resources/Xml/XmlResource.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/Xml/ValidationMessages.cs" />
-        <option value="$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" />
         <option value="$PROJECT_DIR$/UnitTestProject/UnitTest1.cs" />
         <option value="$PROJECT_DIR$/UnitTestProject/UnitTestProject.csproj" />
         <option value="$PROJECT_DIR$/api-client-shared-dotnet/UnitTest1.cs" />
@@ -285,6 +198,13 @@
         <option value="$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateChainUtilityTests.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/47/95e37694/ResourceManager.cs" />
         <option value="$PROJECT_DIR$/api-client-shared/api-client-shared.csproj" />
+        <option value="$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.resx" />
+        <option value="$PROJECT_DIR$/api-client-shared/Extensions/X509Certificate2Extensions.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs" />
+        <option value="$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -322,6 +242,50 @@
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Certificate" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Extensions" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Language" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Resources" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Language" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Data" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="api-client-shared" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Xml" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -388,12 +352,12 @@
       <workItem from="1510826422226" duration="3464000" />
       <workItem from="1510832522342" duration="10123000" />
       <workItem from="1514984782179" duration="820000" />
-      <workItem from="1514985649698" duration="399000" />
+      <workItem from="1514985649698" duration="2239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14806000" />
+    <option name="totallyTimeSpent" value="16646000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,8 +380,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13164063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13164063" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -498,13 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateUtilityTests.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="165" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-client-shared-tests/Certificate/CertificateValidatorTests.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -561,13 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="13" column="114" lean-forward="false" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" column="96" lean-forward="false" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
         </state>
       </provider>
     </entry>
@@ -677,27 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="20" column="66" lean-forward="false" selection-start-line="20" selection-start-column="66" selection-end-line="20" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidationType.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="66" column="49" lean-forward="false" selection-start-line="66" selection-start-column="49" selection-end-line="66" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidationResult.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -791,52 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResourceKey.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <marker date="1510825267246" expanded="true" signature="93:661" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="98" column="54" lean-forward="false" selection-start-line="98" selection-start-column="54" selection-end-line="98" selection-end-column="54" />
-          <folding>
-            <marker date="1510761858184" expanded="false" signature="6:260" ph="..." />
-            <marker date="1510761858184" expanded="true" signature="355:7706" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="447:516" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="600:825" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
-            <marker date="1510761858184" expanded="true" signature="888:990" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="1000:1322" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
-            <marker date="1510761858184" expanded="true" signature="1422:1613" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="1696:2096" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="2174:2368" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="2235:2294" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="2503:3732" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="2575:3676" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="2738:2804" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="3022:3088" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="3905:4312" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="4421:4512" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="4608:4707" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="4753:4994" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="4821:4896" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="5102:6091" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="5160:5247" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="5363:6081" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="6236:6559" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="6653:6895" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="6999:7268" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="7360:7490" ph="{...}" />
-            <marker date="1510761858184" expanded="true" signature="7560:7700" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0279B6E2-D194-4600-B7FB-29D814B3491E/47/95e37694/ResourceManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -845,52 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <marker date="1510825267242" expanded="false" signature="6:62" ph="..." />
-            <marker date="1510825267242" expanded="true" signature="155:1563" ph="{...}" />
-            <marker date="1510825267242" expanded="true" signature="838:912" ph="{...}" />
-            <marker date="1510825267242" expanded="true" signature="998:1096" ph="{...}" />
-            <marker date="1510825267242" expanded="true" signature="1177:1557" ph="{...}" />
-            <marker date="1510825267242" expanded="true" signature="1217:1547" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Language.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1510825267238" expanded="true" signature="55:131" ph="{...}" />
-            <marker date="1510825267238" expanded="true" signature="82:129" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api-client-shared/api-client-shared.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="89" lean-forward="false" selection-start-line="6" selection-start-column="89" selection-end-line="6" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Data/nb-no.resx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.resx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="4" lean-forward="false" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -938,10 +779,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResourceKey.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="22" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Extensions/X509Certificate2Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding>
+            <marker date="1514986898453" expanded="true" signature="6:105" ph="..." />
+            <marker date="1514986898453" expanded="true" signature="154:553" ph="{...}" />
+            <marker date="1514986898453" expanded="true" signature="207:551" ph="{...}" />
+            <marker date="1514986898453" expanded="true" signature="314:545" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Language.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidationType.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1510761858185" expanded="true" signature="48:170" ph="{...}" />
+            <marker date="1510761858185" expanded="true" signature="92:168" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateChainValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+          <folding>
+            <marker date="1514987664248" expanded="false" signature="6:260" ph="..." />
+            <marker date="1514987664248" expanded="true" signature="310:7564" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="355:7562" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="447:516" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="600:825" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
+            <marker date="1514987664248" expanded="true" signature="888:990" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="1000:1322" ph="///    Validates the certificate chain of the certificate, using the &lt;see cref=&quot;CertificateStore&quot; /&gt;. ... " />
+            <marker date="1514987664248" expanded="true" signature="1422:1613" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="1696:2096" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="2174:2368" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="2235:2294" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="2503:3732" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="2575:3676" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="2738:2804" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="3022:3088" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="3905:4296" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="4405:4496" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="4592:4691" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="4737:4978" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="4805:4880" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="5086:6075" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="5144:5231" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="5347:6065" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="6220:6527" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="6621:6847" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="6951:7124" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="7216:7346" ph="{...}" />
+            <marker date="1514987664248" expanded="true" signature="7416:7556" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Data/nb-no.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="124" column="9" lean-forward="false" selection-start-line="119" selection-start-column="2" selection-end-line="124" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/Data/en-us.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="157" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Resources/Language/LanguageResource.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="13" column="22" lean-forward="false" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+          <folding>
+            <marker date="1514986987654" expanded="false" signature="6:62" ph="..." />
+            <marker date="1514986987654" expanded="true" signature="119:3286" ph="{...}" />
+            <marker date="1514986987654" expanded="true" signature="162:3284" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="66" column="73" lean-forward="false" selection-start-line="66" selection-start-column="73" selection-end-line="66" selection-end-column="73" />
+          <folding>
+            <marker date="1514987753918" expanded="false" signature="6:153" ph="..." />
+            <marker date="1514987753918" expanded="true" signature="203:3194" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="241:3192" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="529:1007" ph="///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentU ... " />
+            <marker date="1514987753918" expanded="true" signature="1083:1184" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="1194:1576" ph="///     Retrieves certificate from trusted people (StoreName.TrustedPeople) from current user (StoreLocation.Curr ... " />
+            <marker date="1514987753918" expanded="true" signature="1654:1757" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="1882:1984" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="2111:2224" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="2334:3012" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="2462:2615" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="2659:2891" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="2801:2877" ph="{...}" />
+            <marker date="1514987753918" expanded="true" signature="3078:3186" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Certificate/CertificateValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="159" column="41" lean-forward="false" selection-start-line="159" selection-start-column="41" selection-end-line="159" selection-end-column="41" />
+          <folding>
+            <marker date="1514987753922" expanded="false" signature="6:164" ph="..." />
+            <marker date="1514987753922" expanded="true" signature="214:9172" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="254:9170" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="517:661" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="671:1507" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
+            <marker date="1514987753922" expanded="true" signature="1706:1852" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="1862:2644" ph="///     Validates the certificate and chain. Validates that the certificate ... " />
+            <marker date="1514987753922" expanded="true" signature="2805:3014" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="3271:3744" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="3482:3564" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="3754:4790" ph="///     Validates that the certificate ... " />
+            <marker date="1514987753922" expanded="true" signature="4928:5491" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="4975:5049" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="5124:5209" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="5301:5427" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="5501:6099" ph="///     Validates that the certificate ... " />
+            <marker date="1514987753922" expanded="true" signature="6199:6646" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="6246:6320" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="6375:6459" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="6511:6590" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="6720:6874" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="7024:7380" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="7481:7817" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="7913:8235" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="8329:8535" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="8660:8849" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="8931:9008" ph="{...}" />
+            <marker date="1514987753922" expanded="true" signature="9088:9164" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared/Xml/XmlValidationRunner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <marker date="1514987837031" expanded="true" signature="6:165" ph="..." />
+            <marker date="1514987837031" expanded="true" signature="207:2128" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="295:2126" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="391:628" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="741:802" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="1140:1743" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="1619:1647" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="1826:1975" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="1874:1965" ph="{...}" />
+            <marker date="1514987837031" expanded="true" signature="2044:2120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="198" column="10" lean-forward="false" selection-start-line="198" selection-start-column="10" selection-end-line="198" selection-end-column="10" />
           <folding />
         </state>
       </provider>

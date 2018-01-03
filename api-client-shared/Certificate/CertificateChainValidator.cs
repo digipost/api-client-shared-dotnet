@@ -96,7 +96,7 @@ namespace Digipost.Api.Client.Shared.Certificate
         {
             var externalCertificatesUsedMessage =
                 string.Format(
-                    GetResource(LanguageResourceKey.CertificateUsedExternalResult),
+                    LanguageResource.CertificateUsedExternalResult,
                     certificate.ToShortString(), chainAsString, validatorCertificatesAsString);
 
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, externalCertificatesUsedMessage);
@@ -148,20 +148,19 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult InvalidChainResult(X509Certificate2 certificate, params X509ChainStatus[] x509ChainStatuses)
         {
-            var invalidChainResult = string.Format(GetResource(LanguageResourceKey.CertificateInvalidChainResult), GetPrettyChainErrorStatuses(x509ChainStatuses));
+            var invalidChainResult = string.Format(LanguageResource.CertificateInvalidChainResult, GetPrettyChainErrorStatuses(x509ChainStatuses));
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(invalidChainResult));
         }
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
-            var validChainResult = GetResource(LanguageResourceKey.CertificateValidResult);
+            var validChainResult = LanguageResource.CertificateValidResult;
             return new CertificateValidationResult(CertificateValidationType.Valid, certificate.ToShortString(validChainResult));
         }
 
         private static CertificateValidationResult SelfSignedErrorResult(X509Certificate2 certificate)
         {
-            var selfSignedErrorResult = GetResource(LanguageResourceKey.CertificateSelfSignedErrorResult);
-            return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(selfSignedErrorResult));
+            return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(CertificateSelfSignedErrorResult));
         }
 
         private static string GetPrettyChainErrorStatuses(X509ChainStatus[] chainStatuses)

@@ -143,13 +143,12 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult NoCertificateResult()
         {
-            var nullCertificateResult = LanguageResource.GetResource(LanguageResourceKey.CertificateIsNull);
-            return new CertificateValidationResult(CertificateValidationType.InvalidCertificate, nullCertificateResult);
+            return new CertificateValidationResult(CertificateValidationType.InvalidCertificate, LanguageResource.CertificateIsNull);
         }
 
         private static CertificateValidationResult NotIssuedToOrganizationResult(X509Certificate2 certificate, string certificateOrganizationNumber)
         {
-            var notIssuedToOrganizationResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotIssuedToOrganization), certificateOrganizationNumber);
+            var notIssuedToOrganizationResult = string.Format(LanguageResource.CertificateNotIssuedToOrganization, certificateOrganizationNumber);
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notIssuedToOrganizationResult));
@@ -157,7 +156,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult NotActivatedResult(X509Certificate2 certificate)
         {
-            var notActivatedResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotActivatedResult), certificate.GetEffectiveDateString());
+            var notActivatedResult = string.Format(LanguageResource.CertificateNotActivatedResult, certificate.GetEffectiveDateString());
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notActivatedResult));
@@ -165,7 +164,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult ExpiredResult(X509Certificate2 certificate)
         {
-            var expiredResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateExpiredResult), certificate.GetExpirationDateString());
+            var expiredResult = string.Format(LanguageResource.CertificateExpiredResult, certificate.GetExpirationDateString());
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(expiredResult));
@@ -173,10 +172,9 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
-            var validResult = LanguageResource.GetResource(LanguageResourceKey.CertificateValidResult);
             return new CertificateValidationResult(
                 CertificateValidationType.Valid,
-                certificate.ToShortString(validResult));
+                certificate.ToShortString(LanguageResource.CertificateValidResult));
         }
 
         private static bool IsIssuedToOrganizationNumber(X509Certificate certificate, string certificateOrganizationNumber)

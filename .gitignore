@@ -11,8 +11,7 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/netcoreapp2.0
-Debug/netcoreapp2.0
+[Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -195,3 +194,6 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+# Ignore Rider workspace
+.idea/*/**

@@ -4,8 +4,6 @@ using System.Text;
 using System.Xml;
 using System.Xml.Schema;
 using Digipost.Api.Client.Shared.Resources.Language;
-using static Digipost.Api.Client.Shared.Resources.Language.Language;
-using static Digipost.Api.Client.Shared.Resources.Language.LanguageResourceKey;
 
 namespace Digipost.Api.Client.Shared.Xml
 {
@@ -13,10 +11,10 @@ namespace Digipost.Api.Client.Shared.Xml
     {
         internal static readonly List<string> ToleratedErrors = new List<string>
         {
-            LanguageResource.GetResource(ToleratedXsdIdError, Norwegian),
-            LanguageResource.GetResource(ToleratedXsdIdError, English),
-            LanguageResource.GetResource(ToleratedPrefixListError, Norwegian),
-            LanguageResource.GetResource(ToleratedPrefixListError, English)
+            LanguageResource.ToleratedXsdIdErrorNbNo,
+            LanguageResource.ToleratedXsdIdErrorEnUs,
+            LanguageResource.ToleratedPrefixListErrorNbNo,
+            LanguageResource.ToleratedPrefixListErrorEnUs,
         };
 
         public XmlValidationRunner(XmlSchemaSet xmlSchemaSet) //Todo: Var internal, og bør nok være det videre

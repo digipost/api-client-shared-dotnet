@@ -69,7 +69,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static string GetErrorMessage(string thumbprint)
         {
-            return string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateCouldNotFind), thumbprint);
+            return string.Format(LanguageResource.CertificateCouldNotFind, thumbprint);
         }
     }
 }

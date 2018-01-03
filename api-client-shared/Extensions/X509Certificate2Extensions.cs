@@ -7,7 +7,7 @@ namespace Digipost.Api.Client.Shared.Extensions
     {
         public static string ToShortString(this X509Certificate2 certificate, string extraInfo = "")
         {
-            var shortStringWithPlaceholders = LanguageResource.GetResource(LanguageResourceKey.CertificateShortDescription);
+            var shortStringWithPlaceholders = LanguageResource.CertificateShortDescription;
             return string.Format(shortStringWithPlaceholders, certificate.Subject, certificate.Thumbprint, extraInfo);
         }
     }
