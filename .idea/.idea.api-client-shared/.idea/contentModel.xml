@@ -61,6 +61,7 @@
             <e p="Data" t="Include">
               <e p="en-us.Designer.cs" t="Include" />
               <e p="en-us.resx" t="Include" />
+              <e p="nb-no.Designer.cs" t="Include" />
               <e p="nb-no.resx" t="Include" />
             </e>
             <e p="Language.cs" t="Include" />

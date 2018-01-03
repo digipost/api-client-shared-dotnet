@@ -2,4 +2,8 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Debug'">
+    <None Update="Resources/Certificate/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Resources/Language/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>

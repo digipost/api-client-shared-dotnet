@@ -10,6 +10,10 @@ namespace api_client_shared_tests
         public void Test1()
         {
             Assert.True(File.Exists("Files/difi-enhetstester.cer"));
+
+            var v = Directory.GetCurrentDirectory();
+
+            string i = v + "Hei";
         }
     }
 }

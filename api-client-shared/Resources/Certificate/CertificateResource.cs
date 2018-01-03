@@ -6,11 +6,11 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
 {
     public static class CertificateResource //Todo: Var internal, og bør nok være det videre
     {
-        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Digipost.Api.Client.Shared.Resources.Certificate.Data");
+        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources/Certificate/Data");
 
         private static X509Certificate2 GetCertificate(params string[] path)
         {
-            byte[] cert = ResourceUtility.ReadAllBytes(true, path);
+            byte[] cert = ResourceUtility.ReadAllBytesNew(path);
             return new X509Certificate2(cert, "", X509KeyStorageFlags.Exportable);
         }
 

@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Reflection;
 
 namespace Digipost.Api.Client.Shared.Resources.Resource
@@ -56,6 +58,16 @@ namespace Digipost.Api.Client.Shared.Resources.Resource
                 return bytes;
             }
         }
+        
+        public byte[] ReadAllBytesNew(params string[] path)
+        {
+            var relativePath = string.Join("/", path);
+
+            var fullPath = Path.Combine(BasePath, relativePath);
+         
+            return File.ReadAllBytes(fullPath);
+        }
+
 
         internal string GetFullPath(params string[] path)
         {
