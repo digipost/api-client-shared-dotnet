@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using Xunit;
 
 namespace api_client_shared_tests
@@ -8,7 +9,7 @@ namespace api_client_shared_tests
         [Fact]
         public void Test1()
         {
-            Assert.Equal(1,1);
+            Assert.True(File.Exists("Files/difi-enhetstester.cer"));
         }
     }
 }
