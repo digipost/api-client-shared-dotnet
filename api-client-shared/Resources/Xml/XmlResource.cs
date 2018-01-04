@@ -3,17 +3,17 @@ using Digipost.Api.Client.Shared.Resources.Resource;
 
 namespace Digipost.Api.Client.Shared.Resources.Xml
 {
-    public class XmlResource
+    public static class XmlResource
     {
-        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Digipost.Api.Client.Shared.Resources.Xml.Data");
+        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources/Xml/Data");
 
         private static string GetResource(params string[] path)
         {
-            var bytes = ResourceUtility.ReadAllBytes(true, path);
+            var bytes = ResourceUtility.ReadAllBytesNew(path);
             return XmlUtility.ToXmlDocument(Encoding.UTF8.GetString(bytes)).OuterXml;
         }
 
-        public class GetContent //Todo: Var internal, og bør nok være det videre
+        public static class GetContent //Todo: Var internal, og bør nok være det videre
         {
             public static string GetInvalid()
             {
