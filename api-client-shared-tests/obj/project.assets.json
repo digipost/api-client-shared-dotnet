@@ -5779,58 +5779,75 @@
     ]
   },
   "packageFolders": {
-    "/Users/aas/.nuget/packages/": {}
+    "C:\\Users\\aas\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/api-client-shared-tests.csproj",
+      "projectUniqueName": "Y:\\rider\\api-client-shared\\api-client-shared-tests\\api-client-shared-tests.csproj",
       "projectName": "api-client-shared-tests",
-      "projectPath": "/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/api-client-shared-tests.csproj",
-      "packagesPath": "/Users/aas/.nuget/packages/",
-      "outputPath": "/Users/aas/projects/rider/api-client-shared/api-client-shared-tests/obj/",
+      "projectPath": "Y:\\rider\\api-client-shared\\api-client-shared-tests\\api-client-shared-tests.csproj",
+      "packagesPath": "C:\\Users\\aas\\.nuget\\packages\\",
+      "outputPath": "Y:\\rider\\api-client-shared\\api-client-shared-tests\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/aas/.config/NuGet/NuGet.Config"
+        "C:\\Users\\aas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.smbsrc.net/": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "/Users/aas/projects/rider/api-client-shared/api-client-shared/api-client-shared.csproj": {
-              "projectPath": "/Users/aas/projects/rider/api-client-shared/api-client-shared/api-client-shared.csproj"
+            "Y:\\rider\\api-client-shared\\api-client-shared\\api-client-shared.csproj": {
+              "projectPath": "Y:\\rider\\api-client-shared\\api-client-shared\\api-client-shared.csproj"
             }
           }
         }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
       }
     },
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.NETCore.App": {
+          "xunit.runner.visualstudio": {
             "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.NET.Test.Sdk": {
-            "target": "Package",
-            "version": "15.3.0-preview-20170628-02"
+            "version": "2.2.0"
           },
           "Moq": {
             "target": "Package",
             "version": "4.7.145"
           },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0",
+            "autoReferenced": true
+          },
           "xunit": {
             "target": "Package",
             "version": "2.2.0"
           },
-          "xunit.runner.visualstudio": {
+          "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "15.3.0-preview-20170628-02"
           }
         },
         "imports": [

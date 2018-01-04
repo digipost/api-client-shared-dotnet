@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.0.0
-MinimumVisualStudioVersion = 10.0.0.1
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api_client_shared", "api-client-shared/api-client-shared.csproj", "{13C9281C-5A37-4E4A-A461-B3CADA8C5C61}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "api-client-shared-tests", "api-client-shared-tests\api-client-shared-tests.csproj", "{B1EB4A3A-2EEF-455A-9C7B-516B252D4135}"
