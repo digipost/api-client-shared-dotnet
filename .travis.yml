@@ -9,10 +9,11 @@ install:
 script:
   - dotnet build -c Release
   - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
-deploy:
-  skip_cleanup: true
-  provider: script
-  script:
-    - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
-  on:
-    branch: project-rider-test-netstandard
+  - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
+#deploy:
+#  skip_cleanup: true
+#  provider: script
+#  script:
+#    - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
+#  on:
+#    branch: project-rider-test-netstandard
