@@ -59,8 +59,6 @@
     - git submodule update --init --recursive   
   before_build:
   - ps: >-
-   #   .\appveyor-deploy\MoveSigningKey.ps1 -signingKeyPath "$env:APPVEYOR_BUILD_FOLDER\signingkey.snk" -signingKeyDestination "C:\Keys\signingkey.snk";
-   #   .\appveyor-deploy\NugetRestore.ps1; 
       .\appveyor-deploy\BuildPreamble.ps1         
   build:
         verbosity: minimal
