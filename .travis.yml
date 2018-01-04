@@ -1,0 +1,7 @@
+solution: solution-name.sln
+language: csharp
+mono: none
+dotnet: 1.1.5
+script:
+ - dotnet restore
+ - dotnet build -c Release
