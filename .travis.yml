@@ -10,6 +10,8 @@ script:
 deploy:
   skip_cleanup: true
   provider: script
-  script: chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
+  script: 
+    - dotnet restore
+    - chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
   on:
     branch: project-rider-test-netstandard
