@@ -1,4 +1,4 @@
-solution: solution-name.sln
+solution: api-client-shared.sln
 language: csharp
 mono: none
 dotnet: 1.1.5
