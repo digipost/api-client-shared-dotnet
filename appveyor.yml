@@ -5,8 +5,9 @@
   install:
     - git submodule update --init --recursive   
   before_build:
-  - ps: >-
+  - ps: |
       .\appveyor-deploy\BuildPreamble.ps1         
+      nuget restore
   build:
         verbosity: minimal
   image: Visual Studio 2017
