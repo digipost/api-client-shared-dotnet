@@ -3,9 +3,6 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup Condition="'$(Configuration)' == 'Debug'">
-    <None Update="Resources/Certificate/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
-    <None Update="Resources/Language/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
-    <None Update="Resources/Xsd/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
-    <None Update="Resources/Xml/Data/**/*" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="Resources/**/*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>
