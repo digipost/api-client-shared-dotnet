@@ -1,3 +1,5 @@
+sudo: required
+dist: trusty  
 solution: api-client-shared.sln
 language: csharp
 mono: none
