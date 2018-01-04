@@ -2,6 +2,11 @@ solution: api-client-shared.sln
 language: csharp
 mono: none
 dotnet: 2.0.0
+install:
+  - nuget restore api-client-shared.sln
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
  - dotnet restore
  - dotnet build -c Release
+ - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
+  
