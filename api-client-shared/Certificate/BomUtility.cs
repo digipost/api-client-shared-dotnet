@@ -11,7 +11,7 @@ namespace Digipost.Api.Client.Shared.Certificate
         /// </summary>
         /// <param name="thumbprint"></param>
         /// <returns>cleansed thumbprint</returns>
-        public string RemoveBom(string thumbprint) //Todo: Var internal, og bør nok være det videre
+        public virtual string RemoveBom(string thumbprint) //Todo: Var internal, og bør nok være det videre
         {
             var thumbprintBytes = Encoding.UTF8.GetBytes(thumbprint);
             var arrayOfKnownByteOrderMarks = new List<byte[]> {new byte[] {226, 128, 142}};
