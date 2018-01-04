@@ -9,7 +9,7 @@
       .\appveyor-deploy\BuildPreamble.ps1         
   build:
         verbosity: minimal
-  image: Visual Studio 2015
+  image: Visual Studio 2017
   before_test:
   - ps: >-
       .\appveyor-deploy\TestPreamble.ps1
