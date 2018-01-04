@@ -104,7 +104,6 @@
             </e>
           </e>
         </e>
-        <e p="UnitTest1.cs" t="Include" />
         <e p="Xml" t="Include">
           <e p="TestGenerator.cs" t="Include" />
           <e p="ValidationMessagesTests.cs" t="Include" />
