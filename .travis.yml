@@ -3,15 +3,14 @@ solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
 install:
-  - dotnet restore
-  - nuget restore api-client-shared  
+  - dotnet restore  
 script:
   - dotnet build -c Release
   - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
 deploy:
   skip_cleanup: true
   provider: script
-  script: 
+  script:
     - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
     #- chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
   on:
