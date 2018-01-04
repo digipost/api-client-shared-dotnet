@@ -1,9 +1,10 @@
-solution: api-client-shared.sln
 language: csharp
+solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
 install:
-  - dotnet restore  
+  - dotnet restore
+  - nuget restore api-client-shared.sln  
 script:
   - dotnet build -c Release
   - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
