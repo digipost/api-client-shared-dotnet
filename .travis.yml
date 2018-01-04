@@ -1,3 +1,5 @@
+dist: trusty
+sudo: required
 language: csharp
 solution: api-client-shared.sln
 mono: none
@@ -12,6 +14,5 @@ deploy:
   provider: script
   script:
     - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
-    #- chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
   on:
     branch: project-rider-test-netstandard
