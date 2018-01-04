@@ -4,7 +4,7 @@ mono: none
 dotnet: 2.0.0
 install:
   - dotnet restore
-  - nuget restore api-client-shared.sln  
+  - nuget restore api-client-shared  
 script:
   - dotnet build -c Release
   - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
@@ -12,7 +12,7 @@ deploy:
   skip_cleanup: true
   provider: script
   script: 
-    - dotnet restore
-    - chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
+    - nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
+    #- chmod +x ./deploy/deploy.sh && ./deploy/deploy.sh $NUGET_API_KEY $NUGET_SOURCE
   on:
     branch: project-rider-test-netstandard
