@@ -5,8 +5,10 @@ solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
 before_install:
-  - sudo apt-get mono
-  - sudo apt-get nuget
+  - sudo apt-get mono-complete
+  - wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - mono nuget.exe
+  - chmod +x ./nuget.exe
 install:
   - dotnet restore  
 script:
