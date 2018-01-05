@@ -7,13 +7,14 @@ dotnet: 2.0.0
 before_install:
   - sudo apt-get install mono-complete
   - wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - mono nuget.exe
   - chmod +x ./nuget.exe
 install:
   - dotnet restore  
 script:
   - dotnet build -c Release
   - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
-  - mono nuget pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
+  - mono nuget.exe pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
 #deploy:
 #  skip_cleanup: true
 #  provider: script
