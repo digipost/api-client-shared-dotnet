@@ -3,9 +3,10 @@ solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
 before_install:
+  - sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+  - echo "deb http://download.mono-project.com/repo/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/mono-official.list
   - sudo apt-get update
-  - sudo apt-get install mono-complete=4.6.2
-  - ls -la
+  - sudo apt-get install mono-complete
   - wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
   - mono nuget.exe
   - chmod +x ./nuget.exe
@@ -13,10 +14,8 @@ before_install:
 install:
   - dotnet restore  
 script:
-  - ls -la
   - dotnet build -c Release
   #- dotnet test api-client-shared-tests/api-client-shared-tests.csproj
-  - ls -la
   - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
 #deploy:
 #  skip_cleanup: true
