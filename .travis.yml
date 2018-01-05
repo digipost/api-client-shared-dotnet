@@ -15,9 +15,9 @@ install:
 script:
   - ls -la
   - dotnet build -c Release
-  - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
+  #- dotnet test api-client-shared-tests/api-client-shared-tests.csproj
   - ls -la
-  - mono nuget.exe pack ./api-client-shared/api-client-shared.nuspec -Verbosity detailed
+  - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
 #deploy:
 #  skip_cleanup: true
 #  provider: script
