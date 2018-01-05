@@ -18,6 +18,7 @@ deploy:
   provider: script
   script:
     - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
+    - ls -la
     - mono nuget.exe push ./api-client-shared.4.0-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
   on:
     branch: project-rider-test-netstandard
