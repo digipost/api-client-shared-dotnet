@@ -4,6 +4,9 @@ language: csharp
 solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
+before_install:
+  - sudo apt-get mono
+  - sudo apt-get nuget
 install:
   - dotnet restore  
 script:
