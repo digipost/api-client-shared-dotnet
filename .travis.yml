@@ -13,9 +13,7 @@ install:
 script:
   - dotnet build -c Release
   - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
-  - ls -la  
-  - mono nuget.exe push ./api-client-shared.4.0.0-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
-  #- dotnet test api-client-shared-tests/api-client-shared-tests.csproj
+  - mono nuget.exe push ./api-client-shared.4.0.1-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
 # deploy:
 #   skip_cleanup: true
 #   provider: script
