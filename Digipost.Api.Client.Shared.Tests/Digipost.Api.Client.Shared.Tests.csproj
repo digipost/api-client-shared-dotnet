@@ -10,6 +10,12 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\api-client-shared\api-client-shared.csproj" />
+    <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Resources\Resource\ResourceFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Resource\ResourceFile.txt" />
   </ItemGroup>
 </Project>
