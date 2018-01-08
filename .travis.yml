@@ -23,3 +23,7 @@ script:
 
 #   on:
 #     branch: project-rider-test-netstandard
+
+## TODO
+# 1. Make sure deploy is only run for master and beta branch
+# 2. Do not deploy if tests fail

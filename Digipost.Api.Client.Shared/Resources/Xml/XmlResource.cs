@@ -13,7 +13,7 @@ namespace Digipost.Api.Client.Shared.Resources.Xml
             return XmlUtility.ToXmlDocument(Encoding.UTF8.GetString(bytes)).OuterXml;
         }
 
-        public static class GetContent //Todo: Var internal, og bør nok være det videre
+        internal static class GetContent
         {
             public static string GetInvalid()
             {

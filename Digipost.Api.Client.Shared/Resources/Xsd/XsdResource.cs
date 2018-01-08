@@ -4,7 +4,7 @@ using Digipost.Api.Client.Shared.Resources.Resource;
 
 namespace Digipost.Api.Client.Shared.Resources.Xsd
 {
-    public class XsdResource //Todo: Var internal, og bør nok være det videre
+    internal static class XsdResource
     {
         private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources.Xsd.Data");
 

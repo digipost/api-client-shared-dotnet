@@ -11,13 +11,13 @@ namespace Digipost.Api.Client.Shared.Xml
 
         public bool HasWarnings { get; private set; }
 
-        public void Add(XmlSeverityType severity, string message) //Todo: Var internal, og bør nok være det videre
+        internal void Add(XmlSeverityType severity, string message)
         {
             Add(message);
 
             HasErrors = severity == XmlSeverityType.Error;
             HasWarnings = severity == XmlSeverityType.Warning;
-        }
+        } 
 
         public override string ToString()
         {

@@ -54,7 +54,7 @@ namespace Digipost.Api.Client.Shared.Certificate
             return ValidateCertificateAndChainInternal(certificate, certificateOrganizationNumber, allowedChainCertificates);
         }
 
-        public static CertificateValidationResult ValidateCertificateAndChainInternal(X509Certificate2 certificate, string certificateOrganizationNumber, X509Certificate2Collection allowedChainCertificates) //Todo: Var internal, og bør nok være det videre
+        internal static CertificateValidationResult ValidateCertificateAndChainInternal(X509Certificate2 certificate, string certificateOrganizationNumber, X509Certificate2Collection allowedChainCertificates)
         {
             var sertifikatValideringsResultat = ValidateCertificate(certificate, certificateOrganizationNumber);
 

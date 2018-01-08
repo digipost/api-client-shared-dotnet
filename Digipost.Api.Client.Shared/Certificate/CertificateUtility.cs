@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Resources.Language;
+
+[assembly:InternalsVisibleTo("Digipost.Api.Client.Shared.Tests")]
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
     public class CertificateUtility
     {
-        public virtual KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility(); //Todo: Var internal, og bør nok være det videre
+        internal KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility();
 
-        public virtual BomUtility BomUtility { get; set; } = new BomUtility(); //Todo: Var internal, og bør nok være det videre
+        internal BomUtility BomUtility { get; set; } = new BomUtility();
 
         /// <summary>
         ///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentUser) or
@@ -34,12 +38,12 @@ namespace Digipost.Api.Client.Shared.Certificate
             return new CertificateUtility().CreateReceiverCertificate(thumbprint);
         }
 
-        public X509Certificate2 CreateSenderCertificate(string thumbprint) //Todo: Var internal, og bør nok være det videre
+        internal X509Certificate2 CreateSenderCertificate(string thumbprint)
         {
             return GetFirstCertificateOrThrowException(thumbprint, StoreName.My);
         }
 
-        public X509Certificate2 CreateReceiverCertificate(string thumbprint) //Todo: Var internal, og bør nok være det videre
+        internal X509Certificate2 CreateReceiverCertificate(string thumbprint)
         {
             return GetFirstCertificateOrThrowException(thumbprint, StoreName.TrustedPeople);
         }
@@ -64,7 +68,7 @@ namespace Digipost.Api.Client.Shared.Certificate
                 }
             }
 
-            throw new Exception(GetErrorMessage(thumbprint)); //Todo: var tidligere instanceNotFoundException
+            throw new FileNotFoundException(GetErrorMessage(thumbprint));
         }
 
         private static string GetErrorMessage(string thumbprint)
