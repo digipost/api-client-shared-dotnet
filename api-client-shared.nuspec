@@ -15,8 +15,8 @@
     </metadata>
     <files>
         <file 
-            src="Digipost.Api.Client.Shared\bin\Release\netstandard2.0\api-client-shared.dll" 
-            target="lib\netstandard2\api-client-shared.dll" 
+            src="Digipost.Api.Client.Shared\bin\Release\netstandard2.0\Digipost.Api.Client.Shared.dll" 
+            target="lib\netstandard2\Digipost.Api.Client.Shared.dll" 
         />
     </files>
 </package>
