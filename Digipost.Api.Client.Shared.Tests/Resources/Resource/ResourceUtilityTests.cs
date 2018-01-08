@@ -57,5 +57,11 @@ namespace Digipost.Api.Client.Shared.Tests.Resources.Resource
 
             Assert.Equal(expectedResourcePath.Length, utility.BasePath.Length);
         }
+
+        [Fact]
+        public static void Loads_resources_correctly()
+        {
+            CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
+        }
     }
 }
