@@ -11,6 +11,7 @@ before_install:
 install:
   #- dotnet restore  
 script:
+  - mono nuget.exe restore api-client-shared.sln
   - msbuild
   #- dotnet build -c Release
   - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
