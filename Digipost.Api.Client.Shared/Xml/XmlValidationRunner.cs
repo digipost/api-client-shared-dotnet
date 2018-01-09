@@ -7,9 +7,9 @@ using Digipost.Api.Client.Shared.Resources.Language;
 
 namespace Digipost.Api.Client.Shared.Xml
 {
-    public class XmlValidationRunner //Todo: Var internal, og bør nok være det videre
+    internal class XmlValidationRunner
     {
-        internal static readonly List<string> ToleratedErrors = new List<string>
+        private static readonly List<string> ToleratedErrors = new List<string>
         {
             LanguageResource.ToleratedXsdIdErrorNbNo,
             LanguageResource.ToleratedXsdIdErrorEnUs,
@@ -17,16 +17,16 @@ namespace Digipost.Api.Client.Shared.Xml
             LanguageResource.ToleratedPrefixListErrorEnUs,
         };
 
-        public XmlValidationRunner(XmlSchemaSet xmlSchemaSet) //Todo: Var internal, og bør nok være det videre
+        internal XmlValidationRunner(XmlSchemaSet xmlSchemaSet)
         {
             XmlSchemaSet = xmlSchemaSet;
         }
 
-        public XmlSchemaSet XmlSchemaSet { get; } //Todo: Var internal, og bør nok være det videre
+        internal XmlSchemaSet XmlSchemaSet { get; }
 
-        public ValidationMessages ValidationMessages { get; } = new ValidationMessages(); //Todo: Var internal, og bør nok være det videre
+        internal ValidationMessages ValidationMessages { get; } = new ValidationMessages();
 
-        public bool Validate(string document) ////Todo: Var internal, og bør nok være det videre
+        internal bool Validate(string document)
         {
             var settings = new XmlReaderSettings();
             settings.Schemas.Add(XmlSchemaSet);

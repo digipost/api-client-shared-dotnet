@@ -1,7 +1,26 @@
-solution: solution-name.sln
 language: csharp
-mono: none
-dotnet: 1.1.5
+solution: api-client-shared.sln
+mono:
+  - latest
+install:
+  - nuget restore
+  - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
 script:
- - dotnet restore
- - dotnet build -c Release
+  # - dotnet build -c Release
+  - xbuild /p:Configuration=Release api-client-shared.sln
+  - mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./Digipost.Api.Client.Shared.Tests/bin/Release/netstandard2.0/Digipost.Api.Client.Shared.dll
+  - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
+  #- ls - la
+  #- dotnet test api-client-shared-tests/api-client-shared-tests.csproj
+  - mono nuget.exe push ./api-client-shared.4.0.1-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
+# deploy:
+#   skip_cleanup: true
+#   provider: script
+#   script:
+
+#   on:
+#     branch: project-rider-test-netstandard
+
+## TODO
+# 1. Make sure deploy is only run for master and beta branch
+# 2. Do not deploy if tests fail

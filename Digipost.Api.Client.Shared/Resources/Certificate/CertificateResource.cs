@@ -1,16 +1,17 @@
 ﻿using System.Collections.Generic;
+using System.Reflection;
 using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Resources.Resource;
 
 namespace Digipost.Api.Client.Shared.Resources.Certificate
 {
-    public static class CertificateResource //Todo: Var internal, og bør nok være det videre
+    public static class CertificateResource
     {
-        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources/Certificate/Data");
+        private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources.Certificate.Data");
 
         private static X509Certificate2 GetCertificate(params string[] path)
         {
-            byte[] cert = ResourceUtility.ReadAllBytesNew(path);
+            byte[] cert = ResourceUtility.ReadAllBytes(path);
             return new X509Certificate2(cert, "", X509KeyStorageFlags.Exportable);
         }
 
