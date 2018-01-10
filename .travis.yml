@@ -13,7 +13,7 @@ install:
 script:
   - set -e
   - dotnet build -c Release
-  - dotnet test api-client-shared-tests/api-client-shared-tests.csproj
+  - dotnet test Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj
   - mono nuget.exe push ./api-client-shared.4.0.1-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
 deploy:
   skip_cleanup: true
