@@ -8,12 +8,15 @@ before_install:
   - sudo apt-get update
   - sudo apt-get install mono-complete
   - wget https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
-  - mono nuget.exe install zero29 -source https://nuget.org/api/v2/
+  - mono nuget.exe install zero29 -version 1.0.0 -source https://nuget.org/api/v2/
 install:
   - dotnet restore  
 script:
-  - set -e
+  - set -e #Makes sure we get a fail fast if some of the scripts fails
+  - mono ./Zero29.1.0.0/tools/Zero29.exe -i revision
+  - mono ./Zero29.1.0.0/tools/Zero29.exe -l 
   - dotnet build -c Release
+  - ls -la
   - dotnet test Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj
   - mono nuget.exe push ./api-client-shared.4.0.1-netstandardbeta.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source $NUGET_SOURCE
 deploy:
