@@ -14,9 +14,8 @@ install:
 script:
   - set -e #Makes sure we get a fail fast if some of the scripts fails
   - mono ./Zero29.1.0.0/tools/Zero29.exe -i revision
-  - mono ./Zero29.1.0.0/tools/Zero29.exe -l 
-  - mono ./Zero29.1.0.0/tools/Zero29.exe -l skrivefeil
-  - mono ./Zero29.1.0.0/tools/Zero9.exe -l appath ikke fungerer
+  - mono ./Zero29.1.0.0/tools/Zero29.exe -l
+  - tree
   - dotnet build -c Release
   - dotnet test Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj
   - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
