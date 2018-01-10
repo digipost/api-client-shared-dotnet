@@ -1,5 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -17,5 +20,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Resource\ResourceFile.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Digipost.Api.Client.Shared\AssemblyInfo.cs">
+      <Link>AssemblyInfo.cs</Link>
+    </Compile>
   </ItemGroup>
 </Project>
