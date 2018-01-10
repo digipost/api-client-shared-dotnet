@@ -5,14 +5,8 @@ using Digipost.Api.Client.Shared.Resources.Language;
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
-    public class CertificateValidator
+    public static class CertificateValidator
     {
-        [Obsolete("Use ValidateCertificate(X509Certificate, string) instead and use CertificateValidationResult to get result of validation")]
-        public static bool IsValidCertificate(X509Certificate2 certificate, string certificateOrganizationNumber)
-        {
-            return ValidateCertificate(certificate, certificateOrganizationNumber).Type == CertificateValidationType.Valid;
-        }
-
         /// <summary>
         ///     Validates the certificate and chain. Validates that the certificate
         ///     <list type="bullet">
