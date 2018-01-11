@@ -7,7 +7,6 @@ group: deprecated-2017Q4
 dotnet: 2.0.0
 before_install: 
   - chmod -R +x deploy #make alle scripts executable
-  - ./deploy/apt-get-add-keys-and-update.sh
   - sudo ./deploy/apt-get-add-keys-and-update.sh
   - sudo apt-get install mono-complete
   
