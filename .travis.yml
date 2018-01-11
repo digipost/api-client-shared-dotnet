@@ -6,13 +6,12 @@ sudo: required
 group: deprecated-2017Q4
 dotnet: 2.0.0
 before_install: 
-  #- chmod -R +x deploy #make alle scripts executable
-  - ls -la deploy
-  - chmod +x ./deploy/apt-get-add-keys-and-update.sh
+  - chmod -R +x deploy #make alle scripts executable
+  - ./deploy/apt-get-add-keys-and-update.sh
   - ls -la deploy
   - sudo ./deploy/apt-get-add-keys-and-update.sh
   - sudo apt-get install mono-complete
-  - deploy/nuget-install.sh
+  - sudo ./deploy/nuget-install.sh
   - sudo apt-get install tree
 install:
   - dotnet restore  
