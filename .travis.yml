@@ -11,8 +11,7 @@ before_install:
   - chmod +x ./deploy/apt-get-add-keys-and-update.sh
   - ls -la deploy
   - sudo ./deploy/apt-get-add-keys-and-update.sh
-  - sudo apt-get update
-  - sudo apt-get install mono-complete
+  - sudo apt-get install mono-devel
   - deploy/nuget-install.sh
   - sudo apt-get install tree
 install:
