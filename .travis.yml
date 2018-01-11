@@ -1,7 +1,6 @@
 language: csharp
 solution: api-client-shared.sln
 mono: none
-sudo: required
 dotnet: 2.0.0
 before_install: 
   # apt-get: Add key and update repo 
