@@ -1,6 +1,7 @@
 language: csharp
 solution: api-client-shared.sln
 mono: none
+sudo: required
 dotnet: 2.0.0
 before_install: 
   #- chmod -R +x deploy #make alle scripts executable
