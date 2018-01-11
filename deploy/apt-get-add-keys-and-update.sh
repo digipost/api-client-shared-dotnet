@@ -4,6 +4,6 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328
 echo "deb http://download.mono-project.com/repo/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/mono-official.list
 echo "start cat"
 cat /etc/apt/sources.list.d/mono-official.list 
-echo "end cat"
+
 
 #Update
