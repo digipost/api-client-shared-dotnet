@@ -3,7 +3,9 @@ solution: api-client-shared.sln
 mono: none
 dotnet: 2.0.0
 before_install: 
+  #- chmod -R +x deploy #make alle scripts executable
   - ./deploy/apt-get-add-keys-and-update.sh
+  - sudo apt-get update
   - sudo apt-get install mono-complete
   - deploy/nuget-install.sh
   - sudo apt-get install tree
