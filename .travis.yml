@@ -4,7 +4,9 @@ mono: none
 dotnet: 2.0.0
 before_install: 
   #- chmod -R +x deploy #make alle scripts executable
+  - ls -la
   - chmod +x ./deploy/apt-get-add-keys-and-update.sh
+  - ls -la
   - sudo ./deploy/apt-get-add-keys-and-update.sh
   - sudo apt-get update
   - sudo apt-get install mono-complete
