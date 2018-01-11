@@ -4,14 +4,13 @@ mono: none
 sudo: required
 dotnet: 2.0.0
 before_install: 
-  #- chmod -R +x deploy #make alle scripts executable
-  - ls -la deploy
-  - chmod +x ./deploy/apt-get-add-keys-and-update.sh
-  - ls -la deploy
-  - sudo ./deploy/apt-get-add-keys-and-update.sh
+  # apt-get: Add key and update repo 
+  - apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+  - echo "deb http://download.mono-project.com/repo/ubuntu trusty main" | sudo tee /etc/apt/sources.list.d/mono-official.list
   - sudo apt-get update
+
   - sudo apt-get install mono-complete
-  - deploy/nuget-install.sh
+  - deploy/nuget-install.sh  
   - sudo apt-get install tree
 install:
   - dotnet restore  
