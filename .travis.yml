@@ -13,5 +13,5 @@ before_install:
   - sudo apt-get clean
   - sudo apt-get update
 
-  - sudo apt-get install mono-complete=5.4
+  - sudo apt-get install mono-complete=5.4.1
   - mono --version
