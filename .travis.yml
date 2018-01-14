@@ -12,3 +12,5 @@ before_install:
   #Update packages to get newest mono able to do nuget deploy
   - sudo apt-get clean
   - sudo apt-get update
+
+  - sudo apt-get install mono-complete 
