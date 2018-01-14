@@ -2,7 +2,7 @@
 language: csharp
 solution: api-client-shared.sln
 mono: none
-group: deprecated-2017Q4
+# group: deprecated-2017Q4
 dotnet: 2.0.0
 before_install: 
   #apt-get: Install key and add mono source
