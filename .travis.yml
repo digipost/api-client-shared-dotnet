@@ -6,3 +6,4 @@ dotnet: 2.0.0
 before_install: 
   - ./deploy/apt-get-add-keys-and-update.sh
   - ./deploy/mono-install.sh
+  - ./deploy/version-manager-install.sh
