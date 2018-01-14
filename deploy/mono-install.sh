@@ -1,2 +1,2 @@
-- sudo apt-get install mono-complete
-- mono --version
+sudo apt-get install mono-complete
+mono --version
