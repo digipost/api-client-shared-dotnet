@@ -8,4 +8,6 @@ before_install:
   - ./deploy/mono-install.sh
   - ./deploy/nuget-install.sh
   - sudo apt-get install tree
+  - tree
   - ./deploy/version-manager-install.sh
+  - tree
