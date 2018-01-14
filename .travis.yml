@@ -9,5 +9,6 @@ before_install:
   - ./deploy/nuget-install.sh
   - sudo apt-get install tree
   - ./deploy/version-patcher-install.sh
+  - ./deploy/nuspec-version-patcher.sh
 install:
   - dotnet restore
