@@ -1,4 +1,3 @@
-sudo: required
 language: csharp
 solution: api-client-shared.sln
 mono: none
