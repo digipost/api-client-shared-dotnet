@@ -1,3 +1,4 @@
+sudo: required
 language: csharp
 solution: api-client-shared.sln
 mono: none
@@ -5,4 +6,7 @@ dotnet: 2.0.0
 before_install: 
   - ./deploy/apt-get-add-keys-and-update.sh
   - ./deploy/mono-install.sh
+  - apt-get install tree
+  - tree
   - ./deploy/version-manager-install.sh
+  - tree
