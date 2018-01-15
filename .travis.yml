@@ -16,5 +16,5 @@ script:
   - dotnet build -c Release
   - dotnet test Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj
   - mono nuget.exe pack api-client-shared.nuspec -Verbosity detailed
-  - mono nuget.exe push *.nupkg -Verbosity detailed -ApiKey $NUGET_API_KEY -Source https://api.nuget.org/v3/index.json
+  - ./deploy/nuget-push.sh
 
