@@ -5,7 +5,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 {
     internal class KeyStoreUtility
     {
-        public virtual X509Certificate2 FindCertificate(string thumbprint, X509Store store) 
+        public virtual X509Certificate2 FindCertificate(string thumbprint, X509Store store)
         {
             try
             {

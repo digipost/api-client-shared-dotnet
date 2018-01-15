@@ -11,7 +11,7 @@ namespace Digipost.Api.Client.Shared.Tests.Xml
             [Fact]
             public void MultipleValidateShouldNotHoldValidationState()
             {
-                Digipost.Api.Client.Shared.Xml.XmlValidator validator = new XmlValidatorTestImplementation();
+                XmlValidator validator = new XmlValidatorTestImplementation();
 
                 var invalidContentTestCouple = new TestGenerator.InvalidContentTestCouple();
                 List<string> messagesList;

@@ -1,8 +1,9 @@
-﻿using Xunit;
+using Xunit;
 using static Digipost.Api.Client.Shared.Certificate.CertificateChainUtility;
 using static Digipost.Api.Client.Shared.Certificate.CertificateValidationType;
 using static Digipost.Api.Client.Shared.Certificate.CertificateValidator;
 using static Digipost.Api.Client.Shared.Resources.Certificate.CertificateResource.UnitTests;
+
 
 namespace Digipost.Api.Client.Shared.Tests.Certificate
 {

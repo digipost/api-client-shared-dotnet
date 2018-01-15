@@ -146,12 +146,14 @@ namespace Digipost.Api.Client.Shared.Certificate
         private static CertificateValidationResult InvalidChainResult(X509Certificate2 certificate, params X509ChainStatus[] x509ChainStatuses)
         {
             var invalidChainResult = string.Format(LanguageResource.CertificateInvalidChainResult, GetPrettyChainErrorStatuses(x509ChainStatuses));
+
             return new CertificateValidationResult(CertificateValidationType.InvalidChain, certificate.ToShortString(invalidChainResult));
         }
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
             var validChainResult = LanguageResource.CertificateValidResult;
+       
             return new CertificateValidationResult(CertificateValidationType.Valid, certificate.ToShortString(validChainResult));
         }
 
