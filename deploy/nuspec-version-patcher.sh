@@ -1,5 +1,5 @@
 #cd to parent folder, because the patcher must be run from base path to find the AssemblyVersion
-cd ..
+#cd ..
 
 pwd
 
