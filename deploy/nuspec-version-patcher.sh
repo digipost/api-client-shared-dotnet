@@ -1,8 +1,3 @@
-#cd to parent folder, because the patcher must be run from base path to find the AssemblyVersion
-#cd ..
-
-pwd
-
 #Find current assembly version
 # 1: Zero29 lists versions of all AssemblyInfo-files. There is two.
 # 2: Take the first one
@@ -14,5 +9,5 @@ assemblyVersion="${assemblyVersionWithoutBuildNumber}${TRAVIS_BUILD_NUMBER}"
 echo "Patching version in .nuspec to ${assemblyVersion}!"
 
 #Patch assembly version number in .nuspec
-sed -i '' "s/VERSION_PLACEHOLDER/${assemblyVersion}/g" api-client-shared.nuspec
+sed -i.originalfilebackup "s/VERSION_PLACEHOLDER/${assemblyVersion}/g" api-client-shared.nuspec
 
