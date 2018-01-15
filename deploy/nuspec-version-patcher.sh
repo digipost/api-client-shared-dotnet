@@ -5,7 +5,7 @@
 #    ending up with '4.3.0.'
 assemblyVersionWithoutBuildNumber=$(mono ./Zero29.1.0.0/tools/Zero29.exe -l | head -n 1 | egrep -o '([0-9].){3}')
 
-if [ ${#assemblyVersionWithoutBuildNumber} -eq "0" ];then
+if [[ ${#assemblyVersionWithoutBuildNumber} -eq "0" ]];then
 	echo "Did not find assembly version with version patcher. Please check that patcher is installed correctly and that it can find the assembly version files. Exiting!" >&2 #Echo and send to stderr
 	exit 1 # terminate and indicate error
 fi
@@ -15,7 +15,7 @@ echo "Assembly version found with version patcher is '${assemblyVersionWithoutBu
 assemblyVersion="${assemblyVersionWithoutBuildNumber}${TRAVIS_BUILD_NUMBER}"
 
 betaSuffix="beta"
-if [ ${TRAVIS_BRANCH} == $betaSuffix ];then
+if [[ ${TRAVIS_BRANCH} == $betaSuffix ]];then
 	echo "Is on beta branch, setting '-${betaSuffix}' as package suffix."
 	assemblyVersion+="-${betaSuffix}"
 fi
