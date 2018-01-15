@@ -14,3 +14,4 @@ install:
   - dotnet restore
 script:
   - dotnet build -c Release
+  - dotnet test Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj
