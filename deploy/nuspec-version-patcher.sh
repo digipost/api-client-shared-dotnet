@@ -14,6 +14,11 @@ echo "Assembly version found with version patcher is '${assemblyVersionWithoutBu
 
 assemblyVersion="${assemblyVersionWithoutBuildNumber}${TRAVIS_BUILD_NUMBER}"
 
+if [ ${TRAVIS_BRANCH} -eq "beta" ];then
+	betaSuffix="-beta"
+	echo "Is on beta branch, setting '${betaSuffix}' as package suffix."
+	assemblyVersion+=betaSuffix
+
 echo "Patching version in .nuspec to '${assemblyVersion}!'"
 
 #Patch assembly version number in .nuspec
