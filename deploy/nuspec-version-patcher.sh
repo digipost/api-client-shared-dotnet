@@ -18,6 +18,7 @@ if [ ${TRAVIS_BRANCH} -eq "beta" ];then
 	betaSuffix="-beta"
 	echo "Is on beta branch, setting '${betaSuffix}' as package suffix."
 	assemblyVersion+=betaSuffix
+fi
 
 echo "Patching version in .nuspec to '${assemblyVersion}!'"
 
