@@ -9,6 +9,7 @@ before_install:
   - ./deploy/nuget-install.sh
   - sudo apt-get install tree
   - tree
+  - pwd
   - ./deploy/version-patcher-install.sh
   - tree
   - ./deploy/nuspec-version-patcher.sh
