@@ -1,6 +1,8 @@
 #cd to parent folder, because the patcher must be run from base path to find the AssemblyVersion
 cd ..
 
+pwd
+
 #Find current assembly version
 # 1: Zero29 lists versions of all AssemblyInfo-files. There is two.
 # 2: Take the first one
