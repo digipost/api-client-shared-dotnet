@@ -10,7 +10,7 @@ before_install:
   - sudo apt-get install tree
   - tree
   - ./deploy/version-patcher-install.sh
-  - ./deploy/nuspec-version-patcher.sh
   - tree
+  - ./deploy/nuspec-version-patcher.sh
 install:
   - dotnet restore
