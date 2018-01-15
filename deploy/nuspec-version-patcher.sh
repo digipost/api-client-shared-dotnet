@@ -3,7 +3,13 @@
 # 2: Take the first one
 # 3: Grep with regex to retrieve the assembly version number (ex. '4.3.0.0') at end of line and excluding build number,
 #    ending up with '4.3.0.'
+
+mono ./Zero29.1.0.0/tools/Zero29.exe -l
+
 assemblyVersionWithoutBuildNumber=$(mono ./Zero29.1.0.0/tools/Zero29.exe -l | head -n 1 | egrep -o '(\d+.){3}')
+
+echo "Assembly version found with version_patcher is ${assemblyVersionWithoutBuildNumber}"
+
 assemblyVersion="${assemblyVersionWithoutBuildNumber}${TRAVIS_BUILD_NUMBER}"
 
 echo "Patching version in .nuspec to ${assemblyVersion}!"
