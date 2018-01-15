@@ -3,11 +3,14 @@
 # 2: Take the first one
 # 3: Grep with regex to retrieve the assembly version number (ex. '4.3.0.0') at end of line and excluding build number,
 #    ending up with '4.3.0.'
-assemblyVersionWithoutBuildNumber=$(mono ./Zero29.1.0.0/tools/Zero29.exe -l | head -n 1 | egrep -o '([0-9].){3}')
+assemblyVersionWithoutBuildNumber=$(mono ./Zero29.1.0.0/tools/Zero29.exe -l | head -n 1 | egrep -o '(FUCK-UP for feiltesting [0-9].){3}')
 
-mono ./Zero29.1.0.0/tools/Zero29.exe -l
+if [ ${#assemblyVersionWithoutBuildNumber} -eq "0" ];then
+	echo "Did not find assembly version with version patcher. Exiting!" >&2 #Echo and send to stderr
+	exit 1 # terminate and indicate error
+fi
 
-echo "Assembly version found with version_patcher is '${assemblyVersionWithoutBuildNumber}' (build number excluded)."
+echo "Assembly version found with version patcher is '${assemblyVersionWithoutBuildNumber}' (build number excluded)."
 
 assemblyVersion="${assemblyVersionWithoutBuildNumber}${TRAVIS_BUILD_NUMBER}"
 
