@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup> 
+  </PropertyGroup>
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
   </PropertyGroup>
@@ -14,4 +14,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\**\*" />
   </ItemGroup>
-</Project> 
+  <ItemGroup>
+    <Compile Include="..\SolutionItems\AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>

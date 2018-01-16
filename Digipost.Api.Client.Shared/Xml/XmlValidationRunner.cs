@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Schema;
-using Digipost.Api.Client.Shared.Resources.Language;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Xml
 {
@@ -11,10 +11,10 @@ namespace Digipost.Api.Client.Shared.Xml
     {
         private static readonly List<string> ToleratedErrors = new List<string>
         {
-            LanguageResource.ToleratedXsdIdErrorNbNo,
-            LanguageResource.ToleratedXsdIdErrorEnUs,
-            LanguageResource.ToleratedPrefixListErrorNbNo,
-            LanguageResource.ToleratedPrefixListErrorEnUs,
+            ToleratedXsdIdErrorNbNo,
+            ToleratedXsdIdErrorEnUs,
+            ToleratedPrefixListErrorNbNo,
+            ToleratedPrefixListErrorEnUs,
         };
 
         internal XmlValidationRunner(XmlSchemaSet xmlSchemaSet)

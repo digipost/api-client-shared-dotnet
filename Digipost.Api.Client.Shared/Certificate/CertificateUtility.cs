@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
-using Digipost.Api.Client.Shared.Resources.Language;
+using static System.Security.Cryptography.X509Certificates.StoreLocation;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 [assembly:InternalsVisibleTo("Digipost.Api.Client.Shared.Tests")]
 
@@ -54,8 +55,8 @@ namespace Digipost.Api.Client.Shared.Certificate
 
             var stores = new List<X509Store>
             {
-                new X509Store(storeName, StoreLocation.CurrentUser),
-                new X509Store(storeName, StoreLocation.LocalMachine)
+                new X509Store(storeName, CurrentUser),
+                new X509Store(storeName, LocalMachine)
             };
 
             foreach (var store in stores)
@@ -73,7 +74,7 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static string GetErrorMessage(string thumbprint)
         {
-            return string.Format(LanguageResource.CertificateCouldNotFind, thumbprint);
+            return string.Format(CertificateCouldNotFind, thumbprint);
         }
     }
 }

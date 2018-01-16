@@ -5,7 +5,7 @@ using Digipost.Api.Client.Shared.Resources.Resource;
 
 namespace Digipost.Api.Client.Shared.Resources.Certificate
 {
-    public static class CertificateResource
+    internal static class CertificateResource
     {
         private static readonly ResourceUtility ResourceUtility = new ResourceUtility("Resources.Certificate.Data");
 

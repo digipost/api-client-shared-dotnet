@@ -22,8 +22,8 @@
     <EmbeddedResource Include="Resources\Resource\ResourceFile.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Digipost.Api.Client.Shared\AssemblyInfo.cs">
-      <Link>AssemblyInfo.cs</Link>
+    <Compile Include="..\SolutionItems\AssemblyInfo.cs">
+      <Link>Properties/AssemblyInfo.cs</Link>
     </Compile>
   </ItemGroup>
 </Project>

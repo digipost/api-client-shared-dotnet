@@ -1,5 +1,5 @@
 ﻿using System.Security.Cryptography.X509Certificates;
-using Digipost.Api.Client.Shared.Resources.Language;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Extensions
 {
@@ -7,9 +7,7 @@ namespace Digipost.Api.Client.Shared.Extensions
     {
         public static string ToShortString(this X509Certificate2 certificate, string extraInfo = "")
         {
-            var shortStringWithPlaceholders = LanguageResource.CertificateShortDescription;
-    
-            return string.Format(shortStringWithPlaceholders, certificate.Subject, certificate.Thumbprint, extraInfo);
+            return string.Format(CertificateShortDescription, certificate.Subject, certificate.Thumbprint, extraInfo);
         }
     }
 }

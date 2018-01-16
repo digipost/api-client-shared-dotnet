@@ -21,7 +21,7 @@ namespace Digipost.Api.Client.Shared.Resources.Resource
         /// <remarks>The calling assembly will be used as reference. If looking for files inside
         /// the library please use overload taking in assembly as a parameter.</remarks>
         public ResourceUtility(string basePathForResources)
-        : this(Assembly.GetExecutingAssembly(), basePathForResources)
+            : this(Assembly.GetExecutingAssembly(), basePathForResources)
         {
         }
 
@@ -44,9 +44,9 @@ namespace Digipost.Api.Client.Shared.Resources.Resource
         private static string IncludeProjectRootNameInBasePath(Assembly currentAssembly, string basePathForResources)
         {
             var assemblyName = currentAssembly.GetName().Name;
-            
-            return !basePathForResources.Contains(assemblyName) 
-                ? string.Join(".", assemblyName, basePathForResources) 
+
+            return !basePathForResources.Contains(assemblyName)
+                ? string.Join(".", assemblyName, basePathForResources)
                 : basePathForResources;
         }
 
@@ -87,22 +87,12 @@ namespace Digipost.Api.Client.Shared.Resources.Resource
                 return bytes;
             }
         }
-        
-        public byte[] ReadAllBytesNew(params string[] path)
-        {
-            var relativePath = string.Join("/", path);
-
-            var fullPath = Path.Combine(BasePath, relativePath);
-         
-            return File.ReadAllBytes(fullPath);
-        }
-
 
         private string JoinWithBasePath(params string[] path)
         {
-            List<string> elements = new List<string>() { BasePath};
+            List<string> elements = new List<string>() {BasePath};
             elements.AddRange(path);
-            
+
             return string.Join(".", elements);
         }
 
