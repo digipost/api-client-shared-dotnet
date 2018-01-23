@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0353d7c1-d362-41da-b2a0-987f7d31cd59" name="Default" comment="Merge branch 'master' into project-rider-test-netstandard-play&#10;&#10;# Conflicts:&#10;#&#9;.gitignore&#10;#&#9;Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs&#10;#&#9;Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs&#10;#&#9;Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj&#10;#&#9;Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs&#10;#&#9;Digipost.Api.Client.Shared/Certificate/BomUtility.cs&#10;#&#9;Digipost.Api.Client.Shared/Certificate/CertificateChainValidator.cs&#10;#&#9;Digipost.Api.Client.Shared/Certificate/CertificateUtility.cs&#10;#&#9;Digipost.Api.Client.Shared/Certificate/CertificateValidator.cs&#10;#&#9;Digipost.Api.Client.Shared/Certificate/KeyStoreUtility.cs&#10;#&#9;Digipost.Api.Client.Shared/Digipost.Api.Client.Shared.csproj&#10;#&#9;Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs&#10;#&#9;Digipost.Api.Client.Shared/Xml/ValidationMessages.cs&#10;#&#9;Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs&#10;#&#9;api-client-shared.nuspec&#10;#&#9;api-client-shared.sln">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/contentModel.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/indexLayout.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.idea.api-client-shared/riderModule.iml" />
+      <change beforePath="$PROJECT_DIR$/.gitmodules" afterPath="$PROJECT_DIR$/.gitmodules" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources.Tests/Digipost.Api.Client.Shared.Resources.Tests.csproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources.Tests/LanguageResourceTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources.Tests/Properties/AssemblyInfo.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources.Tests/packages.config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/CertificateResource.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/ProdChain/BPClass3CA3.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/ProdChain/BPClass3RootCA.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/ProdChain/cpn enterprise sha256 class 3.crt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/ProdChain/cpn rootca sha256 class 3.crt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/TestChain/Buypass_Class_3_Test4_CA_3.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/TestChain/Buypass_Class_3_Test4_Root_CA.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/TestChain/intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.crt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/TestChain/root - cpn root sha256 ca - test.crt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/ExpiredSelfSignedBringAs.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/NotActivatedSelfSignedBringAs.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/PostenNorgeAs.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/ValidSelfSignedBringAs.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/difi-enhetstester.cer" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/difi-enhetstester.p12" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/produksjonsmottakersertifikatFraOppslagstjenesten.pem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/Data/UnitTests/testmottakersertifikatFraOppslagstjenesten.pem" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Digipost.Api.Client.Shared.Resources.csproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/Data/en-us.Designer.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/Data/en-us.resx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/Data/nb-no.resx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/Language.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/LanguageResource.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Language/LanguageResourceKey.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Properties/AssemblyInfo.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Resource/ResourceUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/Data/InvalidIdentifikatorContent.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/Data/Transportkvittering.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/Data/UnknownElement.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/Data/Valid.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/XmlResource.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xml/XmlUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xsd/Data/Sample.xsd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Xsd/XsdResource.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/BomUtilityTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateChainUtilityTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateChainValidatorTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Properties/AssemblyInfo.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/TestGenerator.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/ValidationMessagesTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidationRunnerTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTestImplementation.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/packages.config" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/BomUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateChainUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateChainValidator.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidationResult.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidationType.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidator.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/KeyStoreUtility.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Digipost.Api.Client.Shared.csproj" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/AssemblyInfo.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/ValidationMessages.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidator.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/SolutionItems/SharedAssemblyInfo.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-client-shared.nuspec" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-client-shared.sln" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/api-client-shared.sln.DotSettings" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/appveyor-deploy" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/appveyor.yml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/signingkey.snk.enc" afterPath="" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="711">
+              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>A4A2A3B72B7E</find>
+      <find>test</find>
+      <find>LanguageResource.</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Digipost.Api.Client.Shared.csproj" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/AssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/ProjectAssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Properties/ProjectAssemblyInfo.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/BomUtility.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/KeyStoreUtility.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Resources/Certificate/CertificateResource.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Resources/Resource/ResourceUtility.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/ValidationMessages.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidator.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateChainValidator.cs" />
+        <option value="$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateUtility.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/api-client-shared.nuspec" />
+        <option value="$PROJECT_DIR$/api-client-shared.sln" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1025" />
+    <option name="y" value="22" />
+    <option name="width" value="1535" />
+    <option name="height" value="1418" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource SolutionExplorer="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="api-client-shared (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0353d7c1-d362-41da-b2a0-987f7d31cd59" name="Default" comment="" />
+      <created>1516032318151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516032318151</updated>
+      <workItem from="1516032321128" duration="1271000" />
+      <workItem from="1516034076217" duration="1376000" />
+      <workItem from="1516104045984" duration="6922000" />
+      <workItem from="1516197670531" duration="765000" />
+      <workItem from="1516700619861" duration="2402000" />
+      <workItem from="1516714233307" duration="3273000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="16009000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1025" y="22" width="1535" height="1418" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23204838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29604822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955405" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/api-client-shared.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="84" lean-forward="false" selection-start-line="6" selection-start-column="80" selection-end-line="6" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5083">
+          <caret line="299" column="12" lean-forward="false" selection-start-line="299" selection-start-column="12" selection-end-line="299" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Resources/Resource/ResourceUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Digipost.Api.Client.Shared.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/ValidationMessages.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5083">
+          <caret line="299" column="12" lean-forward="false" selection-start-line="299" selection-start-column="12" selection-end-line="299" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Resources/Resource/ResourceUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="16" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="163" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="174" column="0" lean-forward="false" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/KeyStoreUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/ValidationMessages.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="52" lean-forward="false" selection-start-line="5" selection-start-column="52" selection-end-line="5" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="16" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="163" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5083">
+          <caret line="299" column="12" lean-forward="false" selection-start-line="299" selection-start-column="12" selection-end-line="299" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2771">
+          <caret line="163" column="16" lean-forward="false" selection-start-line="163" selection-start-column="16" selection-end-line="163" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Certificate/CertificateValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="169" column="0" lean-forward="false" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Xml/XmlValidatorTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Resources/Resource/ResourceUtilityTests.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Resources/Certificate/CertificateResource.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Digipost.Api.Client.Shared.Tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Resources/Certificate/Data/ProdChain/BPClass3CA3.cer">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Digipost.Api.Client.Shared.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared.Tests/Properties/ProjectAssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Properties/ProjectAssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/SolutionItems/AssemblyInfo.cs" />
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/BomUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/KeyStoreUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="1" lean-forward="false" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Resources/Certificate/CertificateResource.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="13" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Resources/Resource/ResourceUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/ValidationMessages.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="21" lean-forward="false" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Xml/XmlValidationRunner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="12" lean-forward="false" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Extensions/X509Certificate2Extensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2601">
+          <caret line="153" column="51" lean-forward="false" selection-start-line="153" selection-start-column="51" selection-end-line="153" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateChainValidator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2788">
+          <caret line="164" column="35" lean-forward="false" selection-start-line="164" selection-start-column="35" selection-end-line="164" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Digipost.Api.Client.Shared/Certificate/CertificateUtility.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="57" column="41" lean-forward="false" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared.nuspec">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared.sln~HEAD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="88" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-client-shared.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
