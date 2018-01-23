@@ -1,6 +1,9 @@
-﻿using Digipost.Api.Client.Shared.Certificate;
-using Digipost.Api.Client.Shared.Resources.Certificate;
 using Xunit;
+using static Digipost.Api.Client.Shared.Certificate.CertificateChainUtility;
+using static Digipost.Api.Client.Shared.Certificate.CertificateValidationType;
+using static Digipost.Api.Client.Shared.Certificate.CertificateValidator;
+using static Digipost.Api.Client.Shared.Resources.Certificate.CertificateResource.UnitTests;
+
 
 namespace Digipost.Api.Client.Shared.Tests.Certificate
 {
@@ -12,13 +15,13 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Returns_fail_if_certificate_error()
             {
                 //Arrange
-                var funksjoneltTestmiljøSertifikater = CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
+                var funksjoneltTestmiljøSertifikater = FunksjoneltTestmiljøSertifikater();
 
                 //Act
-                var result = CertificateValidator.ValidateCertificateAndChainInternal(CertificateResource.UnitTests.GetExpiredSelfSignedTestCertificate(), "988015814", funksjoneltTestmiljøSertifikater);
+                var result = ValidateCertificateAndChainInternal(GetExpiredSelfSignedTestCertificate(), "988015814", funksjoneltTestmiljøSertifikater);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("expired on", result.Message);
             }
 
@@ -26,13 +29,13 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Returns_fail_if_self_signed_certificate()
             {
                 //Arrange
-                var funksjoneltTestmiljøSertifikater = CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
+                var funksjoneltTestmiljøSertifikater = FunksjoneltTestmiljøSertifikater();
 
                 //Act
-                var result = CertificateValidator.ValidateCertificateAndChainInternal(CertificateResource.UnitTests.GetValidSelfSignedTestCertificate(), "988015814", funksjoneltTestmiljøSertifikater);
+                var result = ValidateCertificateAndChainInternal(GetValidSelfSignedTestCertificate(), "988015814", funksjoneltTestmiljøSertifikater);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidChain, result.Type);
+                Assert.Equal(InvalidChain, result.Type);
                 Assert.Contains("is invalid because the chain length is 1", result.Message);
             }
 
@@ -40,13 +43,13 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Returns_ok_if_valid_certificate_and_chain()
             {
                 //Arrange
-                var funksjoneltTestmiljøSertifikater = CertificateChainUtility.FunksjoneltTestmiljøSertifikater();
+                var funksjoneltTestmiljøSertifikater = FunksjoneltTestmiljøSertifikater();
 
                 //Act
-                var result = CertificateValidator.ValidateCertificateAndChainInternal(CertificateResource.UnitTests.GetPostenCertificate(), "984661185", funksjoneltTestmiljøSertifikater);
+                var result = ValidateCertificateAndChainInternal(GetPostenCertificate(), "984661185", funksjoneltTestmiljøSertifikater);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.Valid, result.Type);
+                Assert.Equal(Valid, result.Type);
                 Assert.Contains("is a valid certificate", result.Message);
             }
         }
@@ -63,10 +66,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 const string organizationNumber = "988015814";
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.GetExpiredSelfSignedTestCertificate(), organizationNumber);
+                var result = ValidateCertificate(GetExpiredSelfSignedTestCertificate(), organizationNumber);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("expired on", result.Message);
             }
 
@@ -74,10 +77,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Ignores_issued_to_organization_if_no_organization_number()
             {
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.GetPostenCertificate(), string.Empty);
+                var result = ValidateCertificate(GetPostenCertificate(), string.Empty);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.Valid, result.Type);
+                Assert.Equal(Valid, result.Type);
                 Assert.Contains("is a valid certificate", result.Message);
             }
 
@@ -88,10 +91,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 const string certificateOrganizationNumber = "123456789";
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.TestIntegrasjonssertifikat(), certificateOrganizationNumber);
+                var result = ValidateCertificate(TestIntegrasjonssertifikat(), certificateOrganizationNumber);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("is not issued to organization number", result.Message);
             }
 
@@ -102,10 +105,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 const string certificateOrganizationNumber = "984661185";
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.GetPostenCertificate(), certificateOrganizationNumber);
+                var result = ValidateCertificate(GetPostenCertificate(), certificateOrganizationNumber);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.Valid, result.Type);
+                Assert.Equal(Valid, result.Type);
                 Assert.Contains("is a valid certificate", result.Message);
             }
         }
@@ -118,10 +121,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.GetExpiredSelfSignedTestCertificate());
+                var result = ValidateCertificate(GetExpiredSelfSignedTestCertificate());
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("expired on", result.Message);
             }
 
@@ -131,10 +134,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.NotActivatedSelfSignedTestCertificate());
+                var result = ValidateCertificate(NotActivatedSelfSignedTestCertificate());
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("is not active until", result.Message);
             }
 
@@ -144,10 +147,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(null);
+                var result = ValidateCertificate(null);
 
                 //Assert
-                Assert.Equal(CertificateValidationType.InvalidCertificate, result.Type);
+                Assert.Equal(InvalidCertificate, result.Type);
                 Assert.Contains("is null", result.Message);
             }
 
@@ -157,79 +160,11 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = CertificateValidator.ValidateCertificate(CertificateResource.UnitTests.GetPostenCertificate());
+                var result = ValidateCertificate(GetPostenCertificate());
 
                 //Assert
-                Assert.Equal(CertificateValidationType.Valid, result.Type);
+                Assert.Equal(Valid, result.Type);
                 Assert.Contains("is a valid certificate", result.Message);
-            }
-        }
-
-        public class IsValidCertificateMethod : CertificateValidatorTests
-        {
-            [Fact]
-            public void Returns_false_if_expired()
-            {
-                //Arrange
-                var certificateOrganizationNumber = "123456789";
-
-                //Act
-                var isValid = CertificateValidator.IsValidCertificate(CertificateResource.UnitTests.GetExpiredSelfSignedTestCertificate(), certificateOrganizationNumber);
-
-                //Assert
-                Assert.False(isValid);
-            }
-
-            [Fact]
-            public void Returns_false_if_not_activated()
-            {
-                //Arrange
-                var certificateOrganizationNumber = "123456789";
-
-                //Act
-                var isValid = CertificateValidator.IsValidCertificate(CertificateResource.UnitTests.NotActivatedSelfSignedTestCertificate(), certificateOrganizationNumber);
-
-                //Assert
-                Assert.False(isValid);
-            }
-
-            [Fact]
-            public void Returns_false_if_not_issued_to_organization_number()
-            {
-                //Arrange
-                var certificateOrganizationNumber = "123456789";
-
-                //Act
-                var isValid = CertificateValidator.IsValidCertificate(CertificateResource.UnitTests.TestIntegrasjonssertifikat(), certificateOrganizationNumber);
-
-                //Assert
-                Assert.False(isValid);
-            }
-
-            [Fact]
-            public void Returns_false_with_null_certificate()
-            {
-                //Arrange
-                const string certificateOrganizationNumber = "123456789";
-
-                //Act
-                var isValid = CertificateValidator.IsValidCertificate(null, certificateOrganizationNumber);
-
-                //Assert
-                Assert.False(isValid);
-            }
-
-            [Fact]
-            public void Returns_true_for_correct_certificate()
-            {
-                //Arrange
-                var certificateOrganizationNumber = "984661185";
-
-                //Act
-                var isValid = CertificateValidator.IsValidCertificate(CertificateResource.UnitTests.GetPostenCertificate(), certificateOrganizationNumber);
-
-                //Assert
-                Assert.True(isValid);
             }
         }
     }

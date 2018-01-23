@@ -3,20 +3,18 @@ using System.IO;
 using System.Text;
 using System.Xml;
 using System.Xml.Schema;
-using Digipost.Api.Client.Shared.Resources.Language;
-using static Digipost.Api.Client.Shared.Resources.Language.Language;
-using static Digipost.Api.Client.Shared.Resources.Language.LanguageResourceKey;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Xml
 {
     internal class XmlValidationRunner
     {
-        internal static readonly List<string> ToleratedErrors = new List<string>
+        private static readonly List<string> ToleratedErrors = new List<string>
         {
-            LanguageResource.GetResource(ToleratedXsdIdError, Norwegian),
-            LanguageResource.GetResource(ToleratedXsdIdError, English),
-            LanguageResource.GetResource(ToleratedPrefixListError, Norwegian),
-            LanguageResource.GetResource(ToleratedPrefixListError, English)
+            ToleratedXsdIdErrorNbNo,
+            ToleratedXsdIdErrorEnUs,
+            ToleratedPrefixListErrorNbNo,
+            ToleratedPrefixListErrorEnUs,
         };
 
         internal XmlValidationRunner(XmlSchemaSet xmlSchemaSet)

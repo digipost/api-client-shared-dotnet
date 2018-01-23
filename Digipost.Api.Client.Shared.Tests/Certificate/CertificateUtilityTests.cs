@@ -2,7 +2,6 @@
 using Digipost.Api.Client.Shared.Certificate;
 using Moq;
 using Xunit;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace Digipost.Api.Client.Shared.Tests.Certificate
 {
@@ -56,7 +55,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
 
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
             }
 
             [Fact]
@@ -67,7 +66,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 var certificate = GetCertificateFromMockedStore(storeName, storeLocation, true);
 
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
             }
 
             [Fact]
@@ -101,7 +100,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var certificate = certificateUtility.CreateSenderCertificate(StringWithoutBom);
 
                 //Assert
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
         }
@@ -116,7 +115,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
 
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
             }
 
             [Fact]
@@ -127,7 +126,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
 
                 var certificate = GetCertificateFromMockedStore(storeName, storeLocation, false);
 
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
             }
 
             [Fact]
@@ -146,7 +145,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var certificate = certificateFactory.CreateReceiverCertificate(StringWithBom);
 
                 //Assert
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
                 bomUtilityMock.Verify(utility => utility.RemoveBom(It.IsAny<string>()), Times.Once());
             }
 
@@ -161,7 +160,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var certificate = certificateFactory.CreateReceiverCertificate(StringWithoutBom);
 
                 //Assert
-                Assert.IsNotNull(certificate);
+                Assert.NotNull(certificate);
                 keyStoreMock.Verify(utility => utility.FindCertificate(StringWithoutBom, It.IsAny<X509Store>()));
             }
         }
