@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>api-client-shared</id>
+        <version>VERSION_PLACEHOLDER</version>
+        <title>api-client-shared</title>
+        <authors>Aleksander Sjåfjell</authors>
+        <owners></owners>
+        <licenseUrl>https://github.com/digipost/api-client-shared-dotnet/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/digipost/api-client-shared-dotnet</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Enkelt bibliotek for vanlig brukte hjelpeklasser for bruk i digipost.</description>
+        <summary>Apache License 2.0</summary>
+        <tags>utility hjelp api digipost</tags>
+    </metadata>
+    <files>
+        <file 
+            src="Digipost.Api.Client.Shared\bin\Release\netstandard2.0\Digipost.Api.Client.Shared.dll" 
+            target="lib\netstandard2\Digipost.Api.Client.Shared.dll" 
+        />
+    </files>
+</package>

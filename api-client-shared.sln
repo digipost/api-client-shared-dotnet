@@ -1,0 +1,27 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.0.0
+MinimumVisualStudioVersion = 10.0.0.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digipost.Api.Client.Shared", "Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj", "{12873E33-FB67-4CB5-A871-A4A2A3B72B7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Digipost.Api.Client.Shared.Tests", "Digipost.Api.Client.Shared.Tests\Digipost.Api.Client.Shared.Tests.csproj", "{1095CAA5-E105-4C9C-AF98-7EC4F4D03DE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12873E33-FB67-4CB5-A871-A4A2A3B72B7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12873E33-FB67-4CB5-A871-A4A2A3B72B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12873E33-FB67-4CB5-A871-A4A2A3B72B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12873E33-FB67-4CB5-A871-A4A2A3B72B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1095CAA5-E105-4C9C-AF98-7EC4F4D03DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1095CAA5-E105-4C9C-AF98-7EC4F4D03DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1095CAA5-E105-4C9C-AF98-7EC4F4D03DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1095CAA5-E105-4C9C-AF98-7EC4F4D03DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
