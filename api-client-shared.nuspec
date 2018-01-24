@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>api-client-shared</id>
-        <version>VERSION_PLACEHOLDER</version>
+        <version>4.0.0.</version>
         <title>api-client-shared</title>
         <authors>Aleksander Sjåfjell</authors>
         <owners></owners>
