@@ -1,9 +1,14 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
+
+[assembly: InternalsVisibleTo("Digipost.Api.Client.Shared.Tests")]
+[assembly: InternalsVisibleTo("DynamicProxyGenAssembly2")]
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
+    // ReSharper disable once ClassWithVirtualMembersNeverInherited.Global
     internal class BomUtility
     {
         /// <summary>

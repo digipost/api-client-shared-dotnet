@@ -17,7 +17,7 @@ namespace Digipost.Api.Client.Shared.Xml
 
             HasErrors = severity == XmlSeverityType.Error;
             HasWarnings = severity == XmlSeverityType.Warning;
-        }
+        } 
 
         public override string ToString()
         {

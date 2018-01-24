@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Management.Instrumentation;
+using System.IO;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
-using Digipost.Api.Client.Shared.Resources.Language;
+using static System.Security.Cryptography.X509Certificates.StoreLocation;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
+
+[assembly:InternalsVisibleTo("Digipost.Api.Client.Shared.Tests")]
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
     public class CertificateUtility
     {
-        internal virtual KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility();
+        internal KeyStoreUtility KeyStoreUtility { get; set; } = new KeyStoreUtility();
 
-        internal virtual BomUtility BomUtility { get; set; } = new BomUtility();
+        internal BomUtility BomUtility { get; set; } = new BomUtility();
 
         /// <summary>
         ///     Retrieves certificate from personal certificates (StoreName.My) from current user (StoreLocation.CurrentUser) or
@@ -51,8 +55,8 @@ namespace Digipost.Api.Client.Shared.Certificate
 
             var stores = new List<X509Store>
             {
-                new X509Store(storeName, StoreLocation.CurrentUser),
-                new X509Store(storeName, StoreLocation.LocalMachine)
+                new X509Store(storeName, CurrentUser),
+                new X509Store(storeName, LocalMachine)
             };
 
             foreach (var store in stores)
@@ -65,12 +69,12 @@ namespace Digipost.Api.Client.Shared.Certificate
                 }
             }
 
-            throw new InstanceNotFoundException(GetErrorMessage(thumbprint));
+            throw new FileNotFoundException(GetErrorMessage(thumbprint));
         }
 
         private static string GetErrorMessage(string thumbprint)
         {
-            return string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateCouldNotFind), thumbprint);
+            return string.Format(CertificateCouldNotFind, thumbprint);
         }
     }
 }

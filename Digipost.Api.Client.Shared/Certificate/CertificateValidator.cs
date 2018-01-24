@@ -1,18 +1,12 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Extensions;
-using Digipost.Api.Client.Shared.Resources.Language;
+using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
-    public class CertificateValidator
+    public static class CertificateValidator
     {
-        [Obsolete("Use ValidateCertificate(X509Certificate, string) instead and use CertificateValidationResult to get result of validation")]
-        public static bool IsValidCertificate(X509Certificate2 certificate, string certificateOrganizationNumber)
-        {
-            return ValidateCertificate(certificate, certificateOrganizationNumber).Type == CertificateValidationType.Valid;
-        }
-
         /// <summary>
         ///     Validates the certificate and chain. Validates that the certificate
         ///     <list type="bullet">
@@ -143,13 +137,13 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult NoCertificateResult()
         {
-            var nullCertificateResult = LanguageResource.GetResource(LanguageResourceKey.CertificateIsNull);
-            return new CertificateValidationResult(CertificateValidationType.InvalidCertificate, nullCertificateResult);
+            return new CertificateValidationResult(CertificateValidationType.InvalidCertificate, CertificateIsNull);
         }
 
         private static CertificateValidationResult NotIssuedToOrganizationResult(X509Certificate2 certificate, string certificateOrganizationNumber)
         {
-            var notIssuedToOrganizationResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotIssuedToOrganization), certificateOrganizationNumber);
+            var notIssuedToOrganizationResult = string.Format(CertificateNotIssuedToOrganization, certificateOrganizationNumber);
+
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notIssuedToOrganizationResult));
@@ -157,7 +151,8 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult NotActivatedResult(X509Certificate2 certificate)
         {
-            var notActivatedResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateNotActivatedResult), certificate.GetEffectiveDateString());
+            var notActivatedResult = string.Format(CertificateNotActivatedResult, certificate.GetEffectiveDateString());
+           
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(notActivatedResult));
@@ -165,7 +160,8 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult ExpiredResult(X509Certificate2 certificate)
         {
-            var expiredResult = string.Format(LanguageResource.GetResource(LanguageResourceKey.CertificateExpiredResult), certificate.GetExpirationDateString());
+            var expiredResult = string.Format(CertificateExpiredResult, certificate.GetExpirationDateString());
+
             return new CertificateValidationResult(
                 CertificateValidationType.InvalidCertificate,
                 certificate.ToShortString(expiredResult));
@@ -173,10 +169,9 @@ namespace Digipost.Api.Client.Shared.Certificate
 
         private static CertificateValidationResult ValidResult(X509Certificate2 certificate)
         {
-            var validResult = LanguageResource.GetResource(LanguageResourceKey.CertificateValidResult);
             return new CertificateValidationResult(
                 CertificateValidationType.Valid,
-                certificate.ToShortString(validResult));
+                certificate.ToShortString(CertificateValidResult));
         }
 
         private static bool IsIssuedToOrganizationNumber(X509Certificate certificate, string certificateOrganizationNumber)

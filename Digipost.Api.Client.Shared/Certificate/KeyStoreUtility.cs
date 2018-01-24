@@ -3,6 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
+    // ReSharper disable once ClassWithVirtualMembersNeverInherited.Global
     internal class KeyStoreUtility
     {
         internal virtual X509Certificate2 FindCertificate(string thumbprint, X509Store store)
