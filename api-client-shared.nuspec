@@ -16,7 +16,11 @@
     <files>
         <file 
             src="Digipost.Api.Client.Shared\bin\Release\netstandard2.0\Digipost.Api.Client.Shared.dll" 
-            target="lib\netstandard2\Digipost.Api.Client.Shared.dll" 
+            target="lib\netstandard2.0" 
+        />
+        <file 
+            src="Digipost.Api.Client.Shared\bin\Release\net45\Digipost.Api.Client.Shared.dll" 
+            target="lib\net45" 
         />
     </files>
 </package>
