@@ -50,10 +50,7 @@
       <PackageReference Include="xunit.core" Version="2.4.1" />
       <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
     </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj" />
-    </ItemGroup>
+    
     <ItemGroup>
         <None Remove="Resources\Resource\ResourceFile.txt" />
     </ItemGroup>
@@ -65,6 +62,12 @@
         <Compile Include="..\SolutionItems\AssemblyInfo.cs">
             <Link>Properties/AssemblyInfo.cs</Link>
         </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="C:\Keys\signingkey.snk">
+            <Link>signingkey.snk</Link>
+        </None>
     </ItemGroup>
     
 </Project>

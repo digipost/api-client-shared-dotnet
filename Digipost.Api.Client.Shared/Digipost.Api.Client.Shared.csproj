@@ -51,5 +51,11 @@
             <Link>Properties/AssemblyInfo.cs</Link>
         </Compile>
     </ItemGroup>
+
+    <ItemGroup>
+        <None Include="C:\Keys\signingkey.snk">
+            <Link>signingkey.snk</Link>
+        </None>
+    </ItemGroup>
     
 </Project>
