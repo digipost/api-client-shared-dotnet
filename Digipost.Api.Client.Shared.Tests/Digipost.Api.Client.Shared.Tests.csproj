@@ -1,29 +1,73 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-  </PropertyGroup>
-  <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
-    <IsPackable>false</IsPackable>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0-preview-20170628-02" />
-    <PackageReference Include="Moq" Version="4.7.145" />
-    <PackageReference Include="xunit" Version="2.2.0" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Resources\Resource\ResourceFile.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Resource\ResourceFile.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="..\SolutionItems\AssemblyInfo.cs">
-      <Link>Properties/AssemblyInfo.cs</Link>
-    </Compile>
-  </ItemGroup>
+﻿<Project Sdk="Microsoft.NET.Sdk" DefaultTargets="Build">
+
+    <PropertyGroup>
+        <Title>Digipost Api Client Shared Tests</Title>
+        <PackageId>Digipost.Api.Client.Shared.Tests</PackageId>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <RootNamespace>Digipost.Api.Client.Shared.Tests</RootNamespace>
+        <AssemblyName>Digipost.Api.Client.Shared.Tests</AssemblyName>
+        <ProjectGuid>{E1EAFDDF-FC6F-4A4C-892F-1CBF1EF2A015}</ProjectGuid>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <NoWarn>1591</NoWarn>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+        <NoWarn>1591</NoWarn>
+        <DocumentationFile>bin\Release\Digipost.Api.Client.Shared.Tests.XML</DocumentationFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Digipost.Api.Client.Shared\Digipost.Api.Client.Shared.csproj">
+            <Project>{641FD6C2-5880-4262-A44C-8EC66AA16291}</Project>
+            <Name>Digipost.Api.Client.Shared</Name>
+        </ProjectReference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+      <PackageReference Include="Moq" Version="4.12.0" />
+      <PackageReference Include="xunit.assert" Version="2.4.1" />
+      <PackageReference Include="xunit.core" Version="2.4.1" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <None Remove="Resources\Resource\ResourceFile.txt" />
+    </ItemGroup>
+    <ItemGroup>
+        <EmbeddedResource Include="Resources\Resource\ResourceFile.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="..\SolutionItems\AssemblyInfo.cs">
+            <Link>Properties/AssemblyInfo.cs</Link>
+        </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="C:\Keys\signingkey.snk">
+            <Link>signingkey.snk</Link>
+        </None>
+    </ItemGroup>
+    
 </Project>

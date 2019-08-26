@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using Digipost.Api.Client.Shared.Extensions;
-using Digipost.Api.Client.Shared.Resources.Language;
 using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
 namespace Digipost.Api.Client.Shared.Certificate

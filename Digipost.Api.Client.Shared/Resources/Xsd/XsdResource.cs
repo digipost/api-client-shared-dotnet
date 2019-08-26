@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using System.Text;
 using Digipost.Api.Client.Shared.Resources.Resource;
 
 namespace Digipost.Api.Client.Shared.Resources.Xsd

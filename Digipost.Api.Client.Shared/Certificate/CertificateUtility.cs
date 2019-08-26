@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using static System.Security.Cryptography.X509Certificates.StoreLocation;
 using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
-
-[assembly:InternalsVisibleTo("Digipost.Api.Client.Shared.Tests")]
 
 namespace Digipost.Api.Client.Shared.Certificate
 {
