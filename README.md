@@ -1,4 +1,4 @@
 # api-client-shared-dotnet
 
 ## Hvordan deploye?
-Releasing is done via tagging with [Semver](http://semver.org) versioning scheme. For a beta-release, please add `-beta` as version suffix in tag.
+Releasing er gjort via tagging med [Semver](http://semver.org) versjons schema. For en beta-release, bruk `-beta` som versjon suffix i taggen.
