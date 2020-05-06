@@ -46,7 +46,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 var funksjoneltTestmiljøSertifikater = FunksjoneltTestmiljøSertifikater();
 
                 //Act
-                var result = ValidateCertificateAndChainInternal(GetPostenCertificate(), "984661185", funksjoneltTestmiljøSertifikater);
+                var result = ValidateCertificateAndChainInternal(GetPostenTestCertificate(), "984661185", funksjoneltTestmiljøSertifikater);
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
@@ -77,7 +77,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Ignores_issued_to_organization_if_no_organization_number()
             {
                 //Act
-                var result = ValidateCertificate(GetPostenCertificate(), string.Empty);
+                var result = ValidateCertificate(GetPostenTestCertificate(), string.Empty);
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
@@ -105,7 +105,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 const string certificateOrganizationNumber = "984661185";
 
                 //Act
-                var result = ValidateCertificate(GetPostenCertificate(), certificateOrganizationNumber);
+                var result = ValidateCertificate(GetPostenTestCertificate(), certificateOrganizationNumber);
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
@@ -160,7 +160,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = ValidateCertificate(GetPostenCertificate());
+                var result = ValidateCertificate(GetPostenTestCertificate());
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
