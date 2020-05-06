@@ -6,7 +6,7 @@
     </PropertyGroup>
 
     <PropertyGroup>
-        <TargetFramework>netcoreapp2.2</TargetFramework>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
         <RootNamespace>Digipost.Api.Client.Shared.Tests</RootNamespace>
         <AssemblyName>Digipost.Api.Client.Shared.Tests</AssemblyName>
         <ProjectGuid>{E1EAFDDF-FC6F-4A4C-892F-1CBF1EF2A015}</ProjectGuid>

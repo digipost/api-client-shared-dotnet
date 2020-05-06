@@ -43,7 +43,7 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
 
             public static X509Certificate2 TestIntegrasjonssertifikat()
             {
-                return GetPostenCertificate();
+                return GetPostenTestCertificate();
             }
 
             public static X509Certificate2 GetEnhetstesterSelvsignertSertifikat()
@@ -51,9 +51,9 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                 return GetCertificate("UnitTests", "difi-enhetstester.cer");
             }
 
-            public static X509Certificate2 GetPostenCertificate()
+            public static X509Certificate2 GetPostenTestCertificate()
             {
-                return GetCertificate("UnitTests", "PostenNorgeAs.cer");
+                return GetFunksjoneltTestmiljøMottakerSertifikatOppslagstjenesten();
             }
 
             internal static X509Certificate2 GetAvsenderEnhetstesterSertifikat()
