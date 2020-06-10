@@ -30,8 +30,12 @@ jobs:
       run: dotnet test --no-restore --verbosity normal
     - name: Set release version
       run: echo ::set-env name=RELEASE_VERSION::$(echo ${GITHUB_REF:10})
+    - name: Set assembly version to major semver
+      run: echo ::set-env name=ASSEMBLY_VERSION::$(echo ${GITHUB_REF:10} | cut -d '.' -f 1).0.0
+    - name: Print assembly version
+      run: echo $ASSEMBLY_VERSION
     - name: Pack nupkg
-      run: dotnet pack -p:PackageVersion=$RELEASE_VERSION --configuration Release --no-build --output digipost/packed Digipost.Api.Client.Shared
+      run: dotnet pack -p:PackageVersion=$RELEASE_VERSION -p:AssemblyVersion=$ASSEMBLY_VERSION --configuration Release --no-build --output digipost/packed Digipost.Api.Client.Shared
     - name: Push to NuGet
       env:
         NUGET_API_KEY: ${{ secrets.nugetApiKey }}
