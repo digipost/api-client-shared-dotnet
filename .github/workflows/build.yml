@@ -4,26 +4,28 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 3.1.101
-    - name: Print openssl version
-      run: |
-        openssl version
-    - name: Decrypt signing key to use for strong-name
-      env:
-        SIGNINGKEY_ENC_PASSWORD: ${{ secrets.signingkeyEncPassword }}
-      run: |
-        openssl aes-256-cbc -salt -pbkdf2 -k "$SIGNINGKEY_ENC_PASSWORD" -in signingkey.snk.enc -out signingkey.snk -d    
-    - name: Install dependencies
-      run: dotnet restore
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
-    - name: Test
-      run: dotnet test --no-restore --verbosity normal
+      - uses: digipost/set-timezone@v1.0
+        with:
+          timezoneLinux: "Europe/Oslo"
+      - uses: actions/checkout@v2
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 3.1.101
+      - name: Print openssl version
+        run: |
+          openssl version
+      - name: Decrypt signing key to use for strong-name
+        env:
+          SIGNINGKEY_ENC_PASSWORD: ${{ secrets.signingkeyEncPassword }}
+        run: |
+          openssl aes-256-cbc -salt -pbkdf2 -k "$SIGNINGKEY_ENC_PASSWORD" -in signingkey.snk.enc -out signingkey.snk -d
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal

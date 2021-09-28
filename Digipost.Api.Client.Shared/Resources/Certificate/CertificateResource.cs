@@ -56,24 +56,9 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                 return GetFunksjoneltTestmiljøMottakerSertifikatOppslagstjenesten();
             }
 
-            internal static X509Certificate2 GetAvsenderEnhetstesterSertifikat()
+            public static X509Certificate2 Seid2TestSertifikat()
             {
-                return EvigTestSertifikatMedPrivatnøkkel();
-            }
-
-            internal static X509Certificate2 GetMottakerEnhetstesterSertifikat()
-            {
-                return EvigTestSertifikatUtenPrivatnøkkel();
-            }
-
-            private static X509Certificate2 EvigTestSertifikatUtenPrivatnøkkel()
-            {
-                return GetCertificate("UnitTests", "difi-enhetstester.cer");
-            }
-
-            private static X509Certificate2 EvigTestSertifikatMedPrivatnøkkel()
-            {
-                return GetCertificate("UnitTests", "difi-enhetstester.p12");
+                return GetCertificate("UnitTests", "seid2.cer");
             }
         }
 
@@ -86,7 +71,11 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                     new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_CA_3.pem")),
                     new X509Certificate2(GetCertificate("TestChain", "Buypass_Class_3_Test4_Root_CA.pem")),
                     new X509Certificate2(GetCertificate("TestChain", "intermediate - commfides cpn enterprise-norwegian sha256 ca - test2.pem")),
-                    new X509Certificate2(GetCertificate("TestChain", "root - cpn root sha256 ca - test.pem"))
+                    new X509Certificate2(GetCertificate("TestChain", "root - cpn root sha256 ca - test.pem")),
+                    new X509Certificate2(GetCertificate("TestChain", "BPCl3CaG2HTBS.cer")),
+                    new X509Certificate2(GetCertificate("TestChain", "BPCl3CaG2STBS.cer")),
+                    new X509Certificate2(GetCertificate("TestChain", "BPCl3RootCaG2HT.cer")),
+                    new X509Certificate2(GetCertificate("TestChain", "BPCl3RootCaG2ST.cer")),
                 };
             }
 
@@ -97,7 +86,11 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                     new X509Certificate2(GetCertificate("ProdChain", "BPClass3CA3.cer")),
                     new X509Certificate2(GetCertificate("ProdChain", "BPClass3RootCA.cer")),
                     new X509Certificate2(GetCertificate("ProdChain", "cpn enterprise sha256 class 3.crt")),
-                    new X509Certificate2(GetCertificate("ProdChain", "cpn rootca sha256 class 3.crt"))
+                    new X509Certificate2(GetCertificate("ProdChain", "cpn rootca sha256 class 3.crt")),
+                    new X509Certificate2(GetCertificate("ProdChain", "BPCl3CaG2HTBS.cer")),
+                    new X509Certificate2(GetCertificate("ProdChain", "BPCl3CaG2STBS.cer")),
+                    new X509Certificate2(GetCertificate("ProdChain", "BPCl3RootCaG2HT.cer")),
+                    new X509Certificate2(GetCertificate("ProdChain", "BPCl3RootCaG2ST.cer")),
                 };
             }
         }
