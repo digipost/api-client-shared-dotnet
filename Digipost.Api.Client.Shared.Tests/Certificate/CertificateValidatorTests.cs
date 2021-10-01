@@ -38,6 +38,27 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 Assert.Equal(InvalidChain, result.Type);
                 Assert.Contains("is invalid because the chain length is 1", result.Message);
             }
+            
+            [Fact]
+            public void Returns_ok_if_valid_seid2_certificate_and_chain()
+            {
+                //Act
+                var result = ValidateCertificateAndChainInternal(Seid2TestSertifikat(), "100101688", FunksjoneltTestmiljøSertifikater());
+
+                //Assert
+                Assert.Equal(Valid, result.Type);
+                Assert.Contains("is a valid certificate", result.Message);
+            }
+            
+            [Fact]
+            public void Returns_not_ok_if_valid_seid2_certificate_and_chain_but_wrong_org_number()
+            {
+                //Act
+                var result = ValidateCertificateAndChainInternal(Seid2TestSertifikat(), "988015814", FunksjoneltTestmiljøSertifikater());
+
+                //Assert
+                Assert.Equal(InvalidCertificate, result.Type);
+            }
 
             [Fact]
             public void Returns_ok_if_valid_certificate_and_chain()

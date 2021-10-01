@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
 using Digipost.Api.Client.Shared.Extensions;
 using static Digipost.Api.Client.Shared.Resources.Language.LanguageResource;
 
@@ -56,7 +57,7 @@ namespace Digipost.Api.Client.Shared.Certificate
             {
                 return sertifikatValideringsResultat;
             }
-
+            
             var certificateChainValidator = new CertificateChainValidator(allowedChainCertificates);
             return certificateChainValidator.Validate(certificate);
         }
@@ -174,9 +175,17 @@ namespace Digipost.Api.Client.Shared.Certificate
                 certificate.ToShortString(CertificateValidResult));
         }
 
-        private static bool IsIssuedToOrganizationNumber(X509Certificate certificate, string certificateOrganizationNumber)
+        private static bool IsIssuedToOrganizationNumber(X509Certificate certificate,
+            string certificateOrganizationNumber)
         {
-            return certificate.Subject.Contains($"SERIALNUMBER={certificateOrganizationNumber}") || certificate.Subject.Contains($"CN={certificateOrganizationNumber}");
+            // SEID 2 way to embed Norwegian "organisasjonsnummer" in certificates.
+            //  
+            // @see <a href="http://www.oid-info.com/get/2.5.4.97">OID 2.5.4.97</a>
+            string seid2OrgNumberPattern = "(OID\\.2\\.5\\.4\\.97|organizationIdentifier)=(?:NTRNO-)?(" + certificateOrganizationNumber + ")";
+            
+            return certificate.Subject.Contains($"SERIALNUMBER={certificateOrganizationNumber}")
+                   || certificate.Subject.Contains($"CN={certificateOrganizationNumber}")
+                   || Regex.IsMatch(certificate.Subject, seid2OrgNumberPattern);
         }
 
         private static bool IsActivatedCertificate(X509Certificate2 certificate)
