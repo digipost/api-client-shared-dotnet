@@ -76,6 +76,8 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                     new X509Certificate2(GetCertificate("TestChain", "BPCl3CaG2STBS.cer")),
                     new X509Certificate2(GetCertificate("TestChain", "BPCl3RootCaG2HT.cer")),
                     new X509Certificate2(GetCertificate("TestChain", "BPCl3RootCaG2ST.cer")),
+                    new X509Certificate2(GetCertificate("TestChain", "CommfidesLegalPersonCA-G3-TEST.cer")),
+                    new X509Certificate2(GetCertificate("TestChain", "CommfidesRootCA-G3-TEST.cer")),
                 };
             }
 
@@ -91,6 +93,8 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                     new X509Certificate2(GetCertificate("ProdChain", "BPCl3CaG2STBS.cer")),
                     new X509Certificate2(GetCertificate("ProdChain", "BPCl3RootCaG2HT.cer")),
                     new X509Certificate2(GetCertificate("ProdChain", "BPCl3RootCaG2ST.cer")),
+                    new X509Certificate2(GetCertificate("ProdChain", "CommfidesLegalPersonCA-G3.cer")),
+                    new X509Certificate2(GetCertificate("ProdChain", "CommfidesRootCA-G3.cer")),
                 };
             }
         }
