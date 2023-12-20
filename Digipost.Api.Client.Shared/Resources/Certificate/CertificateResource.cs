@@ -16,16 +16,6 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
 
         public static class UnitTests
         {
-            public static X509Certificate2 GetProduksjonsMottakerSertifikatOppslagstjenesten()
-            {
-                return GetCertificate("UnitTests", "produksjonsmottakersertifikatFraOppslagstjenesten.pem");
-            }
-
-            public static X509Certificate2 GetFunksjoneltTestmiljøMottakerSertifikatOppslagstjenesten()
-            {
-                return GetCertificate("UnitTests", "testmottakersertifikatFraOppslagstjenesten.pem");
-            }
-
             public static X509Certificate2 NotActivatedSelfSignedTestCertificate()
             {
                 return GetCertificate("UnitTests", "NotActivatedSelfSignedBringAs.cer");
@@ -41,19 +31,9 @@ namespace Digipost.Api.Client.Shared.Resources.Certificate
                 return GetCertificate("UnitTests", "ValidSelfSignedBringAs.cer");
             }
 
-            public static X509Certificate2 TestIntegrasjonssertifikat()
-            {
-                return GetPostenTestCertificate();
-            }
-
             public static X509Certificate2 GetEnhetstesterSelvsignertSertifikat()
             {
                 return GetCertificate("UnitTests", "difi-enhetstester.cer");
-            }
-
-            public static X509Certificate2 GetPostenTestCertificate()
-            {
-                return GetFunksjoneltTestmiljøMottakerSertifikatOppslagstjenesten();
             }
 
             public static X509Certificate2 Seid2TestSertifikat()
