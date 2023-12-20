@@ -27,10 +27,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Fails_with_wrong_root_and_intermediate()
             {
                 //Arrange
-                var productionCertificate = CertificateResource.UnitTests.GetProduksjonsMottakerSertifikatOppslagstjenesten();
+                var productionCertificate = CertificateResource.UnitTests.Seid2TestSertifikat();
 
                 //Act
-                var certificateChainValidator = new CertificateChainValidator(CertificateChainUtility.FunksjoneltTestmiljøSertifikater());
+                var certificateChainValidator = new CertificateChainValidator(CertificateChainUtility.ProduksjonsSertifikater());
                 var result = certificateChainValidator.Validate(productionCertificate);
 
                 //Assert
@@ -42,11 +42,11 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Valid_with_correct_root_and_intermediate()
             {
                 //Arrange
-                var productionCertificate = CertificateResource.UnitTests.GetProduksjonsMottakerSertifikatOppslagstjenesten();
-                var certificateChainValidator = new CertificateChainValidator(CertificateChainUtility.ProduksjonsSertifikater());
+                var testCertificate = CertificateResource.UnitTests.Seid2TestSertifikat();
+                var certificateChainValidator = new CertificateChainValidator(CertificateChainUtility.FunksjoneltTestmiljøSertifikater());
 
                 //Act
-                var result = certificateChainValidator.Validate(productionCertificate);
+                var result = certificateChainValidator.Validate(testCertificate);
 
                 //Assert
                 Assert.Equal(CertificateValidationType.Valid, result.Type);
