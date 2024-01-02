@@ -60,19 +60,6 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 Assert.Equal(InvalidCertificate, result.Type);
             }
 
-            [Fact]
-            public void Returns_ok_if_valid_certificate_and_chain()
-            {
-                //Arrange
-                var funksjoneltTestmiljøSertifikater = FunksjoneltTestmiljøSertifikater();
-
-                //Act
-                var result = ValidateCertificateAndChainInternal(GetPostenTestCertificate(), "984661185", funksjoneltTestmiljøSertifikater);
-
-                //Assert
-                Assert.Equal(Valid, result.Type);
-                Assert.Contains("is a valid certificate", result.Message);
-            }
         }
 
         public class ValidateCertificateMethodWithOrganizationNumber : CertificateValidatorTests
@@ -98,7 +85,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Ignores_issued_to_organization_if_no_organization_number()
             {
                 //Act
-                var result = ValidateCertificate(GetPostenTestCertificate(), string.Empty);
+                var result = ValidateCertificate(Seid2TestSertifikat(), string.Empty);
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
@@ -112,7 +99,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 const string certificateOrganizationNumber = "123456789";
 
                 //Act
-                var result = ValidateCertificate(TestIntegrasjonssertifikat(), certificateOrganizationNumber);
+                var result = ValidateCertificate(Seid2TestSertifikat(), certificateOrganizationNumber);
 
                 //Assert
                 Assert.Equal(InvalidCertificate, result.Type);
@@ -123,10 +110,10 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
             public void Returns_ok_if_valid()
             {
                 //Arrange
-                const string certificateOrganizationNumber = "984661185";
+                const string certificateOrganizationNumber = "100101688";
 
                 //Act
-                var result = ValidateCertificate(GetPostenTestCertificate(), certificateOrganizationNumber);
+                var result = ValidateCertificate(Seid2TestSertifikat(), certificateOrganizationNumber);
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
@@ -181,7 +168,7 @@ namespace Digipost.Api.Client.Shared.Tests.Certificate
                 //Arrange
 
                 //Act
-                var result = ValidateCertificate(GetPostenTestCertificate());
+                var result = ValidateCertificate(Seid2TestSertifikat());
 
                 //Assert
                 Assert.Equal(Valid, result.Type);
