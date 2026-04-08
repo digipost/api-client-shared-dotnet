@@ -7,14 +7,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: digipost/set-timezone@v1.0
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      - name: Setup .NET
+        uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7
         with:
-          timezoneLinux: "Europe/Oslo"
-      - uses: actions/checkout@v4
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 3.1.101
+          dotnet-version: 10.x
       - name: Print openssl version
         run: |
           openssl version
